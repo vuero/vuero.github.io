@@ -1,0 +1,201 @@
+/* ==========================================================================
+1. Confirm Account
+========================================================================== */
+.confirm-account-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  min-height: 560px;
+  margin: 0 auto;
+}
+.confirm-account-wrapper .wrapper-inner .action-box {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 40px;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-flat {
+  box-shadow: none;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-info .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-info p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-success .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-success p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger .title,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger .subtitle,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger h1,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger h2,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger h3,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger h4,
+.confirm-account-wrapper .wrapper-inner .action-box.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .card-head .left,
+.confirm-account-wrapper .wrapper-inner .action-box .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .card-head .right {
+  justify-content: flex-end;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .card-inner {
+  padding-top: 1.75rem;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content {
+  text-align: center;
+  font-family: var(--font);
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 8px auto;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content img.is-larger {
+  max-width: 300px;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  max-width: 320px;
+  margin: 0 auto 8px auto;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content h3 span {
+  color: var(--primary);
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content p {
+  font-size: 0.9rem;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content .buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content .buttons .button {
+  margin: 0 4px;
+  min-width: 180px;
+}
+.is-dark .confirm-account-wrapper .wrapper-inner .action-box {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .confirm-account-wrapper .wrapper-inner .action-box .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .confirm-account-wrapper .wrapper-inner .action-box .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .confirm-account-wrapper .wrapper-inner .action-box .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .confirm-account-wrapper .wrapper-outer {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .confirm-account-wrapper .wrapper-outer .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .confirm-account-wrapper .wrapper-outer .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .confirm-account-wrapper .wrapper-outer .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+@media only screen and (max-width: 767px) {
+.confirm-account-wrapper .wrapper-inner .action-box {
+    padding: 20px;
+}
+.confirm-account-wrapper .wrapper-inner .action-box .box-content .buttons .button {
+    min-width: 130px;
+}
+}

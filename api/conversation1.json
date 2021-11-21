@@ -1,0 +1,120 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "دیروز",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/10.jpg",
+                "content": {
+                    "text": "سلام جمال، در حین انجام تحقیقات با نرم افزار Saas جدیدی برخورد کردم. حتماً باید آن را بررسی کنید.",
+                    "time": "08:17pm"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "مطمئناً ، من دوست دارم در مورد آن بیشتر بدانم. آیا پیوند یا مستندی دارید؟",
+                    "time": "08:18 ب.ظ"
+                }
+            },
+            {
+                "id": "3",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "اکنون",
+                    "time": null
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/10.jpg",
+                "content": {
+                    "text": "بفرمایید. همچنین مستندات کامل وجود دارد. فقط روی کلیک در گوشه بالا سمت راست کلیک کنید.",
+                    "time": "11:27 صبح"
+                }
+            },
+            {
+                "id": "5",
+                "type": "imagelink",
+                "sender": "other",
+                "avatar": "/demo/avatars/10.jpg",
+                "content": {
+                    "text": "با این برنامه جدید پروژه هایی را مانند قبل مدیریت کنید",
+                    "subtext": "gettrueprojects.com",
+                    "time": null,
+                    "link_image": "/demo/photos/demo-apps/1.jpg",
+                    "link_badge": "/images/icons/logos/slicer.svg"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "با تشکر ، آیا فکر می کنید این یکی برای مدیریت پروژه های ما مناسب خواهد بود؟",
+                    "time": "11:32 صبح"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/10.jpg",
+                "content": {
+                    "text": "می توانید با خواندن کاغذ سفید پروژه شروع کنید. هر آنچه شما نیاز دارید در آنجا وجود دارد. همچنین می توانید نسخه ی نمایشی رایگان را امتحان کنید و شروع به کاوش در ویژگی ها کنید.",
+                    "time": "11:43 صبح"
+                }
+            },
+            {
+                "id": "8",
+                "type": "link",
+                "sender": "other",
+                "avatar": "/demo/avatars/10.jpg",
+                "content": {
+                    "text": "پروژه های واقعی کتاب سفید",
+                    "subtext": "باز کردن پیوند",
+                    "time": "11:47 صبح"
+                }
+            },
+            {
+                "id": "9",
+                "type": "image",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "time": null,
+                    "image_url": "/demo/photos/demo-apps/2.jpg"
+                }
+            },
+            {
+                "id": "10",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "خوب ، من فکر می کنم ما ممکن است به آن ضربه بزنیم. حداقل ، ارزش امتحان کردن را دارد. به نظر شما اینطور نیست؟",
+                    "time": "11:49 صبح"
+                }
+            }
+        ]
+    }
+}

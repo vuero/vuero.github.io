@@ -1,0 +1,872 @@
+/* ==========================================================================
+1. Project Details
+========================================================================== */
+.is-navbar .project-details {
+  padding-top: 30px;
+}
+.project-details .tabs-wrapper .tabs-inner .tabs {
+  margin: 0 auto;
+  background: var(--white);
+}
+.project-details .project-details-inner {
+  padding: 20px 0;
+}
+.project-details .project-details-inner .project-details-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 40px;
+}
+.project-details .project-details-inner .project-details-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.project-details .project-details-inner .project-details-card.is-flat {
+  box-shadow: none;
+}
+.project-details .project-details-inner .project-details-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .project-details-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.project-details .project-details-inner .project-details-card.is-primary .title,
+.project-details .project-details-inner .project-details-card.is-primary .subtitle,
+.project-details .project-details-inner .project-details-card.is-primary h1,
+.project-details .project-details-inner .project-details-card.is-primary h2,
+.project-details .project-details-inner .project-details-card.is-primary h3,
+.project-details .project-details-inner .project-details-card.is-primary h4,
+.project-details .project-details-inner .project-details-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.project-details .project-details-inner .project-details-card.is-secondary .title,
+.project-details .project-details-inner .project-details-card.is-secondary .subtitle,
+.project-details .project-details-inner .project-details-card.is-secondary h1,
+.project-details .project-details-inner .project-details-card.is-secondary h2,
+.project-details .project-details-inner .project-details-card.is-secondary h3,
+.project-details .project-details-inner .project-details-card.is-secondary h4,
+.project-details .project-details-inner .project-details-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.project-details .project-details-inner .project-details-card.is-info .title,
+.project-details .project-details-inner .project-details-card.is-info .subtitle,
+.project-details .project-details-inner .project-details-card.is-info h1,
+.project-details .project-details-inner .project-details-card.is-info h2,
+.project-details .project-details-inner .project-details-card.is-info h3,
+.project-details .project-details-inner .project-details-card.is-info h4,
+.project-details .project-details-inner .project-details-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.project-details .project-details-inner .project-details-card.is-success .title,
+.project-details .project-details-inner .project-details-card.is-success .subtitle,
+.project-details .project-details-inner .project-details-card.is-success h1,
+.project-details .project-details-inner .project-details-card.is-success h2,
+.project-details .project-details-inner .project-details-card.is-success h3,
+.project-details .project-details-inner .project-details-card.is-success h4,
+.project-details .project-details-inner .project-details-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.project-details .project-details-inner .project-details-card.is-warning .title,
+.project-details .project-details-inner .project-details-card.is-warning .subtitle,
+.project-details .project-details-inner .project-details-card.is-warning h1,
+.project-details .project-details-inner .project-details-card.is-warning h2,
+.project-details .project-details-inner .project-details-card.is-warning h3,
+.project-details .project-details-inner .project-details-card.is-warning h4,
+.project-details .project-details-inner .project-details-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.project-details .project-details-inner .project-details-card.is-danger .title,
+.project-details .project-details-inner .project-details-card.is-danger .subtitle,
+.project-details .project-details-inner .project-details-card.is-danger h1,
+.project-details .project-details-inner .project-details-card.is-danger h2,
+.project-details .project-details-inner .project-details-card.is-danger h3,
+.project-details .project-details-inner .project-details-card.is-danger h4,
+.project-details .project-details-inner .project-details-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-details-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-details .project-details-inner .project-details-card .card-head .left,
+.project-details .project-details-inner .project-details-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.project-details .project-details-inner .project-details-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.project-details .project-details-inner .project-details-card .card-head .right {
+  justify-content: flex-end;
+}
+.project-details .project-details-inner .project-details-card .card-inner {
+  padding-top: 1.75rem;
+}
+.project-details .project-details-inner .project-details-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.project-details .project-details-inner .project-details-card .card-head .title-wrap h3 {
+  font-family: var(--font-alt);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  line-height: 1.2;
+  transition: all 0.3s;
+}
+.project-details .project-details-inner .project-details-card .project-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.project-details .project-details-inner .project-details-card .project-overview p {
+  max-width: 420px;
+}
+.project-details .project-details-inner .project-details-card .project-features {
+  display: flex;
+  padding: 25px 0;
+  border-top: 1px solid var(--fade-grey-dark-3);
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature {
+  margin-right: 20px;
+  width: calc(25% - 20px);
+}
+[dir=rtl] .project-details .project-details-inner .project-details-card .project-features .project-feature {
+  margin-left: 20px;
+  margin-right: unset;
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature i {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature h4 {
+  font-family: var(--font-alt);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature p {
+  line-height: 1.2;
+  font-size: 0.85rem;
+  color: var(--light-text);
+  margin-bottom: 0;
+}
+.project-details .project-details-inner .project-details-card .project-files {
+  padding: 20px 0;
+}
+.project-details .project-details-inner .project-details-card .project-files h4 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: var(--white);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box:hover {
+  border-color: var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box img {
+  display: block;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .meta {
+  margin-left: 12px;
+  line-height: 1.3;
+}
+[dir=rtl] .project-details .project-details-inner .project-details-card .project-files .file-box .meta {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .meta span {
+  display: block;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .meta span:first-child {
+  font-family: var(--font-alt);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .meta span:nth-child(2) {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .meta span:nth-child(2) i {
+  position: relative;
+  top: -3px;
+  font-size: 0.3rem;
+  color: var(--light-text);
+  margin: 0 4px;
+}
+.project-details .project-details-inner .project-details-card .project-files .file-box .dropdown {
+  margin-left: auto;
+}
+[dir=rtl] .project-details .project-details-inner .project-details-card .project-files .file-box .dropdown {
+  margin-left: unset;
+  margin-right: auto;
+}
+.project-details .project-details-inner .side-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 40px;
+  margin-bottom: 1.5rem;
+}
+.project-details .project-details-inner .side-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.project-details .project-details-inner .side-card.is-flat {
+  box-shadow: none;
+}
+.project-details .project-details-inner .side-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .side-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.project-details .project-details-inner .side-card.is-primary .title,
+.project-details .project-details-inner .side-card.is-primary .subtitle,
+.project-details .project-details-inner .side-card.is-primary h1,
+.project-details .project-details-inner .side-card.is-primary h2,
+.project-details .project-details-inner .side-card.is-primary h3,
+.project-details .project-details-inner .side-card.is-primary h4,
+.project-details .project-details-inner .side-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.project-details .project-details-inner .side-card.is-secondary .title,
+.project-details .project-details-inner .side-card.is-secondary .subtitle,
+.project-details .project-details-inner .side-card.is-secondary h1,
+.project-details .project-details-inner .side-card.is-secondary h2,
+.project-details .project-details-inner .side-card.is-secondary h3,
+.project-details .project-details-inner .side-card.is-secondary h4,
+.project-details .project-details-inner .side-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.project-details .project-details-inner .side-card.is-info .title,
+.project-details .project-details-inner .side-card.is-info .subtitle,
+.project-details .project-details-inner .side-card.is-info h1,
+.project-details .project-details-inner .side-card.is-info h2,
+.project-details .project-details-inner .side-card.is-info h3,
+.project-details .project-details-inner .side-card.is-info h4,
+.project-details .project-details-inner .side-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.project-details .project-details-inner .side-card.is-success .title,
+.project-details .project-details-inner .side-card.is-success .subtitle,
+.project-details .project-details-inner .side-card.is-success h1,
+.project-details .project-details-inner .side-card.is-success h2,
+.project-details .project-details-inner .side-card.is-success h3,
+.project-details .project-details-inner .side-card.is-success h4,
+.project-details .project-details-inner .side-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.project-details .project-details-inner .side-card.is-warning .title,
+.project-details .project-details-inner .side-card.is-warning .subtitle,
+.project-details .project-details-inner .side-card.is-warning h1,
+.project-details .project-details-inner .side-card.is-warning h2,
+.project-details .project-details-inner .side-card.is-warning h3,
+.project-details .project-details-inner .side-card.is-warning h4,
+.project-details .project-details-inner .side-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.project-details .project-details-inner .side-card.is-danger .title,
+.project-details .project-details-inner .side-card.is-danger .subtitle,
+.project-details .project-details-inner .side-card.is-danger h1,
+.project-details .project-details-inner .side-card.is-danger h2,
+.project-details .project-details-inner .side-card.is-danger h3,
+.project-details .project-details-inner .side-card.is-danger h4,
+.project-details .project-details-inner .side-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .side-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-details .project-details-inner .side-card .card-head .left,
+.project-details .project-details-inner .side-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.project-details .project-details-inner .side-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.project-details .project-details-inner .side-card .card-head .right {
+  justify-content: flex-end;
+}
+.project-details .project-details-inner .side-card .card-inner {
+  padding-top: 1.75rem;
+}
+.project-details .project-details-inner .side-card h4 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.project-details .project-details-inner .project-team-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 40px;
+  max-width: 940px;
+  display: block;
+  margin: 0 auto;
+}
+.project-details .project-details-inner .project-team-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.project-details .project-details-inner .project-team-card.is-flat {
+  box-shadow: none;
+}
+.project-details .project-details-inner .project-team-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .project-team-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.project-details .project-details-inner .project-team-card.is-primary .title,
+.project-details .project-details-inner .project-team-card.is-primary .subtitle,
+.project-details .project-details-inner .project-team-card.is-primary h1,
+.project-details .project-details-inner .project-team-card.is-primary h2,
+.project-details .project-details-inner .project-team-card.is-primary h3,
+.project-details .project-details-inner .project-team-card.is-primary h4,
+.project-details .project-details-inner .project-team-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.project-details .project-details-inner .project-team-card.is-secondary .title,
+.project-details .project-details-inner .project-team-card.is-secondary .subtitle,
+.project-details .project-details-inner .project-team-card.is-secondary h1,
+.project-details .project-details-inner .project-team-card.is-secondary h2,
+.project-details .project-details-inner .project-team-card.is-secondary h3,
+.project-details .project-details-inner .project-team-card.is-secondary h4,
+.project-details .project-details-inner .project-team-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.project-details .project-details-inner .project-team-card.is-info .title,
+.project-details .project-details-inner .project-team-card.is-info .subtitle,
+.project-details .project-details-inner .project-team-card.is-info h1,
+.project-details .project-details-inner .project-team-card.is-info h2,
+.project-details .project-details-inner .project-team-card.is-info h3,
+.project-details .project-details-inner .project-team-card.is-info h4,
+.project-details .project-details-inner .project-team-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.project-details .project-details-inner .project-team-card.is-success .title,
+.project-details .project-details-inner .project-team-card.is-success .subtitle,
+.project-details .project-details-inner .project-team-card.is-success h1,
+.project-details .project-details-inner .project-team-card.is-success h2,
+.project-details .project-details-inner .project-team-card.is-success h3,
+.project-details .project-details-inner .project-team-card.is-success h4,
+.project-details .project-details-inner .project-team-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.project-details .project-details-inner .project-team-card.is-warning .title,
+.project-details .project-details-inner .project-team-card.is-warning .subtitle,
+.project-details .project-details-inner .project-team-card.is-warning h1,
+.project-details .project-details-inner .project-team-card.is-warning h2,
+.project-details .project-details-inner .project-team-card.is-warning h3,
+.project-details .project-details-inner .project-team-card.is-warning h4,
+.project-details .project-details-inner .project-team-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.project-details .project-details-inner .project-team-card.is-danger .title,
+.project-details .project-details-inner .project-team-card.is-danger .subtitle,
+.project-details .project-details-inner .project-team-card.is-danger h1,
+.project-details .project-details-inner .project-team-card.is-danger h2,
+.project-details .project-details-inner .project-team-card.is-danger h3,
+.project-details .project-details-inner .project-team-card.is-danger h4,
+.project-details .project-details-inner .project-team-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .project-team-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-details .project-details-inner .project-team-card .card-head .left,
+.project-details .project-details-inner .project-team-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.project-details .project-details-inner .project-team-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.project-details .project-details-inner .project-team-card .card-head .right {
+  justify-content: flex-end;
+}
+.project-details .project-details-inner .project-team-card .card-inner {
+  padding-top: 1.75rem;
+}
+.project-details .project-details-inner .project-team-card .column {
+  padding: 1.5rem;
+}
+.project-details .project-details-inner .project-team-card .column:nth-child(odd) {
+  border-right: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .project-details .project-details-inner .project-team-card .column:nth-child(odd) {
+  border-right: none;
+  border-left: 1px solid var(--fade-grey-dark-3);
+}
+.project-details .project-details-inner .project-team-card .column.has-border-bottom {
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+}
+.project-details .project-details-inner .task-grid .grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.project-details .project-details-inner .task-grid .grid-header h3 {
+  font-family: var(--font-alt);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  line-height: 1.2;
+}
+.project-details .project-details-inner .task-grid .grid-header .filter {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 8px 24px;
+  border-radius: 100px;
+}
+.project-details .project-details-inner .task-grid .grid-header .filter > span {
+  font-family: var(--font-alt);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-right: 20px;
+}
+[dir=rtl] .project-details .project-details-inner .task-grid .grid-header .filter > span {
+  margin-left: 20px;
+  margin-right: unset;
+}
+.project-details .project-details-inner .task-grid .grid-header .filter .multiselect {
+  min-width: 140px;
+}
+.project-details .project-details-inner .task-grid .grid-header .filter .multiselect .multiselect-input {
+  border: none;
+}
+.project-details .project-details-inner .task-grid .task-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  min-height: 200px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.project-details .project-details-inner .task-grid .task-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.project-details .project-details-inner .task-grid .task-card.is-flat {
+  box-shadow: none;
+}
+.project-details .project-details-inner .task-grid .task-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .task-grid .task-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.project-details .project-details-inner .task-grid .task-card.is-primary .title,
+.project-details .project-details-inner .task-grid .task-card.is-primary .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-primary h1,
+.project-details .project-details-inner .task-grid .task-card.is-primary h2,
+.project-details .project-details-inner .task-grid .task-card.is-primary h3,
+.project-details .project-details-inner .task-grid .task-card.is-primary h4,
+.project-details .project-details-inner .task-grid .task-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-secondary .title,
+.project-details .project-details-inner .task-grid .task-card.is-secondary .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-secondary h1,
+.project-details .project-details-inner .task-grid .task-card.is-secondary h2,
+.project-details .project-details-inner .task-grid .task-card.is-secondary h3,
+.project-details .project-details-inner .task-grid .task-card.is-secondary h4,
+.project-details .project-details-inner .task-grid .task-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-info .title,
+.project-details .project-details-inner .task-grid .task-card.is-info .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-info h1,
+.project-details .project-details-inner .task-grid .task-card.is-info h2,
+.project-details .project-details-inner .task-grid .task-card.is-info h3,
+.project-details .project-details-inner .task-grid .task-card.is-info h4,
+.project-details .project-details-inner .task-grid .task-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-success .title,
+.project-details .project-details-inner .task-grid .task-card.is-success .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-success h1,
+.project-details .project-details-inner .task-grid .task-card.is-success h2,
+.project-details .project-details-inner .task-grid .task-card.is-success h3,
+.project-details .project-details-inner .task-grid .task-card.is-success h4,
+.project-details .project-details-inner .task-grid .task-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-warning .title,
+.project-details .project-details-inner .task-grid .task-card.is-warning .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-warning h1,
+.project-details .project-details-inner .task-grid .task-card.is-warning h2,
+.project-details .project-details-inner .task-grid .task-card.is-warning h3,
+.project-details .project-details-inner .task-grid .task-card.is-warning h4,
+.project-details .project-details-inner .task-grid .task-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.project-details .project-details-inner .task-grid .task-card.is-danger .title,
+.project-details .project-details-inner .task-grid .task-card.is-danger .subtitle,
+.project-details .project-details-inner .task-grid .task-card.is-danger h1,
+.project-details .project-details-inner .task-grid .task-card.is-danger h2,
+.project-details .project-details-inner .task-grid .task-card.is-danger h3,
+.project-details .project-details-inner .task-grid .task-card.is-danger h4,
+.project-details .project-details-inner .task-grid .task-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.project-details .project-details-inner .task-grid .task-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-details .project-details-inner .task-grid .task-card .card-head .left,
+.project-details .project-details-inner .task-grid .task-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.project-details .project-details-inner .task-grid .task-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.project-details .project-details-inner .task-grid .task-card .card-head .right {
+  justify-content: flex-end;
+}
+.project-details .project-details-inner .task-grid .task-card .card-inner {
+  padding-top: 1.75rem;
+}
+.project-details .project-details-inner .task-grid .task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--light-box-shadow);
+}
+.project-details .project-details-inner .task-grid .task-card .title-wrap h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.project-details .project-details-inner .task-grid .task-card .title-wrap span {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.project-details .project-details-inner .task-grid .task-card .content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-details .project-details-inner .task-grid .task-card .content-wrap .left .avatar-stack {
+  margin-bottom: 6px;
+}
+.project-details .project-details-inner .task-grid .task-card .content-wrap .left .attachments {
+  display: flex;
+  align-items: center;
+}
+.project-details .project-details-inner .task-grid .task-card .content-wrap .left .attachments i {
+  font-size: 15px;
+  color: var(--light-text);
+}
+.project-details .project-details-inner .task-grid .task-card .content-wrap .left .attachments span {
+  margin-left: 2px;
+  font-size: 0.9rem;
+  font-family: var(--font);
+  color: var(--light-text);
+}
+[dir=rtl] .project-details .project-details-inner .task-grid .task-card .content-wrap .left .attachments span {
+  margin-left: unset;
+  margin-right: 2px;
+}
+/* ==========================================================================
+2. Project Details Dark Mode
+========================================================================== */
+.is-dark .project-details .project-details-inner .project-details-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .project-details-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-details-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-details-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-details-card .card-head .title-wrap h3 {
+  color: var(--dark-dark-text) !important;
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-features {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-features .project-feature i {
+  color: var(--primary);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-features .project-feature h4 {
+  color: var(--dark-dark-text);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-files h4 {
+  color: var(--primary);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-files .file-box {
+  background: var(--dark-sidebar-light-3);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-files .file-box:hover {
+  border-color: var(--dark-sidebar-light-10);
+}
+.is-dark .project-details .project-details-inner .project-details-card .project-files .file-box .meta span:first-child {
+  color: var(--dark-dark-text);
+}
+.is-dark .project-details .project-details-inner .side-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .side-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .side-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .side-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .side-card h4 {
+  color: var(--primary);
+}
+.is-dark .project-details .project-details-inner .project-team-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .project-team-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-team-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-team-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .project-team-card .column {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .task-grid .grid-header h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .project-details .project-details-inner .task-grid .grid-header .filter {
+  background: var(--dark-sidebar-light-1) !important;
+  border-color: var(--dark-sidebar-light-4) !important;
+}
+.is-dark .project-details .project-details-inner .task-grid .grid-header .filter > span {
+  color: var(--dark-dark-text);
+}
+.is-dark .project-details .project-details-inner .task-grid .task-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .project-details .project-details-inner .task-grid .task-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .task-grid .task-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .task-grid .task-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .project-details .project-details-inner .task-grid .task-card .title-wrap h3 {
+  color: var(--dark-dark-text);
+}
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.project-details .project-details-inner .project-details-card {
+    padding: 30px;
+}
+.project-details .project-details-inner .project-details-card .project-overview {
+    flex-direction: column;
+}
+.project-details .project-details-inner .project-details-card .project-overview p {
+    margin-bottom: 20px;
+}
+.project-details .project-details-inner .project-details-card .project-features {
+    flex-wrap: wrap;
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature {
+    width: calc(50% - 20px);
+    text-align: center;
+    margin: 0 10px;
+}
+.project-details .project-details-inner .project-details-card .project-features .project-feature:first-child, .project-details .project-details-inner .project-details-card .project-features .project-feature:nth-child(2) {
+    margin-bottom: 20px;
+}
+.project-details .project-details-inner .project-team-card {
+    padding: 30px;
+}
+.project-details .project-details-inner .project-team-card .column {
+    border-right: none !important;
+}
+[dir=rtl] .project-details .project-details-inner .project-team-card .column {
+    border-left: none !important;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.project-details .project-details-inner .project-details-card .project-files .columns {
+    display: flex;
+}
+.project-details .project-details-inner .project-details-card .project-files .columns .column {
+    min-width: 50%;
+}
+.project-details .project-details-inner .project-team-card .columns {
+    display: flex;
+}
+.project-details .project-details-inner .project-team-card .columns .column {
+    min-width: 50%;
+}
+.project-details .project-details-inner .task-grid .columns {
+    display: flex;
+}
+.project-details .project-details-inner .task-grid .columns .column {
+    min-width: 50%;
+}
+}

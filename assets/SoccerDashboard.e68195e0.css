@@ -1,0 +1,771 @@
+.soccer-dashboard .soccer-dashboard-inner .live-match {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-flat {
+  box-shadow: none;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-info p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-success p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger .title,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger h1,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger h2,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger h3,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger h4,
+.soccer-dashboard .soccer-dashboard-inner .live-match.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-head .left,
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-head .right {
+  justify-content: flex-end;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .card-inner {
+  padding-top: 1.75rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head {
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league .left span {
+  display: block;
+  font-family: var(--font);
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league .left span:first-child {
+  color: var(--dark-text);
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league .left span:nth-child(2) {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league .right .live-block {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50rem;
+  background: var(--danger);
+  color: var(--white);
+  box-shadow: var(--danger-box-shadow);
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .head .league .right .live-block span {
+  display: inline-block;
+  font-family: var(--font);
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .live-match .head .league .right .live-block span {
+  margin-left: unset;
+  margin-right: 0.25rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .left,
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .right {
+  text-align: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .left .team-logo,
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .right .team-logo {
+  display: block;
+  min-width: 50px;
+  max-width: 50px;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .left .team-name,
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .right .team-name {
+  display: block;
+  font-family: var(--font);
+  font-weight: 500;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .center .score {
+  display: block;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .match .center .separator {
+  position: relative;
+  top: -2px;
+  display: block;
+  padding: 0 0.5rem;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .live-match .action .v-button {
+  border-radius: 0.65rem;
+  height: 44px;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 2rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-flat {
+  box-shadow: none;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-info p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-success p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger .title,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger h1,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger h2,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger h3,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger h4,
+.soccer-dashboard .soccer-dashboard-inner .leagues.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-head .left,
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-head .right {
+  justify-content: flex-end;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .card-inner {
+  padding-top: 1.75rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .head {
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item {
+  display: flex;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .league-logo {
+  display: block;
+  min-width: 38px;
+  max-width: 38px;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .meta {
+  margin-left: 0.5rem;
+  line-height: 1.2;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .meta {
+  margin-left: unset;
+  margin-right: 0.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .meta .league-name {
+  display: block;
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .meta .league-country {
+  display: block;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .end {
+  margin-left: auto;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .end {
+  margin-left: unset;
+  margin-right: auto;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta {
+  background-color: var(--primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-title {
+  font-family: var(--font-alt);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0 0 0.25rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-text {
+  color: var(--white);
+  opacity: 0.9;
+  font-family: var(--font);
+  line-height: 1.7;
+  margin-top: 0;
+  max-width: 58%;
+  margin-bottom: 1rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+  width: 40%;
+  max-width: 350px;
+  position: absolute;
+  overflow: hidden;
+  height: calc(110%);
+  top: -10%;
+  right: 2rem;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+  left: 2rem;
+  right: unset;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img img {
+  width: 100%;
+  height: auto;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 0;
+  overflow: hidden;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-flat {
+  box-shadow: none;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger .title,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger .subtitle,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger h1,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger h2,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger h3,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger h4,
+.soccer-dashboard .soccer-dashboard-inner .matches-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-head .left,
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-head .right {
+  justify-content: flex-end;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .card-inner {
+  padding-top: 1.75rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding: 2rem 2rem 0 2rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header .header-nav {
+  display: flex;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header .header-nav .nav-item .nav-link {
+  font-family: var(--font);
+  margin-right: 1rem;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 1rem;
+  color: var(--light-text);
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header .header-nav .nav-item .nav-link {
+  margin-left: 1rem;
+  margin-right: unset;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header .header-nav .nav-item .nav-link.is-active {
+  color: var(--dark-text);
+  border-bottom-color: var(--primary);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body {
+  overflow-x: auto;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table {
+  width: 100%;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table thead th {
+  border: none;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr th:first-child,
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td:first-child {
+  padding-left: 2rem;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr th:first-child,
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td:first-child {
+  padding-left: unset;
+  padding-right: 2rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr th:last-child,
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td:last-child {
+  padding-right: 2rem;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr th:last-child,
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td:last-child {
+  padding-left: 2rem;
+  padding-right: unset;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td.score-cell {
+  min-width: 300px;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row {
+  display: flex;
+  align-items: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row .match-time {
+  font-family: var(--font);
+  color: var(--light-text);
+  margin-right: 0.75rem;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row .match-time {
+  margin-left: 0.75rem;
+  margin-right: unset;
+  white-space: nowrap;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row .tag {
+  font-family: var(--font);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row .tag svg {
+  color: var(--warning);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .match-time-row .tag.is-live svg {
+  color: var(--danger);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .table-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  color: var(--light-text);
+  transition: background-color 0.3s;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table tr td .table-action:hover {
+  background: var(--widget-grey);
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-vertical {
+  justify-content: flex-start;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team {
+  text-align: center;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team span {
+  display: block;
+  font-weight: 500;
+  padding-top: 0.25rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team img {
+  width: 40px;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team.score-team-vertical {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team.score-team-vertical:first-child {
+  justify-content: flex-end;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team.score-team-vertical span {
+  white-space: nowrap;
+  font-size: inherit;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-team.score-team-vertical img {
+  width: 32px;
+  margin: 0 0.5rem;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-result {
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.75rem;
+  margin: 0;
+  letter-spacing: 0.4em;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-result.score-result-not-started {
+  color: gray;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-body .table .score .score-result.score-result-vertical {
+  letter-spacing: 0.2em;
+  font-size: inherit;
+  flex: 0 0 auto;
+  width: auto;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .matches .nav-item:first-child .nav-link {
+  padding-right: 0;
+}
+.soccer-dashboard .soccer-dashboard-inner .matches .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .v-avatar img,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .avatar-stack .v-avatar,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .avatar-stack .v-avatar .avatar.is-more .inner,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .head .title,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .head .title {
+  color: var(--white) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .match .left .team-name,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .match .right .team-name,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .match .left .team-name,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .match .right .team-name {
+  color: var(--white) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .live-match .leagues-list .league-item .meta span:first-child,
+.is-dark .soccer-dashboard .soccer-dashboard-inner .leagues .leagues-list .league-item .meta span:first-child {
+  color: var(--white) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card .matches-card-header .header-nav .nav-item .nav-link.is-active {
+  color: var(--white) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card-body .table .score .score-team.score-team-vertical > span {
+  color: var(--white) !important;
+}
+.is-dark .soccer-dashboard .soccer-dashboard-inner .matches-card-body .table tr td .table-action:hover {
+  background: var(--dark-sidebar-light-2) !important;
+}
+@media only screen and (max-width: 767px) {
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-title {
+    max-width: 170px;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+    right: -0.25rem;
+    width: 36%;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+    left: -0.25rem;
+    right: unset;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-title {
+    max-width: 170px;
+}
+.soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+    right: 1rem;
+    width: 36%;
+}
+[dir=rtl] .soccer-dashboard .soccer-dashboard-inner .dashboard-cta .dashboard-cta-img {
+    left: 1rem;
+    right: unset;
+}
+}

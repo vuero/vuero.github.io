@@ -1,0 +1,58 @@
+[
+    {
+        "id":"0",
+        "name":"ایر بی ان بی",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/airbnb.svg"
+    },
+    {
+        "id":"1",
+        "name":"فیسبوک",
+        "initials": "F",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/facebook.svg"
+    },
+    {
+        "id":"2",
+        "name":"گیتهاب",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/github.svg"
+    },
+    {
+        "id":"3",
+        "name":"گیت‌لب",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/gitlab.svg"
+    },
+    {
+        "id":"4",
+        "name":"اطلسین",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/atlassian.svg"
+    },
+    {
+        "id":"5",
+        "name":"گوگل",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/google.svg"
+    },
+    {
+        "id":"6",
+        "name":"دریبل",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/dribbble.svg"
+    },
+    {
+        "id":"7",
+        "name":"هاب اسپات",
+        "initials": "A",
+        "location":"لس آنجلس",
+        "pic":"/demo/photos/brands/hubspot.svg"
+    }
+]

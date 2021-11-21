@@ -1,0 +1,412 @@
+.banking-dashboard-v1 .columns .column {
+  height: fit-content;
+}
+.banking-dashboard-v1 .dashboard-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.banking-dashboard-v1 .dashboard-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-flat {
+  box-shadow: none;
+}
+.banking-dashboard-v1 .dashboard-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.banking-dashboard-v1 .dashboard-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.banking-dashboard-v1 .dashboard-card.is-primary .title,
+.banking-dashboard-v1 .dashboard-card.is-primary .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-primary h1,
+.banking-dashboard-v1 .dashboard-card.is-primary h2,
+.banking-dashboard-v1 .dashboard-card.is-primary h3,
+.banking-dashboard-v1 .dashboard-card.is-primary h4,
+.banking-dashboard-v1 .dashboard-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-secondary .title,
+.banking-dashboard-v1 .dashboard-card.is-secondary .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-secondary h1,
+.banking-dashboard-v1 .dashboard-card.is-secondary h2,
+.banking-dashboard-v1 .dashboard-card.is-secondary h3,
+.banking-dashboard-v1 .dashboard-card.is-secondary h4,
+.banking-dashboard-v1 .dashboard-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-info .title,
+.banking-dashboard-v1 .dashboard-card.is-info .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-info h1,
+.banking-dashboard-v1 .dashboard-card.is-info h2,
+.banking-dashboard-v1 .dashboard-card.is-info h3,
+.banking-dashboard-v1 .dashboard-card.is-info h4,
+.banking-dashboard-v1 .dashboard-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-success .title,
+.banking-dashboard-v1 .dashboard-card.is-success .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-success h1,
+.banking-dashboard-v1 .dashboard-card.is-success h2,
+.banking-dashboard-v1 .dashboard-card.is-success h3,
+.banking-dashboard-v1 .dashboard-card.is-success h4,
+.banking-dashboard-v1 .dashboard-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-warning .title,
+.banking-dashboard-v1 .dashboard-card.is-warning .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-warning h1,
+.banking-dashboard-v1 .dashboard-card.is-warning h2,
+.banking-dashboard-v1 .dashboard-card.is-warning h3,
+.banking-dashboard-v1 .dashboard-card.is-warning h4,
+.banking-dashboard-v1 .dashboard-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.banking-dashboard-v1 .dashboard-card.is-danger .title,
+.banking-dashboard-v1 .dashboard-card.is-danger .subtitle,
+.banking-dashboard-v1 .dashboard-card.is-danger h1,
+.banking-dashboard-v1 .dashboard-card.is-danger h2,
+.banking-dashboard-v1 .dashboard-card.is-danger h3,
+.banking-dashboard-v1 .dashboard-card.is-danger h4,
+.banking-dashboard-v1 .dashboard-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v1 .dashboard-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banking-dashboard-v1 .dashboard-card .card-head .left,
+.banking-dashboard-v1 .dashboard-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.banking-dashboard-v1 .dashboard-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.banking-dashboard-v1 .dashboard-card .card-head .right {
+  justify-content: flex-end;
+}
+.banking-dashboard-v1 .dashboard-card .card-inner {
+  padding-top: 1.75rem;
+}
+.banking-dashboard-v1 .dashboard-card:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards {
+  padding: 0;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .title-wrap {
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 0;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner:not(:first-child) {
+  border-top: 1.6px dashed var(--fade-grey-dark-4);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 120px;
+  min-width: 120px;
+  background: var(--fade-grey);
+  border-radius: 10px;
+  padding: 6px 10px 8px 10px;
+  overflow: hidden;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card.is-theme-1 {
+  background: var(--primary);
+  box-shadow: var(--primary-box-shadow);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card.is-theme-2 {
+  background: var(--info);
+  box-shadow: var(--info-box-shadow);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .top .card-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .top .card-number span {
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--smoke-white);
+  display: block;
+  direction: ltr;
+  text-align: right;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .top .card-number img {
+  display: block;
+  width: 100%;
+  max-width: 28px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .bottom {
+  font-family: var(--font);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--smoke-white);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .shape {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  height: 46px;
+  width: 46px;
+  background: var(--white);
+  border-radius: var(--radius-rounded);
+  opacity: 0.15;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card .shape {
+  left: -10px;
+  right: unset;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta {
+  margin-left: 16px;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta span {
+  display: block;
+  font-family: var(--font);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta span:first-child {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta span:nth-child(2) {
+  color: var(--dark-text);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-end {
+  margin-left: auto;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-end {
+  margin-left: unset;
+  margin-right: auto;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner {
+  padding: 10px 20px 20px 20px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .title-wrap h3 {
+  font-size: 1rem;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .title-wrap .action-link {
+  font-size: 0.9rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line h4 {
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span.has-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 2;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span.has-image img {
+  max-width: 28px;
+  margin-right: 6px;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span.has-image img {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span i {
+  position: relative;
+  top: 0;
+  font-size: 10px;
+  margin-right: 8px;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .info-block-inner .info-block-line span i {
+  margin-left: 8px;
+  margin-right: unset;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts {
+  display: flex;
+  flex-direction: column;
+  height: 372px;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .people {
+  display: flex;
+  padding: 10px 0;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .people .v-avatar {
+  margin: 0 4px;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font);
+  padding: 0 4px;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .actions span {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .actions a {
+  color: var(--light-text);
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .actions a:hover {
+  color: var(--primary);
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .people-wrap .actions a svg {
+  height: 16px;
+  width: 16px;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts .transfer-form {
+  margin-top: auto;
+}
+.banking-dashboard-v1 .dashboard-card.is-transactions .transactions {
+  padding: 10px 0;
+}
+.banking-dashboard-v1 .dashboard-card.is-transactions .transactions .media-flex-center .flex-meta span:nth-child(2) {
+  font-size: 0.85rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-transactions .transactions .media-flex-center .flex-end {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-text);
+}
+.banking-dashboard-v1 .dashboard-card.is-income {
+  position: relative;
+}
+.banking-dashboard-v1 .dashboard-card.is-income .field {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 5;
+  min-width: 135px;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-income .field {
+  left: 16px;
+  right: unset;
+}
+.banking-dashboard-v1 .dashboard-card.is-income .field .multiselect .multiselect-input .multiselect-single-label {
+  color: var(--light-text);
+}
+.banking-dashboard-v1 .dashboard-card.is-income .field .multiselect .multiselect-options {
+  left: unset !important;
+  min-width: 180px;
+}
+[dir=rtl] .banking-dashboard-v1 .dashboard-card.is-income .field .multiselect .multiselect-options {
+  right: unset !important;
+}
+.banking-dashboard-v1 .dashboard-card > .title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-family: var(--font);
+}
+.banking-dashboard-v1 .dashboard-card > .title-wrap h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.banking-dashboard-v1 .dashboard-card > .title-wrap .title-meta {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-text);
+}
+.banking-dashboard-v1 .dashboard-card > .title-wrap .action-link {
+  font-size: 0.9rem;
+}
+.banking-dashboard-v1 .dashboard-card .context-text {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.is-dark .banking-dashboard-v1 .dashboard-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .banking-dashboard-v1 .dashboard-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v1 .dashboard-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v1 .dashboard-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card {
+    height: 67px;
+    width: 100px;
+    min-width: 100px;
+}
+.banking-dashboard-v1 .dashboard-card.is-credit-cards .card-block .card-block-inner .credit-card-meta span:nth-child(2) {
+    font-size: 1.3rem;
+}
+.banking-dashboard-v1 .dashboard-card.is-contacts {
+    height: 400px;
+}
+.banking-dashboard-v1 .dashboard-card .context-text {
+    font-size: 0.8rem;
+}
+}

@@ -1,0 +1,109 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "دوشنبه ۲۳ آبان",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/25.jpg",
+                "content": {
+                    "text": "من تعجب می کردم که چرا دنی هنوز روی Sketch کار می کند وقتی Figma ارزان و در دسترس است. این واقعاً می تواند روند ما را تقویت کند.",
+                    "time": "12:17 ب.ظ"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "در مورد علت دقیقاً مطمئن نیست ، اما مطمئناً دلایل خوبی دارد. به هر حال ، چرا باید تغییر کند؟",
+                    "time": "12:31 ب.ظ"
+                }
+            },
+            {
+                "id": "3",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Yesterday",
+                    "time": null
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/25.jpg",
+                "content": {
+                    "text": "دلایل زیادی وجود دارد ، یکی از آنها کیت های فوق العاده UI است که هر روز منتشر می شود.",
+                    "time": "08:42 صبح"
+                }
+            },
+            {
+                "id": "5",
+                "type": "imagelink",
+                "sender": "other",
+                "avatar": "/demo/avatars/2.gif",
+                "content": {
+                    "text": "iDesign Pro ، کیت رابط کاربری برتر iOS",
+                    "subtext": "figma-factory.com",
+                    "time": null,
+                    "link_image": "/demo/photos/demo-apps/5.jpg",
+                    "link_badge": "/demo/photos/misc/figma.png"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "این واقعا عالی به نظر می رسد! قطعا دنی باید به این موضوع نگاهی بیندازد.",
+                    "time": "09:23 صبح"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/25.jpg",
+                "content": {
+                    "text": "بله ، این دقیقاً همان چیزی بود که من فکر می کردم ، آیا فکر می کنید که او حاضر به تغییر است؟",
+                    "time": "09:32 صبح"
+                }
+            },
+            {
+                "id": "8",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "صادقانه بگویم ، نمی توانم بگویم. اما اگر بله بگوید واقعاً خوشحال می شوم.",
+                    "time": "09:44 صبح"
+                }
+            },
+            {
+                "id": "9",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/25.jpg",
+                "content": {
+                    "text": "خوب این ارزش امتحان کردن را دارد. شاید بتوانیم جلسه ای را برای بحث در مورد آن با ارائه مناسب برنامه ریزی کنیم.",
+                    "time": "09:49 صبح"
+                }
+            }
+        ]
+    }
+}

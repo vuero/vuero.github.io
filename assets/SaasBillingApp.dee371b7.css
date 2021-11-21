@@ -1,0 +1,696 @@
+/* ==========================================================================
+1. SaaS Billing
+========================================================================== */
+.saas-billing-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.saas-billing-wrapper .plans-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--fade-grey-dark-4);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.saas-billing-wrapper .plans-wrapper .left {
+  width: 50%;
+}
+.saas-billing-wrapper .plans-wrapper .left .inner-wrap > h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 10px;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan {
+  position: relative;
+  width: calc(50% - 16px);
+  max-width: calc(50% - 16px);
+  margin: 8px;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan input:checked + .plan-inner {
+  border-color: var(--primary);
+  box-shadow: var(--light-box-shadow);
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan input:checked + .plan-inner img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan input:checked + .plan-inner .checkmark {
+  display: flex;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  width: 100%;
+  flex: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-flat {
+  box-shadow: none;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-info p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-success p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger .title,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger .subtitle,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger h1,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger h2,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger h3,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger h4,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-head .left,
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-head .right {
+  justify-content: flex-end;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .card-inner {
+  padding-top: 1.75rem;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner img {
+  display: block;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  filter: grayscale(1);
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta {
+  margin-left: 12px;
+  line-height: 1.3;
+}
+[dir=rtl] .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta span {
+  display: block;
+  font-family: var(--font);
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta span:first-child {
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta span:nth-child(2) {
+  color: var(--light-text);
+  font-size: 0.85rem;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+  margin-left: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+  color: var(--success);
+}
+[dir=rtl] .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+  margin-left: unset;
+  margin-right: auto;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 3px;
+}
+.saas-billing-wrapper .plans-wrapper .right {
+  width: 45%;
+  padding: 20px 0;
+  margin-left: auto;
+}
+[dir=rtl] .saas-billing-wrapper .plans-wrapper .right {
+  margin-left: unset;
+  margin-right: auto;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details > h3 {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-text);
+  margin-bottom: 10px;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description {
+  display: flex;
+  align-items: center;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .left {
+  max-width: 200px;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .left img {
+  display: block;
+  height: 160px;
+  width: 160px;
+  min-width: 160px;
+  margin: 0 auto;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right {
+  flex-grow: 2;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing {
+  padding: 5px 0 10px 0;
+  font-family: var(--font);
+  line-height: 1.3;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+  font-family: var(--font-alt);
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing span:first-child {
+  color: var(--dark-text);
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing span b {
+  font-size: 2rem;
+  font-family: var(--font);
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-moto p {
+  font-size: 0.9rem;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-summary .plan-features ul {
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  color: var(--dark-text);
+}
+.saas-billing-wrapper .billing-options-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.saas-billing-wrapper .billing-options-wrapper .left {
+  width: 50%;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-flat {
+  box-shadow: none;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-info p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-success p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger .title,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger .subtitle,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger h1,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger h2,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger h3,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger h4,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-head .left,
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-head .right {
+  justify-content: flex-end;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .card-inner {
+  padding-top: 1.75rem;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header span {
+  font-family: var(--font);
+  color: var(--light-text);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header a {
+  font-family: var(--font);
+  color: var(--light-text);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header a:hover {
+  color: var(--primary);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats {
+  display: flex;
+  padding-bottom: 10px;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .v-avatar {
+  margin-right: 8px;
+}
+[dir=rtl] .saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .v-avatar {
+  margin-right: unset;
+  margin-left: 8px;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .add-seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  border-radius: var(--radius-rounded);
+  border: 1.6px dashed var(--light-text);
+  color: var(--light-text);
+  outline: none;
+  padding: 0;
+  background: none;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+[dir=rtl] .saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .add-seat {
+  margin-left: unset;
+  margin-right: 4px;
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .add-seat:hover {
+  border: 1.6px solid var(--primary);
+  color: var(--primary);
+}
+.saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .add-seat svg {
+  height: 16px;
+  width: 16px;
+}
+.saas-billing-wrapper .billing-options-wrapper .right {
+  width: 45%;
+  margin-left: auto;
+}
+[dir=rtl] .saas-billing-wrapper .billing-options-wrapper .right {
+  margin-left: unset;
+  margin-right: auto;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form {
+  padding: 20px 30px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--fade-grey-dark-3);
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header span {
+  font-family: var(--font);
+  color: var(--light-text);
+  cursor: pointer;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container {
+  padding: 30px 0 20px 0;
+  max-width: 330px;
+  margin: 0 auto;
+  color: #707070;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .column {
+  padding: 0.25rem 0.75rem;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .field {
+  margin-bottom: 0;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .field .control {
+  position: relative;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .field .control .creditcardIcon svg {
+  height: 30px;
+  position: absolute;
+  right: -2px;
+  top: 4px;
+  width: 60px;
+}
+[dir=rtl] .saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .field .control .creditcardIcon svg {
+  right: unset;
+  left: -2px;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .button-wrap {
+  padding-top: 16px;
+}
+.saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-container .button-wrap .v-button {
+  min-height: 50px;
+}
+/* ==========================================================================
+2. SaaS Billing Dark mode
+========================================================================== */
+.is-dark .saas-billing-wrapper .plans-wrapper {
+  border-color: var(--dark-sidebar-light-20);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .inner-wrap > h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan input:checked + .plan-inner {
+  border-color: var(--primary) !important;
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .meta span:first-child {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing span:first-child {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-description .right .plan-pricing span:nth-child(2) {
+  color: var(--primary);
+}
+.is-dark .saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-summary .plan-features ul {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .block-header a:hover {
+  color: var(--primary);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .left .option-block .block-body.is-seats .add-seat:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .right .payment-form {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header span:hover,
+.is-dark .saas-billing-wrapper .billing-options-wrapper .right .payment-form .form-header a:hover {
+  color: var(--primary);
+}
+/* ==========================================================================
+3. SaaS Billing Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.saas-billing-wrapper .plans-wrapper {
+    flex-direction: column;
+}
+.saas-billing-wrapper .plans-wrapper .left,
+.saas-billing-wrapper .plans-wrapper .right {
+    width: 100%;
+    max-width: 100%;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-summary .plan-features .columns {
+    display: flex;
+}
+.saas-billing-wrapper .billing-options-wrapper {
+    flex-direction: column;
+}
+.saas-billing-wrapper .billing-options-wrapper .left,
+.saas-billing-wrapper .billing-options-wrapper .right {
+    width: 100%;
+    max-width: 100%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.saas-billing-wrapper {
+    max-width: 690px;
+}
+.saas-billing-wrapper .plans-wrapper {
+    flex-direction: column;
+}
+.saas-billing-wrapper .plans-wrapper .left,
+.saas-billing-wrapper .plans-wrapper .right {
+    width: 100%;
+    max-width: 100%;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.saas-billing-wrapper .plans-wrapper .right .plan-details .plan-details-inner .plan-summary .plan-features .columns {
+    display: flex;
+}
+.saas-billing-wrapper .billing-options-wrapper {
+    flex-direction: column;
+}
+.saas-billing-wrapper .billing-options-wrapper .left,
+.saas-billing-wrapper .billing-options-wrapper .right {
+    width: 100%;
+    max-width: 100%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.saas-billing-wrapper .plans-wrapper .left .plans .plan .plan-inner .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+}

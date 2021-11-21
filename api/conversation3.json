@@ -1,0 +1,109 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "دوشنبه ۲۳ آبان",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/13.jpg",
+                "content": {
+                    "text": "سلام جمال ، من به سند بنچمارک Heartman & Sons نیاز دارم که در جلسه دیروز به آن اشاره کردید.",
+                    "time": "12:17 ب.ظ"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "اوه ، متأسفانه من واقعاً به خاطر ندارم ، می توانید دقیق تر بگویید؟",
+                    "time": "12:31 ب.ظ"
+                }
+            },
+            {
+                "id": "3",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Yesterday",
+                    "time": null
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/13.jpg",
+                "content": {
+                    "text": "خوب یکی در مورد webapp ، من فکر می کنم این چیزی در مورد برنامه حسابداری بود که با چارچوب های جاوا اسکریپت مدرن ساخته شده بود.",
+                    "time": "08:42 صبح"
+                }
+            },
+            {
+                "id": "5",
+                "type": "imagelink",
+                "sender": "other",
+                "avatar": "/demo/avatars/2.gif",
+                "content": {
+                    "text": "حسابداری هوشمند برای همه آسان شده است",
+                    "subtext": "titan-accounting.io",
+                    "time": null,
+                    "link_image": "/demo/photos/demo-apps/1.png",
+                    "link_badge": "/images/icons/stacks/angular.svg"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "دیدم ، حالا یادم آمد. مطمئناً می توانم آن را به سرعت برای شما ارسال کنم آیا آن را در صندوق ورودی ایمیل خود می خواهید یا خوب است که اینجا را ارسال کنید؟",
+                    "time": "09:23 صبح"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/13.jpg",
+                "content": {
+                    "text": "حدس می زنم از طریق ایمیل بهتر باشد ، من بیش از یک بار به آن نیاز دارم.",
+                    "time": "09:32 صبح"
+                }
+            },
+            {
+                "id": "8",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "خوب پس ، من چند دقیقه دیگر به شما ایمیل می زنم.",
+                    "time": "09:44 صبح"
+                }
+            },
+            {
+                "id": "9",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/13.jpg",
+                "content": {
+                    "text": "بسیار از شما متشکرم! بسیار قدردانی شد.",
+                    "time": "09:49 صبح"
+                }
+            }
+        ]
+    }
+}

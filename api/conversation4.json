@@ -1,0 +1,86 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "سه‌شنبه ۲۴ آبان",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/18.jpg",
+                "content": {
+                    "text": "سلام جمال ، من می خواهم گزارش مفصلی در مورد کمپین تامین مالی جمعیت که دیروز راه اندازی شد ، داشته باشم",
+                    "time": "08:52 صبح"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "مطمئناً ، من هر آنچه را که باید بدانید به شما می دهم",
+                    "time": "08:54 صبح"
+                }
+            },
+            {
+                "id": "3",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "آیا برخی از معیارهای اولیه را نیز می خواهید؟",
+                    "time": "08:58 صبح"
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "همچنین ، من آن را در چندین فرمت دارم. آیا وب ، PDF یا چیز دیگری را ترجیح می دهید؟",
+                    "time": "09:05 صبح"
+                }
+            },
+            {
+                "id": "5",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/18.jpg",
+                "content": {
+                    "text": "میرم وب",
+                    "time": "09:10 صبح"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "متوجه شدم رئیس ، درست در راه",
+                    "time": "09:11"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/18.jpg",
+                "content": {
+                    "text": "عالی! ممنون جمال",
+                    "time": "09:11"
+                }
+            }
+        ]
+    }
+}

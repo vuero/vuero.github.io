@@ -1,0 +1,482 @@
+.course-dashboard .dashboard-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: var(--font);
+}
+.course-dashboard .dashboard-title.is-main {
+  margin-bottom: 30px;
+}
+.course-dashboard .dashboard-title.is-main h2 {
+  font-size: 1.8rem;
+}
+.course-dashboard .dashboard-title h2 {
+  font-family: var(--font-alt);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.course-dashboard .course-grid {
+  margin-bottom: 2rem;
+}
+.course-dashboard .course-grid .course-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.course-dashboard .course-grid .course-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.course-dashboard .course-grid .course-card.is-flat {
+  box-shadow: none;
+}
+.course-dashboard .course-grid .course-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.course-dashboard .course-grid .course-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.course-dashboard .course-grid .course-card.is-primary .title,
+.course-dashboard .course-grid .course-card.is-primary .subtitle,
+.course-dashboard .course-grid .course-card.is-primary h1,
+.course-dashboard .course-grid .course-card.is-primary h2,
+.course-dashboard .course-grid .course-card.is-primary h3,
+.course-dashboard .course-grid .course-card.is-primary h4,
+.course-dashboard .course-grid .course-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.course-dashboard .course-grid .course-card.is-secondary .title,
+.course-dashboard .course-grid .course-card.is-secondary .subtitle,
+.course-dashboard .course-grid .course-card.is-secondary h1,
+.course-dashboard .course-grid .course-card.is-secondary h2,
+.course-dashboard .course-grid .course-card.is-secondary h3,
+.course-dashboard .course-grid .course-card.is-secondary h4,
+.course-dashboard .course-grid .course-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.course-dashboard .course-grid .course-card.is-info .title,
+.course-dashboard .course-grid .course-card.is-info .subtitle,
+.course-dashboard .course-grid .course-card.is-info h1,
+.course-dashboard .course-grid .course-card.is-info h2,
+.course-dashboard .course-grid .course-card.is-info h3,
+.course-dashboard .course-grid .course-card.is-info h4,
+.course-dashboard .course-grid .course-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.course-dashboard .course-grid .course-card.is-success .title,
+.course-dashboard .course-grid .course-card.is-success .subtitle,
+.course-dashboard .course-grid .course-card.is-success h1,
+.course-dashboard .course-grid .course-card.is-success h2,
+.course-dashboard .course-grid .course-card.is-success h3,
+.course-dashboard .course-grid .course-card.is-success h4,
+.course-dashboard .course-grid .course-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.course-dashboard .course-grid .course-card.is-warning .title,
+.course-dashboard .course-grid .course-card.is-warning .subtitle,
+.course-dashboard .course-grid .course-card.is-warning h1,
+.course-dashboard .course-grid .course-card.is-warning h2,
+.course-dashboard .course-grid .course-card.is-warning h3,
+.course-dashboard .course-grid .course-card.is-warning h4,
+.course-dashboard .course-grid .course-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.course-dashboard .course-grid .course-card.is-danger .title,
+.course-dashboard .course-grid .course-card.is-danger .subtitle,
+.course-dashboard .course-grid .course-card.is-danger h1,
+.course-dashboard .course-grid .course-card.is-danger h2,
+.course-dashboard .course-grid .course-card.is-danger h3,
+.course-dashboard .course-grid .course-card.is-danger h4,
+.course-dashboard .course-grid .course-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.course-dashboard .course-grid .course-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-dashboard .course-grid .course-card .card-head .left,
+.course-dashboard .course-grid .course-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.course-dashboard .course-grid .course-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.course-dashboard .course-grid .course-card .card-head .right {
+  justify-content: flex-end;
+}
+.course-dashboard .course-grid .course-card .card-inner {
+  padding-top: 1.75rem;
+}
+.course-dashboard .course-grid .course-card .tag {
+  height: 2.75em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  line-height: 2.7;
+  margin-bottom: 2rem;
+}
+.course-dashboard .course-grid .course-card h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+.course-dashboard .course-grid .course-card .students {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.course-dashboard .course-grid .course-card .students .v-avatar {
+  margin: 0 0.25rem;
+}
+.course-dashboard .course-grid .course-card .students .v-avatar .avatar.is-fake span {
+  position: relative;
+  left: -2px;
+}
+[dir=rtl] .course-dashboard .course-grid .course-card .students .v-avatar .avatar.is-fake span {
+  left: unset;
+  right: -2px;
+}
+.course-dashboard .course-grid .course-card .students .link {
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--primary);
+  margin-left: 1rem;
+}
+[dir=rtl] .course-dashboard .course-grid .course-card .students .link {
+  margin-left: unset;
+  margin-right: 1rem;
+}
+.course-dashboard .course-grid .course-card .attached-block + .attached-block {
+  margin-top: 1.5rem;
+}
+.course-dashboard .course-grid .course-card .attached-block > a {
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.course-dashboard .course-grid .course-card .attached-block .block-stats {
+  display: flex;
+  color: var(--light-text);
+}
+.course-dashboard .course-grid .course-card .attached-block .block-stats + .block-stats {
+  margin-top: 0.25rem;
+}
+.course-dashboard .course-grid .course-card .attached-block .block-stats span {
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+[dir=rtl] .course-dashboard .course-grid .course-card .attached-block .block-stats span {
+  margin-left: 0.75rem;
+  margin-right: unset;
+}
+.course-dashboard .course-grid .course-card .attached-block .block-stats span svg {
+  height: 15px;
+  width: 15px;
+  stroke-width: 1px;
+  margin-right: 0.25rem;
+}
+[dir=rtl] .course-dashboard .course-grid .course-card .attached-block .block-stats span svg {
+  margin-left: 0.25rem;
+  margin-right: unset;
+}
+.course-dashboard .course-grid .course-card .action-block {
+  margin-top: 2.5rem;
+}
+.course-dashboard .course-grid .course-card .action-block .button {
+  height: 46px;
+  border-radius: 0.75rem;
+}
+.course-dashboard .tile-grid .tile-grid-item {
+  margin-bottom: 1rem;
+}
+.course-dashboard .flex-table .flex-table-item {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.course-dashboard .flex-table .flex-table-item .tag {
+  height: 2.75em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  line-height: 2.7;
+}
+.course-dashboard .flex-table .flex-table-item .action-button {
+  border-radius: 0.75rem;
+}
+.course-dashboard .flex-table .flex-table-item .action-button:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: var(--primary-box-shadow);
+}
+.tile-grid .columns {
+  margin-left: -0.5rem !important;
+  margin-right: -0.5rem !important;
+  margin-top: -0.5rem !important;
+}
+.tile-grid .column {
+  padding: 0.5rem !important;
+}
+.tile-grid-v2 .tile-grid-item {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+}
+.tile-grid-v2 .tile-grid-item.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.tile-grid-v2 .tile-grid-item.is-flat {
+  box-shadow: none;
+}
+.tile-grid-v2 .tile-grid-item.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.tile-grid-v2 .tile-grid-item.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.tile-grid-v2 .tile-grid-item.is-primary .title,
+.tile-grid-v2 .tile-grid-item.is-primary .subtitle,
+.tile-grid-v2 .tile-grid-item.is-primary h1,
+.tile-grid-v2 .tile-grid-item.is-primary h2,
+.tile-grid-v2 .tile-grid-item.is-primary h3,
+.tile-grid-v2 .tile-grid-item.is-primary h4,
+.tile-grid-v2 .tile-grid-item.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-secondary .title,
+.tile-grid-v2 .tile-grid-item.is-secondary .subtitle,
+.tile-grid-v2 .tile-grid-item.is-secondary h1,
+.tile-grid-v2 .tile-grid-item.is-secondary h2,
+.tile-grid-v2 .tile-grid-item.is-secondary h3,
+.tile-grid-v2 .tile-grid-item.is-secondary h4,
+.tile-grid-v2 .tile-grid-item.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-info .title,
+.tile-grid-v2 .tile-grid-item.is-info .subtitle,
+.tile-grid-v2 .tile-grid-item.is-info h1,
+.tile-grid-v2 .tile-grid-item.is-info h2,
+.tile-grid-v2 .tile-grid-item.is-info h3,
+.tile-grid-v2 .tile-grid-item.is-info h4,
+.tile-grid-v2 .tile-grid-item.is-info p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-success .title,
+.tile-grid-v2 .tile-grid-item.is-success .subtitle,
+.tile-grid-v2 .tile-grid-item.is-success h1,
+.tile-grid-v2 .tile-grid-item.is-success h2,
+.tile-grid-v2 .tile-grid-item.is-success h3,
+.tile-grid-v2 .tile-grid-item.is-success h4,
+.tile-grid-v2 .tile-grid-item.is-success p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-warning .title,
+.tile-grid-v2 .tile-grid-item.is-warning .subtitle,
+.tile-grid-v2 .tile-grid-item.is-warning h1,
+.tile-grid-v2 .tile-grid-item.is-warning h2,
+.tile-grid-v2 .tile-grid-item.is-warning h3,
+.tile-grid-v2 .tile-grid-item.is-warning h4,
+.tile-grid-v2 .tile-grid-item.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.tile-grid-v2 .tile-grid-item.is-danger .title,
+.tile-grid-v2 .tile-grid-item.is-danger .subtitle,
+.tile-grid-v2 .tile-grid-item.is-danger h1,
+.tile-grid-v2 .tile-grid-item.is-danger h2,
+.tile-grid-v2 .tile-grid-item.is-danger h3,
+.tile-grid-v2 .tile-grid-item.is-danger h4,
+.tile-grid-v2 .tile-grid-item.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.tile-grid-v2 .tile-grid-item .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tile-grid-v2 .tile-grid-item .card-head .left,
+.tile-grid-v2 .tile-grid-item .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.tile-grid-v2 .tile-grid-item .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tile-grid-v2 .tile-grid-item .card-head .right {
+  justify-content: flex-end;
+}
+.tile-grid-v2 .tile-grid-item .card-inner {
+  padding-top: 1.75rem;
+}
+.tile-grid-v2 .tile-grid-item:hover {
+  border-color: var(--primary);
+  box-shadow: var(--light-box-shadow);
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner {
+  display: flex;
+  align-items: center;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta {
+  margin-left: 10px;
+  line-height: 1.4;
+}
+[dir=rtl] .tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta span {
+  display: block;
+  font-family: var(--font);
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta span:first-child {
+  color: var(--dark-text);
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta span:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta span:nth-child(2) span {
+  display: inline-block;
+  color: var(--light-text);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .meta span:nth-child(2) .icon-separator {
+  position: relative;
+  font-size: 4px;
+  color: var(--light-text);
+  padding: 0 6px;
+}
+.tile-grid-v2 .tile-grid-item .tile-grid-item-inner .dropdown {
+  margin-left: auto;
+}
+[dir=rtl] .tile-grid-v2 .tile-grid-item .tile-grid-item-inner .dropdown {
+  margin-left: unset;
+  margin-right: auto;
+}
+.is-dark .course-dashboard .course-grid .course-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .course-dashboard .course-grid .course-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .course-dashboard .course-grid .course-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .course-dashboard .course-grid .course-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid .tile-grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .tile-grid .tile-grid-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid .tile-grid-item .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid .tile-grid-item .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid-v2 .tile-grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .tile-grid-v2 .tile-grid-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid-v2 .tile-grid-item .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid-v2 .tile-grid-item .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .tile-grid-v2 .tile-grid-item:hover {
+  border-color: var(--primary) !important;
+}
+@media only screen and (max-width: 767px) {
+.course-dashboard .dashboard-title {
+    flex-direction: column;
+}
+.course-dashboard .dashboard-title .left {
+    margin-bottom: 1rem;
+}
+}

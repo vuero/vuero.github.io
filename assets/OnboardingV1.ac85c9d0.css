@@ -1,0 +1,623 @@
+/*! _pages-onboarding.scss | Vuero | Css ninja 2020-2021 */
+/* ==========================================================================
+Onboarding Layouts
+========================================================================== */
+/*
+    1. Standard Onboarding
+    2. Standard Onboarding Dark mode
+    3. Onboarding V1
+    4. Onboarding V2 and V4
+    5. Media Queries
+*/
+/* ==========================================================================
+1. Standard Onboarding
+========================================================================== */
+.is-navbar .standard-onboarding {
+  margin-top: 20px;
+}
+.standard-onboarding {
+  padding: 20px 0;
+}
+.standard-onboarding .title-wrap {
+  text-align: center;
+}
+.standard-onboarding .title-wrap h2 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--dark-text);
+}
+.standard-onboarding .title-wrap p {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 0.85rem;
+}
+.standard-onboarding .onboarding-wrap {
+  padding: 30px 0;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner {
+  display: flex;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin: 8px;
+  width: calc(33.3% - 16px);
+  text-align: center;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-flat {
+  box-shadow: none;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .title,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .subtitle,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h1,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h2,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h3,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h4,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left,
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  justify-content: flex-end;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-inner {
+  padding-top: 1.75rem;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card > img {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card p {
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .button-wrap {
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+.standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .button-wrap .button {
+  min-width: 140px;
+}
+/* ==========================================================================
+2. Standard Onboarding Dark mode
+========================================================================== */
+.is-dark .standard-onboarding .title-wrap h2 {
+  color: var(--dark-dark-text);
+}
+.is-dark .standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .standard-onboarding .onboarding-wrap .onboarding-wrap-inner .onboarding-card h3 {
+  color: var(--dark-dark-text);
+}
+/* ==========================================================================
+3. Onboarding V1
+========================================================================== */
+.is-navbar .onboarding-wrapper {
+  margin-top: 40px;
+}
+.onboarding-wrapper .title-wrap {
+  text-align: center;
+}
+.onboarding-wrapper .title-wrap h2 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--dark-text);
+}
+.onboarding-wrapper .title-wrap p {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 0.85rem;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap {
+  padding: 30px 0;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin: 8px;
+  width: calc(33.3% - 16px);
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-flat {
+  box-shadow: none;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .title,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .subtitle,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h1,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h2,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h3,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h4,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left,
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  justify-content: flex-end;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-inner {
+  padding-top: 1.75rem;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content {
+  padding: 0 20px 30px 20px;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content p {
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap .button {
+  min-width: 140px;
+}
+/* ==========================================================================
+4. Onboarding V2 and V4
+========================================================================== */
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap, .onboarding-wrapper.onboarding-v4 .onboarding-wrap {
+  padding: 30px 0;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner {
+  display: flex;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin: 8px;
+  width: calc(33.3% - 16px);
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.has-margin-bottom, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-flat, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-flat {
+  box-shadow: none;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-raised, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .title,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .subtitle,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h1,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h2,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h3,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h4,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .title,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger .subtitle,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h1,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h2,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h3,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger h4,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left,
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left,
+.onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left .title, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-head .right {
+  justify-content: flex-end;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-inner, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .card-inner {
+  padding-top: 1.75rem;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card > img, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content {
+  padding: 0 20px 30px 20px;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content h3, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content p, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content p {
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap .button, .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .onboarding-content .button-wrap .button {
+  min-width: 140px;
+}
+.is-dark .onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card, .is-dark .onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card, .is-dark .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .v-avatar img, .is-dark .onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .v-avatar img, .is-dark .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar, .is-dark .onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar, .is-dark .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .onboarding-wrapper.onboarding-v1 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar .avatar.is-more .inner, .is-dark .onboarding-wrapper.onboarding-v2 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar .avatar.is-more .inner, .is-dark .onboarding-wrapper.onboarding-v4 .onboarding-wrap .onboarding-wrap-inner .onboarding-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+/* ==========================================================================
+5. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.onboarding-wrapper .standard-onboarding {
+    padding: 20px 0;
+}
+.onboarding-wrapper .title-wrap h2 {
+    max-width: 280px;
+    margin: 0 auto;
+}
+.onboarding-wrapper .onboarding-wrap .onboarding-wrap-inner {
+    flex-wrap: wrap;
+}
+.onboarding-wrapper .onboarding-wrap .onboarding-wrap-inner .onboarding-card {
+    min-width: calc(100% - 16px) !important;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.standard-onboarding {
+    padding: 20px 0;
+}
+.standard-onboarding .title-wrap h2 {
+    max-width: 280px;
+    margin: 0 auto;
+}
+}

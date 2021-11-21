@@ -1,0 +1,669 @@
+/*! _projects.scss | Vuero | Css ninja 2020-2021 */
+/*
+    1. Projects Toolbar
+    2. Projects Grid
+    3. Projects Grid Dark mode
+    4. Projects Grid V2
+    5. Projects Grid V2 dark mode
+    6. Projects Grid V3 dark mode
+    7. Media Queries
+*/
+/* ==========================================================================
+2. Projects Grid
+========================================================================== */
+.all-projects .section-heading {
+  font-family: var(--font-alt);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--light-text);
+  margin-bottom: 1rem;
+}
+.all-projects .project-grid {
+  margin-bottom: 1.5rem;
+}
+.all-projects .project-grid .project-grid-item {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  text-align: center;
+  box-shadow: none;
+}
+.all-projects .project-grid .project-grid-item.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.all-projects .project-grid .project-grid-item.is-flat {
+  box-shadow: none;
+}
+.all-projects .project-grid .project-grid-item.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.all-projects .project-grid .project-grid-item.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.all-projects .project-grid .project-grid-item.is-primary .title,
+.all-projects .project-grid .project-grid-item.is-primary .subtitle,
+.all-projects .project-grid .project-grid-item.is-primary h1,
+.all-projects .project-grid .project-grid-item.is-primary h2,
+.all-projects .project-grid .project-grid-item.is-primary h3,
+.all-projects .project-grid .project-grid-item.is-primary h4,
+.all-projects .project-grid .project-grid-item.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.all-projects .project-grid .project-grid-item.is-secondary .title,
+.all-projects .project-grid .project-grid-item.is-secondary .subtitle,
+.all-projects .project-grid .project-grid-item.is-secondary h1,
+.all-projects .project-grid .project-grid-item.is-secondary h2,
+.all-projects .project-grid .project-grid-item.is-secondary h3,
+.all-projects .project-grid .project-grid-item.is-secondary h4,
+.all-projects .project-grid .project-grid-item.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.all-projects .project-grid .project-grid-item.is-info .title,
+.all-projects .project-grid .project-grid-item.is-info .subtitle,
+.all-projects .project-grid .project-grid-item.is-info h1,
+.all-projects .project-grid .project-grid-item.is-info h2,
+.all-projects .project-grid .project-grid-item.is-info h3,
+.all-projects .project-grid .project-grid-item.is-info h4,
+.all-projects .project-grid .project-grid-item.is-info p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.all-projects .project-grid .project-grid-item.is-success .title,
+.all-projects .project-grid .project-grid-item.is-success .subtitle,
+.all-projects .project-grid .project-grid-item.is-success h1,
+.all-projects .project-grid .project-grid-item.is-success h2,
+.all-projects .project-grid .project-grid-item.is-success h3,
+.all-projects .project-grid .project-grid-item.is-success h4,
+.all-projects .project-grid .project-grid-item.is-success p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.all-projects .project-grid .project-grid-item.is-warning .title,
+.all-projects .project-grid .project-grid-item.is-warning .subtitle,
+.all-projects .project-grid .project-grid-item.is-warning h1,
+.all-projects .project-grid .project-grid-item.is-warning h2,
+.all-projects .project-grid .project-grid-item.is-warning h3,
+.all-projects .project-grid .project-grid-item.is-warning h4,
+.all-projects .project-grid .project-grid-item.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.all-projects .project-grid .project-grid-item.is-danger .title,
+.all-projects .project-grid .project-grid-item.is-danger .subtitle,
+.all-projects .project-grid .project-grid-item.is-danger h1,
+.all-projects .project-grid .project-grid-item.is-danger h2,
+.all-projects .project-grid .project-grid-item.is-danger h3,
+.all-projects .project-grid .project-grid-item.is-danger h4,
+.all-projects .project-grid .project-grid-item.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.all-projects .project-grid .project-grid-item .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-projects .project-grid .project-grid-item .card-head .left,
+.all-projects .project-grid .project-grid-item .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.all-projects .project-grid .project-grid-item .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.all-projects .project-grid .project-grid-item .card-head .right {
+  justify-content: flex-end;
+}
+.all-projects .project-grid .project-grid-item .card-inner {
+  padding-top: 1.75rem;
+}
+.all-projects .project-grid .project-grid-item:hover {
+  border-color: var(--fade-grey-dark-6);
+  box-shadow: var(--light-box-shadow);
+}
+.all-projects .project-grid .project-grid-item:hover .project-avatar {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.all-projects .project-grid .project-grid-item .project-avatar {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  margin: 0 auto 10px auto;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+.all-projects .project-grid .project-grid-item h3 {
+  font-size: 0.95rem;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.all-projects .project-grid .project-grid-item p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+/* ==========================================================================
+3. Projects Grid dark mode
+========================================================================== */
+.is-dark .all-projects .project-grid .project-grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .project-grid .project-grid-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .all-projects .project-grid .project-grid-item .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .all-projects .project-grid .project-grid-item .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .all-projects .project-grid .project-grid-item h3 {
+  color: var(--dark-dark-text);
+}
+/* ==========================================================================
+4. Projects Grid V2
+========================================================================== */
+.all-projects .all-projects-header {
+  display: flex;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: var(--radius-large);
+  margin-bottom: 1.5rem;
+}
+.all-projects .all-projects-header .header-item {
+  width: 25%;
+  border-right: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .all-projects .all-projects-header .header-item {
+  border-left: 1px solid var(--fade-grey-dark-3);
+  border-right: none;
+}
+.all-projects .all-projects-header .header-item:last-child {
+  border-right: none;
+}
+[dir=rtl] .all-projects .all-projects-header .header-item:last-child {
+  border-left: none;
+  border-right: none;
+}
+.all-projects .all-projects-header .header-item .item-inner {
+  text-align: center;
+}
+.all-projects .all-projects-header .header-item .item-inner .lnil,
+.all-projects .all-projects-header .header-item .item-inner .lnir {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+.all-projects .all-projects-header .header-item .item-inner span {
+  display: block;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--dark-text);
+}
+.all-projects .all-projects-header .header-item .item-inner p {
+  font-family: var(--font-alt);
+}
+.all-projects .projects-card-grid .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: var(--radius-large);
+}
+.all-projects .projects-card-grid .grid-item .top-section .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.all-projects .projects-card-grid .grid-item .top-section .head h3 {
+  font-size: 1rem;
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+  font-weight: 600;
+}
+.all-projects .projects-card-grid .grid-item .top-section .body p {
+  font-family: var(--font);
+  color: var(--light-text);
+}
+.all-projects .projects-card-grid .grid-item .bottom-section {
+  display: flex;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block {
+  margin-right: 30px;
+}
+[dir=rtl] .all-projects .projects-card-grid .grid-item .bottom-section .foot-block {
+  margin-left: 30px;
+  margin-right: unset;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block .heading {
+  font-family: var(--font-alt);
+  font-size: 0.75rem;
+  color: var(--light-text-dark-22);
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block > p {
+  padding-top: 5px;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block .developers {
+  display: flex;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block .developers .v-avatar {
+  margin-right: 6px;
+}
+[dir=rtl] .all-projects .projects-card-grid .grid-item .bottom-section .foot-block .developers .v-avatar {
+  margin-left: 6px;
+  margin-right: unset;
+}
+/* ==========================================================================
+5. Projects Grid V2 dark mode
+========================================================================== */
+.is-dark .all-projects .all-projects-header {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .all-projects-header .header-item {
+  border-color: var(--dark-sidebar-light-18);
+}
+.is-dark .all-projects .all-projects-header .header-item span {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .all-projects-header .header-item i {
+  color: var(--primary) !important;
+}
+.is-dark .all-projects .projects-card-grid .grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .projects-card-grid .grid-item .top-section .head h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .projects-card-grid .grid-item .bottom-section .foot-block .heading {
+  color: var(--light-text-dark-12);
+}
+/* ==========================================================================
+5. Projects Grid V3
+========================================================================== */
+.is-navbar .all-projects {
+  padding-top: 20px;
+}
+.all-projects .illustration-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-projects .illustration-header img {
+  display: block;
+  max-width: 260px;
+}
+.all-projects .illustration-header .header-stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+.all-projects .illustration-header .header-stats .stats-inner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: var(--radius-large);
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item {
+  text-align: center;
+  margin: 0 20px;
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span {
+  position: relative;
+  display: block;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--dark-text);
+  line-height: 1;
+  width: 75px;
+  margin: 0 auto;
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 6px;
+  height: 8px;
+  width: 8px;
+  border-radius: var(--radius-rounded);
+}
+[dir=rtl] .all-projects .illustration-header .header-stats .stats-inner .stat-item span::after {
+  left: 6px;
+  right: unset;
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span.is-success::after {
+  background: var(--success);
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span.is-info::after {
+  background: var(--info);
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span.is-warning::after {
+  background: var(--warning);
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item span.is-primary::after {
+  background: var(--primary);
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item p {
+  font-family: var(--font-alt);
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.all-projects .recent-projects {
+  padding: 20px 0;
+}
+.all-projects .recent-projects .recent-heading {
+  font-family: var(--font-alt);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--light-text);
+  margin-bottom: 1rem;
+}
+.all-projects .recent-projects .project-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.all-projects .recent-projects .project-box:hover {
+  box-shadow: var(--light-box-shadow);
+}
+.all-projects .recent-projects .project-box h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-left: 16px;
+  line-height: 1.2;
+}
+[dir=rtl] .all-projects .recent-projects .project-box h3 {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.all-projects .project-minimal-grid .grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-projects .project-minimal-grid .grid-header h3 {
+  font-family: var(--font-alt);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-left: 16px;
+  line-height: 1.2;
+}
+[dir=rtl] .all-projects .project-minimal-grid .grid-header h3 {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.all-projects .project-minimal-grid .grid-header .filter {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 8px 24px;
+  border-radius: 100px;
+}
+.all-projects .project-minimal-grid .grid-header .filter > span {
+  font-family: var(--font-alt);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-right: 20px;
+}
+[dir=rtl] .all-projects .project-minimal-grid .grid-header .filter > span {
+  margin-left: 20px;
+  margin-right: unset;
+}
+.all-projects .project-minimal-grid .grid-header .filter .multiselect {
+  min-width: 170px;
+}
+.all-projects .project-minimal-grid .grid-header .filter .multiselect .multiselect-input {
+  border: none;
+}
+.all-projects .project-minimal-grid .grid-body {
+  padding: 20px 0;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item:hover {
+  box-shadow: var(--light-box-shadow);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item:hover .item-title h3 {
+  opacity: 0.6;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .type {
+  text-transform: uppercase;
+  color: var(--light-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .status {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: var(--font-alt);
+  font-weight: 600;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .status.is-success {
+  color: var(--success);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .status.is-info {
+  color: var(--info);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .status.is-warning {
+  color: var(--warning);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-head .status.is-danger {
+  color: var(--danger);
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-title {
+  padding: 40px 0 40px 0;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-title h3 {
+  font-family: var(--font-alt);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-description p {
+  font-size: 1rem;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-description .item-people {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-description .item-people .label {
+  font-family: var(--font);
+  color: var(--light-text);
+  font-weight: 400;
+}
+/* ==========================================================================
+6. Projects Grid V3 dark mode
+========================================================================== */
+.is-dark .all-projects .illustration-header .header-stats .stats-inner {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .illustration-header .header-stats .stats-inner .stat-item span {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .recent-projects .project-box {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .recent-projects .project-box h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .project-minimal-grid .grid-header h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .project-minimal-grid .grid-header .filter {
+  background: var(--dark-sidebar-light-1) !important;
+  border-color: var(--dark-sidebar-light-4) !important;
+}
+.is-dark .all-projects .project-minimal-grid .grid-header .filter > span {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .project-minimal-grid .grid-body .grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .all-projects .project-minimal-grid .grid-body .grid-item .item-title h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .all-projects .project-minimal-grid .grid-body .grid-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6);
+}
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.all-projects .all-projects-header {
+    flex-direction: column;
+}
+.all-projects .all-projects-header .header-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
+    padding: 16px 0;
+}
+[dir=rtl] .all-projects .all-projects-header .header-item {
+    border-left: none;
+    border-right: none;
+}
+.all-projects .all-projects-header .header-item:last-child {
+    border-bottom: none;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section {
+    flex-wrap: wrap;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block:first-child {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 16px 0;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block:first-child .developers {
+    justify-content: center;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block:first-child .developers .v-avatar {
+    margin: 0 4px;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block:not(:first-child) {
+    width: 33.3%;
+    text-align: center;
+    margin: 0;
+}
+.all-projects .illustration-header > img {
+    display: none !important;
+}
+.all-projects .illustration-header .header-stats .stats-inner {
+    flex-wrap: wrap;
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item {
+    width: 50%;
+    margin: 0;
+    padding: 16px 0;
+}
+.all-projects .project-minimal-grid .grid-header .filter {
+    display: none;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.all-projects .illustration-header > img {
+    display: none !important;
+}
+.all-projects .illustration-header .header-stats .stats-inner {
+    width: 100%;
+}
+.all-projects .illustration-header .header-stats .stats-inner .stat-item {
+    width: 25%;
+}
+.all-projects .project-minimal-grid .grid-body {
+    display: flex;
+}
+.all-projects .project-minimal-grid .grid-body .column {
+    min-width: 50%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.all-projects .illustration-header .header-stats .stats-inner .stat-item {
+    width: 25%;
+}
+.all-projects .recent-projects .project-box h3 {
+    font-size: 1.1rem;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-title {
+    padding: 30px 0;
+}
+.all-projects .project-minimal-grid .grid-body .grid-item .item-title h3 {
+    font-size: 1.5rem;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section {
+    margin-top: 0.75rem;
+}
+.all-projects .projects-card-grid .grid-item .bottom-section .foot-block:first-child {
+    display: none;
+}
+}

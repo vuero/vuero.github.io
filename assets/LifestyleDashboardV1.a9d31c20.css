@@ -1,0 +1,1401 @@
+/*! _widgets-stats.scss | Vuero | Css ninja 2020-2021 */
+/* ==========================================================================
+Stat Widgets Styles
+========================================================================== */
+/*
+    1. Stat Widget Base
+    2. Line / Area Chart Widget
+    3. Spark Tile Widget
+    4. Flex Stat Widget
+    5. Grouped Stat Widget
+    6. Followers Stat Widget
+*/
+/* ==========================================================================
+1. Stat Widget Base
+========================================================================== */
+.stat-widget {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 30px;
+  font-family: var(--font);
+}
+.stat-widget.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.stat-widget.is-flat {
+  box-shadow: none;
+}
+.stat-widget.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.stat-widget.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.stat-widget.is-primary .title,
+.stat-widget.is-primary .subtitle,
+.stat-widget.is-primary h1,
+.stat-widget.is-primary h2,
+.stat-widget.is-primary h3,
+.stat-widget.is-primary h4,
+.stat-widget.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.stat-widget.is-secondary .title,
+.stat-widget.is-secondary .subtitle,
+.stat-widget.is-secondary h1,
+.stat-widget.is-secondary h2,
+.stat-widget.is-secondary h3,
+.stat-widget.is-secondary h4,
+.stat-widget.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.stat-widget.is-info .title,
+.stat-widget.is-info .subtitle,
+.stat-widget.is-info h1,
+.stat-widget.is-info h2,
+.stat-widget.is-info h3,
+.stat-widget.is-info h4,
+.stat-widget.is-info p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.stat-widget.is-success .title,
+.stat-widget.is-success .subtitle,
+.stat-widget.is-success h1,
+.stat-widget.is-success h2,
+.stat-widget.is-success h3,
+.stat-widget.is-success h4,
+.stat-widget.is-success p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.stat-widget.is-warning .title,
+.stat-widget.is-warning .subtitle,
+.stat-widget.is-warning h1,
+.stat-widget.is-warning h2,
+.stat-widget.is-warning h3,
+.stat-widget.is-warning h4,
+.stat-widget.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.stat-widget.is-danger .title,
+.stat-widget.is-danger .subtitle,
+.stat-widget.is-danger h1,
+.stat-widget.is-danger h2,
+.stat-widget.is-danger h3,
+.stat-widget.is-danger h4,
+.stat-widget.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stat-widget .card-head .left,
+.stat-widget .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.stat-widget .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.stat-widget .card-head .right {
+  justify-content: flex-end;
+}
+.stat-widget .card-inner {
+  padding-top: 1.75rem;
+}
+.stat-widget.is-straight {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.stat-widget.is-straight.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.stat-widget.is-straight.is-flat {
+  box-shadow: none;
+}
+.stat-widget.is-straight.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.stat-widget.is-straight.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.stat-widget.is-straight.is-primary .title,
+.stat-widget.is-straight.is-primary .subtitle,
+.stat-widget.is-straight.is-primary h1,
+.stat-widget.is-straight.is-primary h2,
+.stat-widget.is-straight.is-primary h3,
+.stat-widget.is-straight.is-primary h4,
+.stat-widget.is-straight.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.stat-widget.is-straight.is-secondary .title,
+.stat-widget.is-straight.is-secondary .subtitle,
+.stat-widget.is-straight.is-secondary h1,
+.stat-widget.is-straight.is-secondary h2,
+.stat-widget.is-straight.is-secondary h3,
+.stat-widget.is-straight.is-secondary h4,
+.stat-widget.is-straight.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.stat-widget.is-straight.is-info .title,
+.stat-widget.is-straight.is-info .subtitle,
+.stat-widget.is-straight.is-info h1,
+.stat-widget.is-straight.is-info h2,
+.stat-widget.is-straight.is-info h3,
+.stat-widget.is-straight.is-info h4,
+.stat-widget.is-straight.is-info p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.stat-widget.is-straight.is-success .title,
+.stat-widget.is-straight.is-success .subtitle,
+.stat-widget.is-straight.is-success h1,
+.stat-widget.is-straight.is-success h2,
+.stat-widget.is-straight.is-success h3,
+.stat-widget.is-straight.is-success h4,
+.stat-widget.is-straight.is-success p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.stat-widget.is-straight.is-warning .title,
+.stat-widget.is-straight.is-warning .subtitle,
+.stat-widget.is-straight.is-warning h1,
+.stat-widget.is-straight.is-warning h2,
+.stat-widget.is-straight.is-warning h3,
+.stat-widget.is-straight.is-warning h4,
+.stat-widget.is-straight.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.stat-widget.is-straight.is-danger .title,
+.stat-widget.is-straight.is-danger .subtitle,
+.stat-widget.is-straight.is-danger h1,
+.stat-widget.is-straight.is-danger h2,
+.stat-widget.is-straight.is-danger h3,
+.stat-widget.is-straight.is-danger h4,
+.stat-widget.is-straight.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.stat-widget.is-straight .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stat-widget.is-straight .card-head .left,
+.stat-widget.is-straight .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.stat-widget.is-straight .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.stat-widget.is-straight .card-head .right {
+  justify-content: flex-end;
+}
+.stat-widget.is-straight .card-inner {
+  padding-top: 1.75rem;
+}
+.stat-widget .widget-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  margin-bottom: 10px;
+}
+.stat-widget .widget-head h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.stat-widget .inner-list {
+  padding: 10px 0;
+}
+.stat-widget .inner-list .inner-list-item + .inner-list-item {
+  margin-top: 24px;
+}
+/* ==========================================================================
+2. Line / Area Chart Widget
+========================================================================== */
+.stat-widget.line-stats-widget .line-stats,
+.stat-widget.line-stats-widget .area-stats, .stat-widget.area-stats-widget .line-stats,
+.stat-widget.area-stats-widget .area-stats {
+  display: flex;
+}
+.stat-widget.line-stats-widget .line-stats .line-stat,
+.stat-widget.line-stats-widget .line-stats .area-stat,
+.stat-widget.line-stats-widget .area-stats .line-stat,
+.stat-widget.line-stats-widget .area-stats .area-stat, .stat-widget.area-stats-widget .line-stats .line-stat,
+.stat-widget.area-stats-widget .line-stats .area-stat,
+.stat-widget.area-stats-widget .area-stats .line-stat,
+.stat-widget.area-stats-widget .area-stats .area-stat {
+  margin-right: 30px;
+  font-family: var(--font);
+}
+[dir=rtl] .stat-widget.line-stats-widget .line-stats .line-stat,
+[dir=rtl] .stat-widget.line-stats-widget .line-stats .area-stat,
+[dir=rtl] .stat-widget.line-stats-widget .area-stats .line-stat,
+[dir=rtl] .stat-widget.line-stats-widget .area-stats .area-stat, [dir=rtl] .stat-widget.area-stats-widget .line-stats .line-stat,
+[dir=rtl] .stat-widget.area-stats-widget .line-stats .area-stat,
+[dir=rtl] .stat-widget.area-stats-widget .area-stats .line-stat,
+[dir=rtl] .stat-widget.area-stats-widget .area-stats .area-stat {
+  margin-left: 30px;
+  margin-right: unset;
+}
+.stat-widget.line-stats-widget .line-stats .line-stat span,
+.stat-widget.line-stats-widget .line-stats .area-stat span,
+.stat-widget.line-stats-widget .area-stats .line-stat span,
+.stat-widget.line-stats-widget .area-stats .area-stat span, .stat-widget.area-stats-widget .line-stats .line-stat span,
+.stat-widget.area-stats-widget .line-stats .area-stat span,
+.stat-widget.area-stats-widget .area-stats .line-stat span,
+.stat-widget.area-stats-widget .area-stats .area-stat span {
+  display: block;
+}
+.stat-widget.line-stats-widget .line-stats .line-stat span:first-child,
+.stat-widget.line-stats-widget .line-stats .area-stat span:first-child,
+.stat-widget.line-stats-widget .area-stats .line-stat span:first-child,
+.stat-widget.line-stats-widget .area-stats .area-stat span:first-child, .stat-widget.area-stats-widget .line-stats .line-stat span:first-child,
+.stat-widget.area-stats-widget .line-stats .area-stat span:first-child,
+.stat-widget.area-stats-widget .area-stats .line-stat span:first-child,
+.stat-widget.area-stats-widget .area-stats .area-stat span:first-child {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+.stat-widget.line-stats-widget .line-stats .line-stat span:nth-child(2),
+.stat-widget.line-stats-widget .line-stats .area-stat span:nth-child(2),
+.stat-widget.line-stats-widget .area-stats .line-stat span:nth-child(2),
+.stat-widget.line-stats-widget .area-stats .area-stat span:nth-child(2), .stat-widget.area-stats-widget .line-stats .line-stat span:nth-child(2),
+.stat-widget.area-stats-widget .line-stats .area-stat span:nth-child(2),
+.stat-widget.area-stats-widget .area-stats .line-stat span:nth-child(2),
+.stat-widget.area-stats-widget .area-stats .area-stat span:nth-child(2) {
+  color: var(--dark-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.stat-widget.line-stats-widget .line-stats .line-stat span.current,
+.stat-widget.line-stats-widget .line-stats .area-stat span.current,
+.stat-widget.line-stats-widget .area-stats .line-stat span.current,
+.stat-widget.line-stats-widget .area-stats .area-stat span.current, .stat-widget.area-stats-widget .line-stats .line-stat span.current,
+.stat-widget.area-stats-widget .line-stats .area-stat span.current,
+.stat-widget.area-stats-widget .area-stats .line-stat span.current,
+.stat-widget.area-stats-widget .area-stats .area-stat span.current {
+  color: var(--primary);
+}
+/* ==========================================================================
+3. Spark Tile Widget
+========================================================================== */
+.stat-widget.spark-tile-widget {
+  padding: 0;
+}
+/* ==========================================================================
+4. Flex Stat Widget
+========================================================================== */
+.stat-widget.flex-stat-widget .chart-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stat-widget.flex-stat-widget .chart-media .meta {
+  margin-right: 30px;
+  align-items: center;
+  font-family: var(--font);
+}
+[dir=rtl] .stat-widget.flex-stat-widget .chart-media .meta {
+  margin-left: 30px;
+  margin-right: unset;
+}
+.stat-widget.flex-stat-widget .chart-media .meta h4 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.stat-widget.flex-stat-widget .chart-media .meta span {
+  display: block;
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.stat-widget.flex-stat-widget .chart-media .meta p {
+  font-size: 0.9rem;
+}
+.stat-widget.flex-stat-widget .chart-media .chart-container {
+  min-width: 110px;
+}
+/* ==========================================================================
+5. Grouped Stat Widget
+========================================================================== */
+.stat-widget.grouped-stat-widget .chart-group {
+  display: flex;
+}
+.stat-widget.grouped-stat-widget .chart-group .group {
+  text-align: center;
+  width: 33.3%;
+}
+.stat-widget.grouped-stat-widget .chart-group .group .chart-container {
+  margin-top: -5px;
+}
+.stat-widget.grouped-stat-widget .chart-group .group .chart-container.is-gauge {
+  margin-bottom: 30px;
+}
+.stat-widget.grouped-stat-widget .chart-group .group span {
+  display: block;
+  margin-top: -25px;
+  font-family: var(--font);
+  color: var(--dark-text);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.stat-widget.grouped-stat-widget .chart-group .group p {
+  font-size: 0.9rem;
+}
+/* ==========================================================================
+6. Followers Stat Widget
+========================================================================== */
+.stat-widget.followers-stat-widget-v1 .follow-block {
+  display: flex;
+  align-items: center;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-icon.is-squared {
+  border-radius: 10px;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-icon.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  box-shadow: var(--primary-box-shadow);
+  color: var(--smoke-white);
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-icon svg {
+  height: 18px;
+  width: 18px;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-icon i {
+  font-size: 18px;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-count {
+  margin-left: 12px;
+}
+[dir=rtl] .stat-widget.followers-stat-widget-v1 .follow-block .follow-count {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-count span {
+  display: block;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-count span:first-child {
+  font-family: var(--font-alt);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .follow-count span:nth-child(2) {
+  font-size: 0.95rem;
+  color: var(--light-text);
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .go-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  border-radius: var(--radius-rounded);
+  background: var(--widget-grey);
+  color: var(--light-text);
+  margin-left: auto;
+}
+[dir=rtl] .stat-widget.followers-stat-widget-v1 .follow-block .go-icon {
+  margin-left: unset;
+  margin-right: auto;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .go-icon.is-squared {
+  border-radius: 10px;
+}
+.stat-widget.followers-stat-widget-v1 .follow-block .go-icon svg {
+  height: 16px;
+  width: 16px;
+  stroke-width: 3px;
+}
+.is-dark .stat-widget {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .stat-widget .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .stat-widget .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .stat-widget .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .stat-widget.followers-stat-widget-v1 .follow-block .follow-icon:not(.is-primary) {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+  color: var(--primary);
+}
+.is-dark .stat-widget.followers-stat-widget-v1 .follow-block .follow-icon.is-primary {
+  border-color: var(--primary);
+  background: var(--primary);
+}
+.is-dark .stat-widget.followers-stat-widget-v1 .go-icon {
+  background: var(--dark-sidebar-light-2);
+  border: 1px solid var(--dark-sidebar-light-12);
+}
+/* ==========================================================================
+7. Table Widget
+========================================================================== */
+.stat-widget.table-widget-v1 .table {
+  margin-top: 1.5rem;
+}
+.stat-widget.table-widget-v1 .table tbody tr,
+.stat-widget.table-widget-v1 .table tbody td {
+  border: none;
+}
+.stat-widget.table-widget-v1 .table tbody tr {
+  border-radius: 10px;
+}
+.stat-widget.table-widget-v1 .table tbody td {
+  padding: 1em 0.75em;
+}
+.stat-widget.table-widget-v1 .table tbody td .double-line {
+  line-height: 1.4;
+}
+.stat-widget.table-widget-v1 .table tbody td .double-line span {
+  display: block;
+}
+.stat-widget.table-widget-v1 .table tbody td .double-line span:first-child {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.stat-widget.table-widget-v1 .table tbody td .double-line span:nth-child(2) {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+.stat-widget.table-widget-v1 .table tbody td .avatars > .v-avatar {
+  margin: 0 0.15rem;
+}
+.stat-widget.table-widget-v1 .table tbody td .rating-wrap {
+  text-align: right;
+}
+.stat-widget.table-widget-v1 .table tbody td .rating-wrap span {
+  color: var(--light-text);
+}
+.stat-widget.table-widget-v1 .table tbody td .rating-wrap .rating i {
+  color: var(--widget-grey-dark-8);
+}
+.stat-widget.table-widget-v1 .table tbody td .rating-wrap .rating i.selected {
+  color: var(--yellow) !important;
+}
+.stat-widget.table-widget-v1 .table tbody td .tag-wrap {
+  text-align: right;
+}
+[dir=rtl] .stat-widget.table-widget-v1 .table tbody td .tag-wrap {
+  text-align: left;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+.stat-widget.table-widget-v1 .table tbody td:nth-child(4), .stat-widget.table-widget-v1 .table tbody td:nth-child(5) {
+    display: none;
+}
+}
+.lifestyle-dashboard-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 355px;
+  background: var(--white);
+  z-index: 1;
+}
+[dir=rtl] .lifestyle-dashboard-bg {
+  left: unset;
+  right: 0;
+}
+.lifestyle-dashboard-bg.has-top-nav {
+  height: 368px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 220px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header {
+  display: flex;
+  width: 100%;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .avatar-container {
+  position: relative;
+  height: 140px;
+  width: 140px;
+  min-width: 140px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .avatar-container img {
+  display: block;
+  height: 140px;
+  width: 140px;
+  min-width: 140px;
+  border-radius: var(--radius-rounded);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .avatar-container .button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .avatar-container .button {
+  left: 5px;
+  right: unset;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta {
+  font-family: var(--font);
+  margin-left: 16px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap {
+  display: flex;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .username h3 {
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .username h3 i {
+  font-size: 1.2rem;
+  margin-left: 5px;
+  color: var(--yellow);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .username h3 i {
+  margin-left: unset;
+  margin-right: 5px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .username > span {
+  color: var(--light-text-dark-5);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .badges {
+  margin-left: 16px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .badges {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .badges .tag {
+  margin-right: 0.5rem;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .badges .tag {
+  margin-left: 0.5rem;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats {
+  display: flex;
+  padding: 16px 0;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat {
+  margin-right: 30px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat {
+  margin-left: 30px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat span:first-child {
+  color: var(--dark-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat span:first-child {
+  margin-left: 0.25rem;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat span:nth-child(2) {
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-description {
+  max-width: 640px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-description p {
+  color: var(--light-text-dark-5);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements {
+  display: flex;
+  padding-top: 16px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements .meta-achievement {
+  height: 36px;
+  width: 36px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--white);
+  background: var(--fade-grey);
+  border-radius: var(--radius-rounded);
+  margin-right: 10px;
+  box-shadow: var(--light-box-shadow);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements .meta-achievement {
+  margin-left: 10px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements .meta-achievement.is-primary {
+  color: var(--primary);
+  background: var(--primary-light-45);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements .meta-achievement.is-yellow {
+  color: var(--yellow);
+  background: var(--yellow-light-22);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements .meta-achievement.is-danger {
+  color: var(--danger);
+  background: var(--danger-light-40);
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .end {
+  margin-left: auto;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .end {
+  margin-left: unset;
+  margin-right: auto;
+}
+.lifestyle-dashboard-v1 .tabs-wrapper .tabs-inner .tabs {
+  margin-bottom: 30px;
+  z-index: 10;
+}
+.lifestyle-dashboard-v1 .tabs-wrapper .tabs-inner .tabs ul {
+  border: none;
+}
+.lifestyle-dashboard-v1 .tabs-wrapper .tabs-inner .tabs ul li {
+  z-index: 10;
+}
+.lifestyle-dashboard-v1 .tabs-wrapper .tabs-inner .tabs ul li a {
+  border-bottom-width: 4px;
+}
+.lifestyle-dashboard-v1 .body-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font);
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v1 .body-title h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v1 .body-title .field {
+  z-index: 5;
+  min-width: 135px;
+}
+.lifestyle-dashboard-v1 .body-title .field .multiselect .multiselect-input .multiselect-single-label {
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v1 .body-title .field .multiselect .multiselect-options {
+  left: unset !important;
+  min-width: 180px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .body-title .field .multiselect .multiselect-options {
+  right: unset !important;
+}
+.lifestyle-dashboard-v1 .overview-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  font-family: var(--font);
+}
+.lifestyle-dashboard-v1 .overview-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.lifestyle-dashboard-v1 .overview-card.is-flat {
+  box-shadow: none;
+}
+.lifestyle-dashboard-v1 .overview-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.lifestyle-dashboard-v1 .overview-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.lifestyle-dashboard-v1 .overview-card.is-primary .title,
+.lifestyle-dashboard-v1 .overview-card.is-primary .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-primary h1,
+.lifestyle-dashboard-v1 .overview-card.is-primary h2,
+.lifestyle-dashboard-v1 .overview-card.is-primary h3,
+.lifestyle-dashboard-v1 .overview-card.is-primary h4,
+.lifestyle-dashboard-v1 .overview-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-secondary .title,
+.lifestyle-dashboard-v1 .overview-card.is-secondary .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-secondary h1,
+.lifestyle-dashboard-v1 .overview-card.is-secondary h2,
+.lifestyle-dashboard-v1 .overview-card.is-secondary h3,
+.lifestyle-dashboard-v1 .overview-card.is-secondary h4,
+.lifestyle-dashboard-v1 .overview-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-info .title,
+.lifestyle-dashboard-v1 .overview-card.is-info .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-info h1,
+.lifestyle-dashboard-v1 .overview-card.is-info h2,
+.lifestyle-dashboard-v1 .overview-card.is-info h3,
+.lifestyle-dashboard-v1 .overview-card.is-info h4,
+.lifestyle-dashboard-v1 .overview-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-success .title,
+.lifestyle-dashboard-v1 .overview-card.is-success .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-success h1,
+.lifestyle-dashboard-v1 .overview-card.is-success h2,
+.lifestyle-dashboard-v1 .overview-card.is-success h3,
+.lifestyle-dashboard-v1 .overview-card.is-success h4,
+.lifestyle-dashboard-v1 .overview-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-warning .title,
+.lifestyle-dashboard-v1 .overview-card.is-warning .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-warning h1,
+.lifestyle-dashboard-v1 .overview-card.is-warning h2,
+.lifestyle-dashboard-v1 .overview-card.is-warning h3,
+.lifestyle-dashboard-v1 .overview-card.is-warning h4,
+.lifestyle-dashboard-v1 .overview-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.lifestyle-dashboard-v1 .overview-card.is-danger .title,
+.lifestyle-dashboard-v1 .overview-card.is-danger .subtitle,
+.lifestyle-dashboard-v1 .overview-card.is-danger h1,
+.lifestyle-dashboard-v1 .overview-card.is-danger h2,
+.lifestyle-dashboard-v1 .overview-card.is-danger h3,
+.lifestyle-dashboard-v1 .overview-card.is-danger h4,
+.lifestyle-dashboard-v1 .overview-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head .left,
+.lifestyle-dashboard-v1 .overview-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head .right {
+  justify-content: flex-end;
+}
+.lifestyle-dashboard-v1 .overview-card .card-inner {
+  padding-top: 1.75rem;
+}
+.lifestyle-dashboard-v1 .overview-card.is-metrics, .lifestyle-dashboard-v1 .overview-card.is-heatmap {
+  padding: 30px;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head.has-margin-bottom {
+  margin-bottom: 16px;
+}
+.lifestyle-dashboard-v1 .overview-card .card-head h4 {
+  color: var(--light-text-dark-2);
+}
+.lifestyle-dashboard-v1 .overview-card .card-head h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v1 .overview-card .card-metric {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--dark-text);
+  padding: 6px 0 16px 0;
+}
+.lifestyle-dashboard-v1 .overview-card .card-metric.is-smaller {
+  font-size: 2.5rem;
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot.is-up span span {
+  color: var(--green);
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot.is-up span span svg {
+  transform: rotate(-45deg);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .card-foot.is-up span span svg {
+  transform: rotate(225deg);
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot.is-down span span {
+  color: var(--red);
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot.is-down span span svg {
+  transform: rotate(45deg);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .card-foot.is-down span span svg {
+  transform: rotate(135deg);
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot span {
+  display: flex;
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot span span {
+  margin-right: 8px;
+  font-weight: 500;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .card-foot span span {
+  margin-left: 8px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .overview-card .card-foot span span svg {
+  height: 18px;
+  width: 18px;
+  stroke-width: 3px;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container {
+  position: relative;
+  height: 455px;
+  text-align: center;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul {
+  margin-top: 1.5rem;
+  list-style-type: none;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li {
+  display: inline-block;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a {
+  text-decoration: none;
+  line-height: 1.8em;
+  font-family: var(--font);
+  color: var(--dark-text);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size1 {
+  color: var(--light-text);
+  padding: 6px;
+  border-radius: 0.5rem;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size1:hover {
+  background-color: var(--primary);
+  box-shadow: var(--primary-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size2 {
+  font-size: 1.25rem;
+  padding: 12px;
+  border-radius: 0.5rem;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size2:hover {
+  background-color: var(--danger);
+  box-shadow: var(--danger-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size3 {
+  font-size: 1.5rem;
+  padding: 18px;
+  border-radius: 0.75rem;
+  color: var(--dark-text-light-18);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size3:hover {
+  background-color: var(--yellow);
+  box-shadow: var(--yellow-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size4 {
+  padding: 10px 16px;
+  font-size: 1.75rem;
+  border-radius: 0.75rem;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size4:hover {
+  background-color: var(--green);
+  box-shadow: var(--green-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size5 {
+  padding: 8px 14px;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size5:hover {
+  background-color: var(--info);
+  box-shadow: var(--info-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size6 {
+  padding: 24px;
+  font-size: 2.5rem;
+  border-radius: 0.75rem;
+}
+.lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size6:hover {
+  background-color: var(--purple);
+  box-shadow: var(--purple-box-shadow);
+  color: var(--white);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-head h4 {
+  color: var(--light-text-dark-2);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--dark-text);
+  padding: 10px 0;
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric.is-smaller {
+  font-size: 2.5rem;
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-up span span {
+  color: var(--green);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-up span span svg {
+  transform: rotate(-45deg);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-up span span svg {
+  transform: rotate(225deg);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-down span span {
+  color: var(--red);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-down span span svg {
+  transform: rotate(45deg);
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .metric .metric-foot.is-down span span svg {
+  transform: rotate(135deg);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot span {
+  display: flex;
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot span span {
+  margin-right: 8px;
+  font-weight: 500;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .overview-card .metric .metric-foot span span {
+  margin-left: 8px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .overview-card .metric .metric-foot span span svg {
+  height: 18px;
+  width: 18px;
+  stroke-width: 3px;
+}
+.lifestyle-dashboard-v1 .stat-widget:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title .title-avatar {
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title .title-avatar img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  border-radius: var(--radius-rounded);
+  border: 3px solid var(--white);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title .title-meta {
+  margin-left: 16px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title .title-meta {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-title .title-meta p span {
+  color: var(--dark-text);
+  font-weight: 500;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-label {
+  width: 60px;
+  text-align: center;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content {
+  display: flex;
+  flex-grow: 2;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item {
+  margin: 5px;
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 34px;
+  border-radius: var(--radius-large);
+  background: var(--widget-grey-dark-2);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.heat-1 {
+  background: var(--primary-light-48);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.heat-2 {
+  background: var(--primary-light-30);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.heat-3 {
+  background: var(--primary);
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.heat-3 i {
+  color: var(--smoke-white);
+  font-size: 12px;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.is-time {
+  background: none;
+  color: var(--light-text);
+  font-size: 0.95rem;
+  min-height: 26px;
+}
+.lifestyle-dashboard-v1 .post-stats {
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 0.9rem;
+}
+.lifestyle-dashboard-v1 .post-stats span {
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v1 .post-stats .post-stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+.lifestyle-dashboard-v1 .post-stats .post-stat i {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .post-stats .post-stat i {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v1 .post-stats .post-stat .count {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v1 .post-group-wrap {
+  padding: 4px 10px;
+}
+.lifestyle-dashboard-v1 .post-group-wrap .post-group {
+  display: flex;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.lifestyle-dashboard-v1 .post-group-wrap .post-group a {
+  display: block;
+  width: calc(25% - 12px);
+  margin: 6px;
+}
+.lifestyle-dashboard-v1 .post-group-wrap .post-group a img {
+  display: block;
+  width: 100%;
+  min-height: 65px;
+  max-height: 85px;
+  object-fit: cover;
+  border-radius: var(--radius-large);
+  margin: 0;
+}
+.is-dark .lifestyle-dashboard-bg {
+  background: var(--dark-sidebar-light-6);
+}
+.is-dark .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .username h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat span:first-child {
+  color: var(--dark-dark-text);
+}
+.is-dark .lifestyle-dashboard-v1 .body-title h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .card-metric,
+.is-dark .lifestyle-dashboard-v1 .overview-card .metric .metric {
+  color: var(--dark-dark-text);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .cloud-container ul li a {
+  color: var(--white);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size-1 {
+  color: var(--light-text) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size-3 {
+  color: var(--dark-text-light-25) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .cloud-container ul li a.size-4 {
+  color: var(--dark-dark-text) !important;
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-title .title-avatar {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-title .title-avatar img {
+  border-color: var(--dark-sidebar-dark-2);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-title .title-meta p span {
+  color: var(--dark-dark-text);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:not(.is-time) {
+  background: var(--dark-sidebar-light-10);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:not(.is-time).heat-1 {
+  background: var(--dark-sidebar-light-2);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:not(.is-time).heat-2 {
+  background: var(--primary-light-10);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:not(.is-time).heat-3 {
+  background: var(--primary);
+}
+.is-dark .lifestyle-dashboard-v1 .overview-card .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:not(.is-time).heat-3 i {
+  color: var(--smoke-white);
+}
+@media only screen and (max-width: 767px) {
+.lifestyle-dashboard-bg:not(.has-top-nav) {
+    height: 614px;
+}
+.lifestyle-dashboard-bg.has-top-nav {
+    height: 625px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper {
+    height: 418px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header {
+    flex-direction: column;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .avatar-container {
+    margin: 0 auto 10px auto;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta {
+    margin-left: 0;
+    text-align: center;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta {
+    margin-left: unset;
+    margin-right: 0;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap {
+    flex-direction: column;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .username-wrap .badges {
+    margin: 10px auto;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats {
+    justify-content: center;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat {
+    margin: 0 10px;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-stats .meta-stat {
+    margin: 0 10px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .header-meta .meta-achievements {
+    justify-content: center;
+    padding-bottom: 16px;
+}
+.lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .end {
+    position: absolute;
+    right: 0;
+}
+[dir=rtl] .lifestyle-dashboard-v1 .dashboard-header-wrapper .dashboard-header .end {
+    left: 0;
+    right: unset;
+}
+.lifestyle-dashboard-v1 .tabs-wrapper .tabs-inner .tabs ul {
+    text-align: center;
+    justify-content: center;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.lifestyle-dashboard-bg.has-top-nav {
+    height: 428px;
+}
+.lifestyle-dashboard-bg:not(.has-top-nav) {
+    height: 415px;
+}
+.lifestyle-dashboard-v1 .is-flex-tablet-p {
+    flex-wrap: wrap;
+}
+.lifestyle-dashboard-v1 .is-flex-tablet-p .is-half-tablet-p {
+    min-width: 50%;
+}
+.lifestyle-dashboard-v1 .is-flex-tablet-p .is-full-tablet-p {
+    min-width: 100%;
+}
+.lifestyle-dashboard-v1 .is-flex-tablet-p .column.is-3 {
+    min-width: 50%;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-label {
+    width: 40px;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:first-child, .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(2), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(3), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(4), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(5), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(6), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(7), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(8), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(9) {
+    display: none;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.is-time {
+    font-size: 0.85rem;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.lifestyle-dashboard-v1 .cloud-container {
+    width: 400px !important;
+    height: 495px !important;
+}
+.lifestyle-dashboard-v1 .cloud-container .cloud {
+    width: 400px !important;
+}
+.lifestyle-dashboard-v1 .cloud-container .cloud-element {
+    font-size: 1.5em !important;
+}
+.lifestyle-dashboard-v1 .cloud-container .cloud-element.size-2 {
+    font-size: 2rem !important;
+}
+.lifestyle-dashboard-v1 .cloud-container .cloud-element.size-3 {
+    font-size: 3rem !important;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-label {
+    width: 40px;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:first-child, .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(2), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(3), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(4), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(5), .lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item:nth-child(6) {
+    display: none;
+}
+.lifestyle-dashboard-v1 .heatmap-wrapper .heatmap-inner .heatmap-row .heatmap-row-content .heatmap-row-item.is-time {
+    font-size: 0.85rem;
+}
+}

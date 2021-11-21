@@ -1,0 +1,86 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "جمعه ۱۴ آبان",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/7.jpg",
+                "content": {
+                    "text": "سلام جمال ، ما مشتری بی میلی داریم که ادعا می کند با شما صحبت کرده است.",
+                    "time": "03:47 ب.ظ"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/7.jpg",
+                "content": {
+                    "text": "او خواسته های فوری دارد. این شخص از هارتمن و پسران است. گری ووتون.",
+                    "time": "03:47 ب.ظ"
+                }
+            },
+            {
+                "id": "3",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "بله ، من او را می شناسم ، مرد کمی عصبی است.",
+                    "time": "04:19 ب.ظ"
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "شما باید آخرین ویژگی ها را در اختیار او قرار دهید و ضمانت های معمول ما را به او بدهید.",
+                    "time": "04:20"
+                }
+            },
+            {
+                "id": "5",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/7.jpg",
+                "content": {
+                    "text": "فکر می کنید همین کافی خواهد بود؟",
+                    "time": "06:30 ب.ظ"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
+                "content": {
+                    "text": "بله ، نگران نباشید ، او به زودی آن را کنار می گذارد.",
+                    "time": "06:34 ب.ظ"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/demo/avatars/7.jpg",
+                "content": {
+                    "text": "باشه ممنون از راهنماییت بهت میگم.",
+                    "time": "06:58 ب.ظ"
+                }
+            }
+        ]
+    }
+}

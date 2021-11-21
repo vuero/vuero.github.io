@@ -1,0 +1,397 @@
+/*! _utility.scss | Vuero | Css ninja 2020-2021 */
+/* ==========================================================================
+Utility Pages
+========================================================================== */
+/*
+    1. Error page
+    2. Media Queries
+*/
+/* ==========================================================================
+1. Error page
+========================================================================== */
+.error-container .error-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.error-container .error-wrapper .error-inner {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.error-container .error-wrapper .error-inner .bg-number {
+  font-family: var(--font);
+  position: absolute;
+  top: -58px;
+  left: -50px;
+  right: 0;
+  margin: 0 auto;
+  font-size: 28rem;
+  font-weight: 600;
+  opacity: 0.15;
+  z-index: 0;
+}
+[dir=rtl] .error-container .error-wrapper .error-inner .bg-number {
+  left: 0;
+  right: -50px;
+}
+.error-container .error-wrapper .error-inner img,
+.error-container .error-wrapper .error-inner svg,
+.error-container .error-wrapper .error-inner h3,
+.error-container .error-wrapper .error-inner p,
+.error-container .error-wrapper .error-inner .button-wrap {
+  position: relative;
+  z-index: 1;
+}
+.error-container .error-wrapper .error-inner img,
+.error-container .error-wrapper .error-inner svg {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.error-container .error-wrapper .error-inner h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+  font-weight: 600;
+  margin-top: 10px;
+}
+.error-container .error-wrapper .error-inner p {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.error-container .error-wrapper .error-inner .button-wrap .button {
+  min-width: 220px;
+  min-height: 50px;
+}
+.is-dark .error-container .error-wrapper .error-inner .bg-number {
+  opacity: 0.09;
+}
+/* ==========================================================================
+2. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.error-container .error-wrapper {
+    padding-top: 60px;
+}
+.error-container .error-wrapper .error-inner {
+    padding: 10px;
+}
+.error-container .error-wrapper .error-inner .bg-number {
+    top: -35px;
+    left: -18px;
+    right: 0;
+    font-size: 13rem;
+}
+[dir=rtl] .error-container .error-wrapper .error-inner .bg-number {
+    left: 0;
+    right: -18px;
+}
+.error-container .error-wrapper .error-inner img,
+.error-container .error-wrapper .error-inner svg {
+    max-width: 345px;
+}
+}
+/* ==========================================================================
+3. Status Page
+========================================================================== */
+.status-page-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 16px 60px 16px;
+}
+.status-page-wrapper .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.status-page-wrapper .head .logo {
+  display: block;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+.status-page-wrapper .status-block {
+  background: var(--white);
+  margin-bottom: 40px;
+  border: 1px solid var(--fade-grey-dark-3);
+  border-radius: var(--radius-large);
+}
+.status-page-wrapper .status-block .status-header {
+  padding: 40px;
+}
+.status-page-wrapper .status-block .status-header .indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 20px;
+  background: var(--success);
+}
+[dir=rtl] .status-page-wrapper .status-block .status-header .indicator {
+  margin-left: 20px;
+  margin-right: unset;
+}
+.status-page-wrapper .status-block .status-header .title {
+  display: inline-block;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.status-page-wrapper .status-block .status-header .subtitle {
+  display: block;
+  margin-left: 35px;
+  color: var(--light-text);
+}
+[dir=rtl] .status-page-wrapper .status-block .status-header .subtitle {
+  margin-left: unset;
+  margin-right: 35px;
+}
+.status-page-wrapper .status-block .status-uptime {
+  border-top: 1px solid var(--fade-grey-dark-3);
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+  padding: 16px 40px;
+  font-family: var(--font);
+}
+.status-page-wrapper .status-block .status-uptime .title {
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--font-alt);
+  margin-bottom: 0;
+  font-weight: 500;
+  color: var(--light-text);
+}
+.status-page-wrapper .status-block .status-uptime .uptime {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 14px;
+  color: var(--light-text);
+}
+[dir=rtl] .status-page-wrapper .status-block .status-uptime .uptime {
+  margin-left: unset;
+  margin-right: 60px;
+}
+.status-page-wrapper .status-block .status-list {
+  padding: 40px;
+}
+.status-page-wrapper .status-block .status-list .list-block {
+  display: flex;
+  align-items: center;
+}
+.status-page-wrapper .status-block .status-list .list-block .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 54px;
+  min-width: 54px;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+  color: var(--primary);
+  margin-right: 12px;
+}
+[dir=rtl] .status-page-wrapper .status-block .status-list .list-block .icon-wrap {
+  margin-left: 12px;
+  margin-right: unset;
+}
+.status-page-wrapper .status-block .status-list .list-block .icon-wrap img {
+  display: block;
+  max-width: 54px;
+  border-radius: var(--radius-rounded);
+}
+.status-page-wrapper .status-block .status-list .list-block .progress-wrap {
+  flex-grow: 2;
+}
+.status-page-wrapper .status-block .status-list .list-block .progress-wrap .progress-wrap-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.status-page-wrapper .status-block .status-list .label {
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.status-page-wrapper .status-block .status-list p {
+  font-size: 0.9rem;
+  font-family: var(--font);
+}
+.status-page-wrapper .status-block .status-list .amount {
+  position: relative;
+  top: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--light-text);
+  margin-left: auto;
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+}
+[dir=rtl] .status-page-wrapper .status-block .status-list .amount {
+  margin-left: unset;
+  margin-right: auto;
+}
+.status-page-wrapper .status-block .status-list .amount span {
+  font-family: var(--font);
+  color: var(--dark-text);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.status-page-wrapper .tweets-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+}
+.status-page-wrapper .tweets-header .icon i {
+  font-size: 1.6rem;
+  color: var(--twitter);
+}
+.status-page-wrapper .tweets-header .username {
+  margin-left: 10px;
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+[dir=rtl] .status-page-wrapper .tweets-header .username {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.status-page-wrapper .tweets-header .action-link {
+  margin-left: auto;
+}
+[dir=rtl] .status-page-wrapper .tweets-header .action-link {
+  margin-left: unset;
+  margin-right: auto;
+}
+.status-page-wrapper .status-tweets .updates {
+  padding: 20px 40px 40px 40px;
+}
+.status-page-wrapper .status-tweets .updates .update {
+  display: flex;
+  align-items: center;
+}
+.status-page-wrapper .status-tweets .updates .update:not(:last-child) {
+  margin-bottom: 30px;
+}
+.status-page-wrapper .status-tweets .updates .update .update-content {
+  margin-left: 12px;
+}
+[dir=rtl] .status-page-wrapper .status-tweets .updates .update .update-content {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.status-page-wrapper .status-tweets .updates .update .update-content .timestamp {
+  color: var(--light-text);
+}
+.status-page-wrapper .status-tweets .updates .update .update-content .tweet {
+  font-family: var(--font);
+  color: var(--dark-text);
+}
+.status-page-wrapper .status-footer {
+  display: flex;
+  padding: 20px;
+}
+.status-page-wrapper .status-footer a {
+  font-family: var(--font);
+  color: var(--light-text-dark-8);
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+.status-page-wrapper .status-footer a:hover {
+  font-weight: 500;
+  color: var(--primary);
+}
+.status-page-wrapper .status-footer .copyright {
+  margin-left: auto;
+  font-family: var(--font);
+  color: var(--light-text);
+}
+[dir=rtl] .status-page-wrapper .status-footer .copyright {
+  margin-left: unset;
+  margin-right: auto;
+}
+.is-dark .status-page-wrapper .status-block {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .status-page-wrapper .status-block .status-uptime {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .status-page-wrapper .status-block .status-list hr {
+  background-color: var(--dark-sidebar-light-12);
+  height: 1px;
+}
+.is-dark .status-page-wrapper .status-block .status-list .list-block .progress-wrap .progress-wrap-inner .amount {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .status-page-wrapper .status-block .status-list .list-block .progress-wrap .progress-wrap-inner .amount span {
+  color: var(--dark-dark-text);
+}
+.is-dark .status-page-wrapper .status-block .tweets-header {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .status-page-wrapper .status-block .status-tweets .updates .update .update-content .tweet {
+  color: var(--dark-dark-text);
+}
+.is-dark .status-page-wrapper .status-footer a:hover {
+  color: var(--primary);
+}
+@media only screen and (max-width: 767px) {
+.status-page-wrapper {
+    padding-top: 20px;
+}
+.status-page-wrapper .status-block .status-header {
+    padding: 30px;
+}
+.status-page-wrapper .status-block .status-uptime {
+    padding: 16px 30px;
+}
+.status-page-wrapper .status-block .status-uptime .uptime {
+    display: none;
+}
+.status-page-wrapper .status-block .status-list {
+    padding: 30px;
+}
+.status-page-wrapper .status-block .status-list .list-block .icon-wrap {
+    display: none;
+}
+.status-page-wrapper .tweets-header {
+    padding: 24px 30px;
+}
+.status-page-wrapper .status-tweets .updates {
+    padding: 20px 30px 30px 30px;
+}
+.status-page-wrapper .status-tweets .updates .update .v-avatar {
+    display: none;
+}
+.status-page-wrapper .status-tweets .updates .update .update-content {
+    margin-left: 0;
+}
+[dir=rtl] .status-page-wrapper .status-tweets .updates .update .update-content {
+    margin-left: unset;
+    margin-right: 0;
+}
+.status-page-wrapper .status-footer {
+    flex-direction: column;
+    align-items: center;
+}
+.status-page-wrapper .status-footer .copyright {
+    margin: 10px 0;
+}
+[dir=rtl] .status-page-wrapper .status-footer .copyright {
+    margin: 10px 0;
+}
+}

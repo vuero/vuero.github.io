@@ -1,0 +1,378 @@
+.list-view-v2 .list-view-item {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.list-view-v2 .list-view-item.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.list-view-v2 .list-view-item.is-flat {
+  box-shadow: none;
+}
+.list-view-v2 .list-view-item.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.list-view-v2 .list-view-item.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.list-view-v2 .list-view-item.is-primary .title,
+.list-view-v2 .list-view-item.is-primary .subtitle,
+.list-view-v2 .list-view-item.is-primary h1,
+.list-view-v2 .list-view-item.is-primary h2,
+.list-view-v2 .list-view-item.is-primary h3,
+.list-view-v2 .list-view-item.is-primary h4,
+.list-view-v2 .list-view-item.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.list-view-v2 .list-view-item.is-secondary .title,
+.list-view-v2 .list-view-item.is-secondary .subtitle,
+.list-view-v2 .list-view-item.is-secondary h1,
+.list-view-v2 .list-view-item.is-secondary h2,
+.list-view-v2 .list-view-item.is-secondary h3,
+.list-view-v2 .list-view-item.is-secondary h4,
+.list-view-v2 .list-view-item.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.list-view-v2 .list-view-item.is-info .title,
+.list-view-v2 .list-view-item.is-info .subtitle,
+.list-view-v2 .list-view-item.is-info h1,
+.list-view-v2 .list-view-item.is-info h2,
+.list-view-v2 .list-view-item.is-info h3,
+.list-view-v2 .list-view-item.is-info h4,
+.list-view-v2 .list-view-item.is-info p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.list-view-v2 .list-view-item.is-success .title,
+.list-view-v2 .list-view-item.is-success .subtitle,
+.list-view-v2 .list-view-item.is-success h1,
+.list-view-v2 .list-view-item.is-success h2,
+.list-view-v2 .list-view-item.is-success h3,
+.list-view-v2 .list-view-item.is-success h4,
+.list-view-v2 .list-view-item.is-success p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.list-view-v2 .list-view-item.is-warning .title,
+.list-view-v2 .list-view-item.is-warning .subtitle,
+.list-view-v2 .list-view-item.is-warning h1,
+.list-view-v2 .list-view-item.is-warning h2,
+.list-view-v2 .list-view-item.is-warning h3,
+.list-view-v2 .list-view-item.is-warning h4,
+.list-view-v2 .list-view-item.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.list-view-v2 .list-view-item.is-danger .title,
+.list-view-v2 .list-view-item.is-danger .subtitle,
+.list-view-v2 .list-view-item.is-danger h1,
+.list-view-v2 .list-view-item.is-danger h2,
+.list-view-v2 .list-view-item.is-danger h3,
+.list-view-v2 .list-view-item.is-danger h4,
+.list-view-v2 .list-view-item.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.list-view-v2 .list-view-item .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-view-v2 .list-view-item .card-head .left,
+.list-view-v2 .list-view-item .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.list-view-v2 .list-view-item .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.list-view-v2 .list-view-item .card-head .right {
+  justify-content: flex-end;
+}
+.list-view-v2 .list-view-item .card-inner {
+  padding-top: 1.75rem;
+}
+.list-view-v2 .list-view-item:hover {
+  box-shadow: var(--light-box-shadow);
+}
+.list-view-v2 .list-view-item .list-view-item-inner {
+  display: flex;
+}
+.list-view-v2 .list-view-item .list-view-item-inner > img {
+  display: block;
+  min-height: 130px;
+  max-height: 130px;
+  min-width: 190px;
+  max-width: 190px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 {
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 .rating {
+  margin-left: 12px;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 .rating {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 .rating i {
+  position: relative;
+  top: -2px;
+  font-size: 12px;
+  color: var(--fade-grey-dark-4);
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 .rating i.active {
+  color: #ffc43b;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left p {
+  font-size: 0.95rem;
+  color: var(--light-text);
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left p svg {
+  height: 12px;
+  width: 12px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left > span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left > span .icon-separator {
+  font-size: 5px;
+  color: var(--light-text);
+  padding: 0 10px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list {
+  margin-top: auto;
+  display: flex;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span {
+  margin-left: 15px;
+  margin-right: unset;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span span {
+  font-size: 0.85rem;
+  font-family: var(--font-alt);
+  color: var(--dark-text);
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span i {
+  font-size: 1.2rem;
+  margin-right: 6px;
+  color: var(--light-text);
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span i {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-right {
+  margin-left: unset;
+  margin-right: auto;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-right .buttons {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-right .buttons {
+  margin-right: unset;
+  margin-left: 10px;
+}
+.is-dark .list-view-v2 .list-view-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .list-view-v2 .list-view-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .list-view-v2 .list-view-item .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .list-view-v2 .list-view-item .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 {
+  color: var(--dark-dark-text) !important;
+}
+.is-dark .list-view-v2 .list-view-item .list-view-item-inner .meta-left h3 .rating i:not(.active) {
+  color: var(--dark-sidebar-dark-2);
+}
+.is-dark .list-view-v2 .list-view-item .list-view-item-inner .meta-left > span {
+  color: var(--primary);
+}
+.is-dark .list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span span {
+  color: var(--dark-dark-text);
+}
+.is-dark .list-view-v2 .list-view-item .list-view-item-inner .meta-right .buttons .button:first-child {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-8);
+  color: var(--dark-dark-text);
+}
+@media only screen and (max-width: 767px) {
+.list-view-v2 .list-view-item {
+    padding: 20px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner {
+    flex-direction: column;
+}
+.list-view-v2 .list-view-item .list-view-item-inner > img {
+    width: 100%;
+    max-width: 100%;
+    min-height: 160px;
+    max-height: 160px;
+    margin-bottom: 1rem;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left {
+    margin-left: 0;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left {
+    margin-left: unset;
+    margin-right: 0;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left > span {
+    margin-bottom: 16px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list {
+    flex-wrap: wrap;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    width: calc(33.3% - 20px);
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span {
+    margin: 10px;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-left .icon-list > span i {
+    margin: 0;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-right {
+    margin: 16px 0 0 0;
+}
+[dir=rtl] .list-view-v2 .list-view-item .list-view-item-inner .meta-right {
+    margin: 16px 0 0 0;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-right .buttons {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list-view-v2 .list-view-item .list-view-item-inner .meta-right .buttons .button {
+    width: 48%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.list-view-v2 .list-view-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-view-v2 .list-view-inner .list-view-item {
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px);
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner {
+    flex-direction: column;
+    height: 100%;
+    min-height: 450px;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner > img {
+    width: 100%;
+    max-width: 100%;
+    min-height: 160px;
+    max-height: 160px;
+    margin-bottom: 1rem;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left {
+    margin-left: 0;
+}
+[dir=rtl] .list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left {
+    margin-left: unset;
+    margin-right: 0;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left > span {
+    margin-bottom: 16px;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left .icon-list {
+    flex-wrap: wrap;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left .icon-list > span {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    width: calc(33.3% - 20px);
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-left .icon-list > span i {
+    margin: 0;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-right {
+    margin: auto 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-right .buttons {
+    margin: 16px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list-view-v2 .list-view-inner .list-view-item .list-view-item-inner .meta-right .buttons .button {
+    width: 48%;
+}
+}

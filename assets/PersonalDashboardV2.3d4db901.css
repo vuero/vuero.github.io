@@ -1,0 +1,365 @@
+.is-navbar .personal-dashboard {
+  margin-top: 30px;
+}
+.personal-dashboard-v2 .dashboard-header {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.personal-dashboard-v2 .dashboard-header.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.personal-dashboard-v2 .dashboard-header.is-flat {
+  box-shadow: none;
+}
+.personal-dashboard-v2 .dashboard-header.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.personal-dashboard-v2 .dashboard-header.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.personal-dashboard-v2 .dashboard-header.is-primary .title,
+.personal-dashboard-v2 .dashboard-header.is-primary .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-primary h1,
+.personal-dashboard-v2 .dashboard-header.is-primary h2,
+.personal-dashboard-v2 .dashboard-header.is-primary h3,
+.personal-dashboard-v2 .dashboard-header.is-primary h4,
+.personal-dashboard-v2 .dashboard-header.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-secondary .title,
+.personal-dashboard-v2 .dashboard-header.is-secondary .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-secondary h1,
+.personal-dashboard-v2 .dashboard-header.is-secondary h2,
+.personal-dashboard-v2 .dashboard-header.is-secondary h3,
+.personal-dashboard-v2 .dashboard-header.is-secondary h4,
+.personal-dashboard-v2 .dashboard-header.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-info .title,
+.personal-dashboard-v2 .dashboard-header.is-info .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-info h1,
+.personal-dashboard-v2 .dashboard-header.is-info h2,
+.personal-dashboard-v2 .dashboard-header.is-info h3,
+.personal-dashboard-v2 .dashboard-header.is-info h4,
+.personal-dashboard-v2 .dashboard-header.is-info p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-success .title,
+.personal-dashboard-v2 .dashboard-header.is-success .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-success h1,
+.personal-dashboard-v2 .dashboard-header.is-success h2,
+.personal-dashboard-v2 .dashboard-header.is-success h3,
+.personal-dashboard-v2 .dashboard-header.is-success h4,
+.personal-dashboard-v2 .dashboard-header.is-success p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-warning .title,
+.personal-dashboard-v2 .dashboard-header.is-warning .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-warning h1,
+.personal-dashboard-v2 .dashboard-header.is-warning h2,
+.personal-dashboard-v2 .dashboard-header.is-warning h3,
+.personal-dashboard-v2 .dashboard-header.is-warning h4,
+.personal-dashboard-v2 .dashboard-header.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.personal-dashboard-v2 .dashboard-header.is-danger .title,
+.personal-dashboard-v2 .dashboard-header.is-danger .subtitle,
+.personal-dashboard-v2 .dashboard-header.is-danger h1,
+.personal-dashboard-v2 .dashboard-header.is-danger h2,
+.personal-dashboard-v2 .dashboard-header.is-danger h3,
+.personal-dashboard-v2 .dashboard-header.is-danger h4,
+.personal-dashboard-v2 .dashboard-header.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-header .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-dashboard-v2 .dashboard-header .card-head .left,
+.personal-dashboard-v2 .dashboard-header .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.personal-dashboard-v2 .dashboard-header .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.personal-dashboard-v2 .dashboard-header .card-head .right {
+  justify-content: flex-end;
+}
+.personal-dashboard-v2 .dashboard-header .card-inner {
+  padding-top: 1.75rem;
+}
+.personal-dashboard-v2 .dashboard-header .user-meta {
+  padding: 0 3rem;
+  border-right: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .user-meta {
+  border-right: none;
+  border-left: 1px solid var(--fade-grey-dark-3);
+}
+.personal-dashboard-v2 .dashboard-header .user-meta h3 {
+  max-width: 180px;
+}
+.personal-dashboard-v2 .dashboard-header .user-action {
+  padding: 0 3rem;
+}
+.personal-dashboard-v2 .dashboard-header .cta {
+  position: relative;
+  flex-grow: 2;
+  max-width: 275px;
+  margin-left: auto;
+  background: var(--primary-light-8);
+  padding: 20px;
+  border-radius: var(--radius-large);
+  box-shadow: var(--primary-box-shadow);
+}
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .cta {
+  margin-left: 0;
+  margin-right: auto;
+}
+.personal-dashboard-v2 .dashboard-header .cta .lnil,
+.personal-dashboard-v2 .dashboard-header .cta .lnir {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 4rem;
+  opacity: 0.3;
+}
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .cta .lnil,
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .cta .lnir {
+  left: 1rem;
+  right: auto;
+}
+.personal-dashboard-v2 .dashboard-header .cta .link {
+  font-family: var(--font-alt);
+  display: block;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.personal-dashboard-v2 .dashboard-header .cta .link:hover {
+  color: var(--smoke-white);
+  opacity: 0.6;
+}
+.personal-dashboard-v2 .dashboard-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 30px;
+}
+.personal-dashboard-v2 .dashboard-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.personal-dashboard-v2 .dashboard-card.is-flat {
+  box-shadow: none;
+}
+.personal-dashboard-v2 .dashboard-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.personal-dashboard-v2 .dashboard-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.personal-dashboard-v2 .dashboard-card.is-primary .title,
+.personal-dashboard-v2 .dashboard-card.is-primary .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-primary h1,
+.personal-dashboard-v2 .dashboard-card.is-primary h2,
+.personal-dashboard-v2 .dashboard-card.is-primary h3,
+.personal-dashboard-v2 .dashboard-card.is-primary h4,
+.personal-dashboard-v2 .dashboard-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-secondary .title,
+.personal-dashboard-v2 .dashboard-card.is-secondary .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-secondary h1,
+.personal-dashboard-v2 .dashboard-card.is-secondary h2,
+.personal-dashboard-v2 .dashboard-card.is-secondary h3,
+.personal-dashboard-v2 .dashboard-card.is-secondary h4,
+.personal-dashboard-v2 .dashboard-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-info .title,
+.personal-dashboard-v2 .dashboard-card.is-info .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-info h1,
+.personal-dashboard-v2 .dashboard-card.is-info h2,
+.personal-dashboard-v2 .dashboard-card.is-info h3,
+.personal-dashboard-v2 .dashboard-card.is-info h4,
+.personal-dashboard-v2 .dashboard-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-success .title,
+.personal-dashboard-v2 .dashboard-card.is-success .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-success h1,
+.personal-dashboard-v2 .dashboard-card.is-success h2,
+.personal-dashboard-v2 .dashboard-card.is-success h3,
+.personal-dashboard-v2 .dashboard-card.is-success h4,
+.personal-dashboard-v2 .dashboard-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-warning .title,
+.personal-dashboard-v2 .dashboard-card.is-warning .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-warning h1,
+.personal-dashboard-v2 .dashboard-card.is-warning h2,
+.personal-dashboard-v2 .dashboard-card.is-warning h3,
+.personal-dashboard-v2 .dashboard-card.is-warning h4,
+.personal-dashboard-v2 .dashboard-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.personal-dashboard-v2 .dashboard-card.is-danger .title,
+.personal-dashboard-v2 .dashboard-card.is-danger .subtitle,
+.personal-dashboard-v2 .dashboard-card.is-danger h1,
+.personal-dashboard-v2 .dashboard-card.is-danger h2,
+.personal-dashboard-v2 .dashboard-card.is-danger h3,
+.personal-dashboard-v2 .dashboard-card.is-danger h4,
+.personal-dashboard-v2 .dashboard-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.personal-dashboard-v2 .dashboard-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-dashboard-v2 .dashboard-card .card-head .left,
+.personal-dashboard-v2 .dashboard-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.personal-dashboard-v2 .dashboard-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.personal-dashboard-v2 .dashboard-card .card-head .right {
+  justify-content: flex-end;
+}
+.personal-dashboard-v2 .dashboard-card .card-inner {
+  padding-top: 1.75rem;
+}
+.personal-dashboard-v2 .dashboard-card:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.personal-dashboard-v2 .dashboard-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.personal-dashboard-v2 .dashboard-card .card-head h3 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 0;
+}
+.personal-dashboard-v2 .dashboard-card .active-projects,
+.personal-dashboard-v2 .dashboard-card .active-team,
+.personal-dashboard-v2 .dashboard-card .active-list {
+  padding: 10px 0;
+}
+.is-dark .personal-dashboard-v2 .dashboard-header,
+.is-dark .personal-dashboard-v2 .dashboard-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .personal-dashboard-v2 .dashboard-header .v-avatar img,
+.is-dark .personal-dashboard-v2 .dashboard-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .personal-dashboard-v2 .dashboard-header .avatar-stack .v-avatar,
+.is-dark .personal-dashboard-v2 .dashboard-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .personal-dashboard-v2 .dashboard-header .avatar-stack .v-avatar .avatar.is-more .inner,
+.is-dark .personal-dashboard-v2 .dashboard-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .personal-dashboard-v2 .home-header .cta {
+  background: var(--primary-light-2);
+  box-shadow: var(--primary-box-shadow);
+}
+@media only screen and (max-width: 767px) {
+.personal-dashboard-v2 .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+}
+.personal-dashboard-v2 .dashboard-header .v-avatar {
+    margin-bottom: 10px;
+}
+.personal-dashboard-v2 .dashboard-header .user-meta {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .user-meta {
+    border: none;
+}
+.personal-dashboard-v2 .dashboard-header .user-action {
+    padding-bottom: 30px;
+}
+.personal-dashboard-v2 .dashboard-header .cta {
+    margin-left: 0;
+}
+[dir=rtl] .personal-dashboard-v2 .dashboard-header .cta {
+    margin-right: 0;
+}
+.personal-dashboard-v2 .active-projects .media-flex-center .flex-end .avatar-stack {
+    display: none;
+}
+}

@@ -1,0 +1,1283 @@
+/*! _user-profile.scss | Vuero | Css ninja 2020-2021 */
+/*
+    1. User Profile View
+    2. User Profile View Dark mode
+    3. User Profile Edit
+    4. User Profile Edit Dark mode
+    5. User Profile Settings
+*/
+/* ==========================================================================
+1. User Profile View
+========================================================================== */
+.is-navbar .profile-wrapper {
+  margin-top: 30px;
+}
+.profile-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.profile-wrapper .profile-header {
+  text-align: center;
+}
+.profile-wrapper .profile-header > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.profile-wrapper .profile-header .v-avatar {
+  margin: 0 auto 12px auto;
+}
+.profile-wrapper .profile-header .anim-icon {
+  margin-bottom: 12px;
+}
+.profile-wrapper .profile-header .title {
+  margin-bottom: 6px;
+}
+.profile-wrapper .profile-header p {
+  font-size: 1rem;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+.profile-wrapper .profile-header .profile-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+.profile-wrapper .profile-header .profile-stats .profile-stat {
+  display: flex;
+  align-items: center;
+  color: var(--light-text);
+  font-family: var(--font);
+}
+.profile-wrapper .profile-header .profile-stats .profile-stat span {
+  font-size: 0.9rem;
+}
+.profile-wrapper .profile-header .profile-stats .profile-stat i {
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+[dir=rtl] .profile-wrapper .profile-header .profile-stats .profile-stat i {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.profile-wrapper .profile-header .profile-stats .separator {
+  height: 25px;
+  width: 2px;
+  border-right: 1px solid var(--fade-grey-dark-6);
+  margin: 0 10px;
+}
+[dir=rtl] .profile-wrapper .profile-header .profile-stats .separator {
+  border-left: 1px solid var(--fade-grey-dark-6);
+  border-right: none;
+}
+.profile-wrapper .profile-header .profile-stats .socials {
+  display: flex;
+  justify-content: center;
+}
+.profile-wrapper .profile-header .profile-stats .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-6);
+  box-shadow: var(--light-box-shadow);
+  border-radius: var(--radius-rounded);
+  margin: 0 2px;
+  transition: all 0.3s;
+}
+.profile-wrapper .profile-header .profile-stats .socials a:hover {
+  border-color: var(--primary);
+}
+.profile-wrapper .profile-header .profile-stats .socials a:hover i {
+  color: var(--primary);
+}
+.profile-wrapper .profile-header .profile-stats .socials a i {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  transition: color 0.3s;
+}
+.profile-wrapper .profile-body {
+  padding: 10px 0 20px 0;
+}
+.profile-wrapper .profile-body .profile-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 30px;
+}
+.profile-wrapper .profile-body .profile-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.profile-wrapper .profile-body .profile-card.is-flat {
+  box-shadow: none;
+}
+.profile-wrapper .profile-body .profile-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.profile-wrapper .profile-body .profile-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.profile-wrapper .profile-body .profile-card.is-primary .title,
+.profile-wrapper .profile-body .profile-card.is-primary .subtitle,
+.profile-wrapper .profile-body .profile-card.is-primary h1,
+.profile-wrapper .profile-body .profile-card.is-primary h2,
+.profile-wrapper .profile-body .profile-card.is-primary h3,
+.profile-wrapper .profile-body .profile-card.is-primary h4,
+.profile-wrapper .profile-body .profile-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-secondary .title,
+.profile-wrapper .profile-body .profile-card.is-secondary .subtitle,
+.profile-wrapper .profile-body .profile-card.is-secondary h1,
+.profile-wrapper .profile-body .profile-card.is-secondary h2,
+.profile-wrapper .profile-body .profile-card.is-secondary h3,
+.profile-wrapper .profile-body .profile-card.is-secondary h4,
+.profile-wrapper .profile-body .profile-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-info .title,
+.profile-wrapper .profile-body .profile-card.is-info .subtitle,
+.profile-wrapper .profile-body .profile-card.is-info h1,
+.profile-wrapper .profile-body .profile-card.is-info h2,
+.profile-wrapper .profile-body .profile-card.is-info h3,
+.profile-wrapper .profile-body .profile-card.is-info h4,
+.profile-wrapper .profile-body .profile-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-success .title,
+.profile-wrapper .profile-body .profile-card.is-success .subtitle,
+.profile-wrapper .profile-body .profile-card.is-success h1,
+.profile-wrapper .profile-body .profile-card.is-success h2,
+.profile-wrapper .profile-body .profile-card.is-success h3,
+.profile-wrapper .profile-body .profile-card.is-success h4,
+.profile-wrapper .profile-body .profile-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-warning .title,
+.profile-wrapper .profile-body .profile-card.is-warning .subtitle,
+.profile-wrapper .profile-body .profile-card.is-warning h1,
+.profile-wrapper .profile-body .profile-card.is-warning h2,
+.profile-wrapper .profile-body .profile-card.is-warning h3,
+.profile-wrapper .profile-body .profile-card.is-warning h4,
+.profile-wrapper .profile-body .profile-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.profile-wrapper .profile-body .profile-card.is-danger .title,
+.profile-wrapper .profile-body .profile-card.is-danger .subtitle,
+.profile-wrapper .profile-body .profile-card.is-danger h1,
+.profile-wrapper .profile-body .profile-card.is-danger h2,
+.profile-wrapper .profile-body .profile-card.is-danger h3,
+.profile-wrapper .profile-body .profile-card.is-danger h4,
+.profile-wrapper .profile-body .profile-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.profile-wrapper .profile-body .profile-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-wrapper .profile-body .profile-card .card-head .left,
+.profile-wrapper .profile-body .profile-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.profile-wrapper .profile-body .profile-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.profile-wrapper .profile-body .profile-card .card-head .right {
+  justify-content: flex-end;
+}
+.profile-wrapper .profile-body .profile-card .card-inner {
+  padding-top: 1.75rem;
+}
+.profile-wrapper .profile-body .profile-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section {
+  padding-bottom: 20px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section:not(:last-child) {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--fade-grey-dark-4);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section.no-padding {
+  padding-bottom: 0;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title h4 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--dark-text);
+  margin-right: 6px;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-title h4 {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title i {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title .action-link {
+  position: relative;
+  top: -2px;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-title .action-link {
+  margin-left: unset;
+  margin-right: auto;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title .control {
+  margin-left: auto;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-title .control {
+  margin-left: unset;
+  margin-right: auto;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-title .control .form-switch {
+  transform: scale(0.8);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .description {
+  font-size: 0.95rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 16px);
+  margin: 8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item img {
+  display: block;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-4);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta {
+  margin-left: 10px;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span {
+  font-family: var(--font);
+  display: block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.85rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(2), .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(3) {
+  font-size: 0.85rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(2) i, .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(3) i {
+  position: relative;
+  top: -2px;
+  font-size: 4px;
+  margin: 0 6px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(3) {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span span {
+  display: inline-block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 16px);
+  margin: 8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .icon-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-4);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta {
+  margin-left: 10px;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta > span {
+  display: block;
+  font-family: var(--font);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta > span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta > span:nth-child(2) {
+  font-size: 0.85rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item .meta > span span {
+  display: inline-block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item {
+  display: flex;
+  align-items: center;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--primary);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap.has-icon {
+  background: var(--fade-grey-light-2);
+  border: 1px solid var(--fade-grey-dark-3);
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap.has-icon i {
+  font-size: 1.4rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap img {
+  display: block;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-4);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap .count {
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  border: 1px solid var(--primary);
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap .count {
+  right: unset;
+  left: -4px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap .count span {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .skill-info {
+  font-family: var(--font);
+  margin-left: 12px;
+  line-height: 1.3;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .skill-info {
+  margin-left: unset;
+  margin-right: 12px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .skill-info span {
+  display: block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .skill-info span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .skill-info span:nth-child(2) {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .people {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .people {
+  margin-left: unset;
+  margin-right: auto;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .people .v-avatar {
+  margin: 0 4px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item {
+  width: calc(50% - 16px);
+  margin: 8px;
+  background: var(--fade-grey-light-3);
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: var(--radius);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item > .v-avatar {
+  display: block;
+  margin: 0 auto 8px auto;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item h3 {
+  font-size: 1rem;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item p {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item .meta span {
+  display: block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item .meta span:first-child {
+  font-weight: 600;
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item .meta span:nth-child(2) {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .network-notifications h3 {
+  font-family: var(--font-alt);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .network-notifications p {
+  font-size: 0.9rem;
+  max-width: 480px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper {
+  padding-top: 12px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item:last-child {
+  margin-bottom: 0;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .icon-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid transparent;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta {
+  margin-left: 10px;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta > span {
+  display: block;
+  font-family: var(--font);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta > span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta > span:nth-child(2) {
+  font-size: 0.85rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .tools-wrapper .tools-item .meta > span span {
+  display: inline-block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper {
+  padding-top: 12px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item:last-child {
+  margin-bottom: 0;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta {
+  margin-left: 10px;
+}
+[dir=rtl] .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta > span {
+  display: block;
+  font-family: var(--font);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta > span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta > span:nth-child(2) {
+  font-size: 0.85rem;
+  color: var(--light-text);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .people-wrapper .people-item .meta > span span {
+  display: inline-block;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .more-button {
+  padding-top: 16px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .more-button .button {
+  min-width: 180px;
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  color: var(--light-text);
+}
+/* ==========================================================================
+2. User Profile View Dark mode
+========================================================================== */
+.is-dark .profile-wrapper .profile-header .v-avatar .badge {
+  border-color: var(--dark-sidebar-light-6);
+}
+.is-dark .profile-wrapper .profile-header .profile-stats .separator {
+  border-color: var(--dark-sidebar-light-20);
+}
+.is-dark .profile-wrapper .profile-header .profile-stats .socials a {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-header .profile-stats .socials a:hover {
+  border-color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-header .profile-stats .socials a:hover i {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .profile-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-title h4 {
+  color: var(--dark-dark-text);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-title i {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .icon-wrap > img {
+  border-color: var(--dark-sidebar-light-12) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item > img {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item .meta > span:nth-child(3) {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap {
+  border-color: var(--primary) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap.has-icon, .is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .icon-wrap.has-img {
+  background: var(--dark-sidebar-light-2) !important;
+  border-color: var(--dark-sidebar-light-12) !important;
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .people .v-avatar:last-child .is-fake {
+  background: var(--dark-sidebar-light-2);
+  border: 1px solid var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item .meta span:first-child {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .profile-card .profile-card-section .section-content .more-button .button {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-12);
+}
+/* ==========================================================================
+3. User Profile Edit
+========================================================================== */
+.is-navbar .account-wrapper {
+  margin-top: 30px;
+}
+.account-wrapper {
+  padding-bottom: 60px;
+}
+.account-wrapper .account-box {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.account-wrapper .account-box.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.account-wrapper .account-box.is-flat {
+  box-shadow: none;
+}
+.account-wrapper .account-box.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.account-wrapper .account-box.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.account-wrapper .account-box.is-primary .title,
+.account-wrapper .account-box.is-primary .subtitle,
+.account-wrapper .account-box.is-primary h1,
+.account-wrapper .account-box.is-primary h2,
+.account-wrapper .account-box.is-primary h3,
+.account-wrapper .account-box.is-primary h4,
+.account-wrapper .account-box.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.account-wrapper .account-box.is-secondary .title,
+.account-wrapper .account-box.is-secondary .subtitle,
+.account-wrapper .account-box.is-secondary h1,
+.account-wrapper .account-box.is-secondary h2,
+.account-wrapper .account-box.is-secondary h3,
+.account-wrapper .account-box.is-secondary h4,
+.account-wrapper .account-box.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.account-wrapper .account-box.is-info .title,
+.account-wrapper .account-box.is-info .subtitle,
+.account-wrapper .account-box.is-info h1,
+.account-wrapper .account-box.is-info h2,
+.account-wrapper .account-box.is-info h3,
+.account-wrapper .account-box.is-info h4,
+.account-wrapper .account-box.is-info p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.account-wrapper .account-box.is-success .title,
+.account-wrapper .account-box.is-success .subtitle,
+.account-wrapper .account-box.is-success h1,
+.account-wrapper .account-box.is-success h2,
+.account-wrapper .account-box.is-success h3,
+.account-wrapper .account-box.is-success h4,
+.account-wrapper .account-box.is-success p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.account-wrapper .account-box.is-warning .title,
+.account-wrapper .account-box.is-warning .subtitle,
+.account-wrapper .account-box.is-warning h1,
+.account-wrapper .account-box.is-warning h2,
+.account-wrapper .account-box.is-warning h3,
+.account-wrapper .account-box.is-warning h4,
+.account-wrapper .account-box.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.account-wrapper .account-box.is-danger .title,
+.account-wrapper .account-box.is-danger .subtitle,
+.account-wrapper .account-box.is-danger h1,
+.account-wrapper .account-box.is-danger h2,
+.account-wrapper .account-box.is-danger h3,
+.account-wrapper .account-box.is-danger h4,
+.account-wrapper .account-box.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.account-wrapper .account-box .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-wrapper .account-box .card-head .left,
+.account-wrapper .account-box .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.account-wrapper .account-box .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.account-wrapper .account-box .card-head .right {
+  justify-content: flex-end;
+}
+.account-wrapper .account-box .card-inner {
+  padding-top: 1.75rem;
+}
+.account-wrapper .account-box.is-navigation .media-flex-center {
+  padding-bottom: 20px;
+}
+.account-wrapper .account-box.is-navigation .media-flex-center .flex-meta span:first-child {
+  font-size: 1.3rem;
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active {
+  box-shadow: var(--light-box-shadow);
+  border-color: var(--fade-grey-dark-3);
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active span,
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active i {
+  color: var(--primary);
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active .end {
+  display: block;
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item:not(.router-link-exact-active):hover {
+  background: var(--fade-grey-light-3);
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  color: var(--light-text);
+}
+[dir=rtl] .account-wrapper .account-box.is-navigation .account-menu .account-menu-item i {
+  margin-left: 8px;
+  margin-right: unset;
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item i.fas,
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item i .fal,
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item i .far {
+  font-size: 0.9rem;
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item span {
+  font-family: var(--font-alt);
+  font-size: 0.95rem;
+  color: var(--dark-text);
+}
+.account-wrapper .account-box.is-navigation .account-menu .account-menu-item .end {
+  margin-left: auto;
+  display: none;
+}
+[dir=rtl] .account-wrapper .account-box.is-navigation .account-menu .account-menu-item .end {
+  margin-left: unset;
+  margin-right: auto;
+}
+.account-wrapper .account-box.is-form {
+  padding: 0;
+}
+.account-wrapper .account-box.is-form.is-footerless {
+  padding-bottom: 20px;
+}
+.account-wrapper .account-box.is-form .form-head,
+.account-wrapper .account-box.is-form .form-foot {
+  padding: 12px 20px;
+}
+.account-wrapper .account-box.is-form .form-head .form-head-inner,
+.account-wrapper .account-box.is-form .form-head .form-foot-inner,
+.account-wrapper .account-box.is-form .form-foot .form-head-inner,
+.account-wrapper .account-box.is-form .form-foot .form-foot-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account-wrapper .account-box.is-form .form-head {
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.account-wrapper .account-box.is-form .form-head.is-stuck {
+  background: var(--white);
+  padding-right: 80px;
+  border-left: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .account-wrapper .account-box.is-form .form-head.is-stuck {
+  padding-right: 20px;
+  padding-left: 80px;
+  border-left: none;
+  border-right: 1px solid var(--fade-grey-dark-3);
+}
+.account-wrapper .account-box.is-form .form-head .left h3 {
+  font-family: var(--font-alt);
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.account-wrapper .account-box.is-form .form-head .left p {
+  font-size: 0.95rem;
+}
+.account-wrapper .account-box.is-form .form-foot {
+  border-top: 1px solid var(--fade-grey-dark-3);
+}
+.account-wrapper .account-box.is-form .form-body {
+  padding: 20px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset {
+  padding: 20px 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .fieldset-heading {
+  margin-bottom: 20px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .fieldset-heading h4 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .fieldset-heading p {
+  font-size: 0.9rem;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .v-avatar {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .v-avatar .edit-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+[dir=rtl] .account-wrapper .account-box.is-form .form-body .fieldset .v-avatar .edit-button {
+  left: 0;
+  right: unset;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-form {
+  text-align: center;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-form .filepond-profile-wrap {
+  margin: 0 auto 10px auto !important;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: var(--radius-rounded);
+  background: var(--fade-grey-light-2);
+  border: 1px solid var(--fade-grey-dark-3);
+  color: var(--light-text);
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .icon-wrap.has-img {
+  border-color: var(--primary);
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .icon-wrap.has-img img {
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .icon-wrap i {
+  font-size: 1.4rem;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item img {
+  display: block;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: var(--radius-rounded);
+  border: 1px solid transparent;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta {
+  margin-left: 10px;
+}
+[dir=rtl] .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta {
+  margin-left: unset;
+  margin-right: 10px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span {
+  font-family: var(--font);
+  display: block;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:first-child {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(2), .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(3) {
+  font-size: 0.85rem;
+  color: var(--light-text);
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(2) i, .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(3) i {
+  position: relative;
+  top: -2px;
+  font-size: 4px;
+  margin: 0 6px;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(3) {
+  color: var(--primary);
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span span {
+  display: inline-block;
+}
+.account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .end {
+  margin-left: auto;
+}
+[dir=rtl] .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .end {
+  margin-left: unset;
+  margin-right: auto;
+}
+/* ==========================================================================
+4. User Profile Edit Dark mode
+========================================================================== */
+.is-dark .account-wrapper .account-box {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .account-wrapper .account-box .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .account-wrapper .account-box .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .account-wrapper .account-box .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active {
+  background: var(--dark-sidebar-light-8);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active i,
+.is-dark .account-wrapper .account-box.is-navigation .account-menu .account-menu-item.router-link-exact-active span {
+  color: var(--primary);
+}
+.is-dark .account-wrapper .account-box.is-navigation .account-menu .account-menu-item:not(.router-link-exact-active):hover {
+  background: var(--dark-sidebar-light-10);
+}
+.is-dark .account-wrapper .account-box.is-navigation .account-menu .account-menu-item span {
+  color: var(--dark-dark-text);
+}
+.is-dark .account-wrapper .account-box.is-form .form-head,
+.is-dark .account-wrapper .account-box.is-form .form-foot {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .account-wrapper .account-box.is-form .form-head.is-stuck {
+  background: var(--dark-sidebar);
+  border-color: var(--dark-sidebar-light-6);
+}
+.is-dark .account-wrapper .account-box.is-form .form-head .left h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .fieldset-heading h4 {
+  color: var(--dark-dark-text);
+}
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item > img,
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item > .icon-wrap,
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item > .icon-wrap img {
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item > .icon-wrap {
+  background: var(--dark-sidebar-light-2);
+}
+.is-dark .account-wrapper .account-box.is-form .form-body .fieldset .setting-list .setting-item .meta > span:nth-child(3) {
+  color: var(--primary);
+}
+/* ==========================================================================
+4. User Profile Settings
+========================================================================== */
+.profile-wrapper .profile-body .settings-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.profile-wrapper .profile-body .settings-section .settings-box {
+  position: relative;
+  width: calc(20% - 16px);
+  background: var(--white);
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.profile-wrapper .profile-body .settings-section .settings-box:hover {
+  border-color: var(--primary);
+  box-shadow: var(--light-box-shadow);
+}
+.profile-wrapper .profile-body .settings-section .settings-box:hover .edit-icon {
+  opacity: 1;
+  pointer-events: all;
+}
+.profile-wrapper .profile-body .settings-section .settings-box:hover .icon-wrap i {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .settings-section .settings-box:hover h3 {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .settings-section .settings-box.is-active .icon-wrap i {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .settings-section .settings-box.is-active h3 {
+  color: var(--primary);
+}
+.profile-wrapper .profile-body .settings-section .settings-box .edit-icon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  border-radius: var(--radius-rounded);
+  background: var(--fade-grey-light-3);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.profile-wrapper .profile-body .settings-section .settings-box .edit-icon i {
+  font-size: 0.8rem;
+}
+.profile-wrapper .profile-body .settings-section .settings-box .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 52px;
+  width: 100%;
+}
+.profile-wrapper .profile-body .settings-section .settings-box .icon-wrap i {
+  font-size: 2.7rem;
+  color: var(--light-text-light-12);
+  margin-bottom: 4px;
+  transition: color 0.3s;
+}
+.profile-wrapper .profile-body .settings-section .settings-box .icon-wrap img {
+  display: block;
+  max-width: 90px;
+}
+.profile-wrapper .profile-body .settings-section .settings-box span {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: var(--light-text);
+  font-family: var(--font-alt);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.profile-wrapper .profile-body .settings-section .settings-box h3 {
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--light-text);
+  transition: color 0.3s;
+}
+/* ==========================================================================
+5. User Profile Settings Dark mode
+========================================================================== */
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box:hover {
+  border-color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box:hover h3 {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box:hover .icon-wrap i {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box.is-active h3 {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box.is-active .icon-wrap i {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box .edit-icon {
+  background: var(--dark-sidebar-light-2);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box .edit-icon i {
+  color: var(--primary);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box .icon-wrap i {
+  color: var(--light-text-dark-20);
+}
+.is-dark .profile-wrapper .profile-body .settings-section .settings-box .icon-wrap i.is-solid {
+  color: var(--primary);
+}
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.profile-wrapper .profile-body .profile-card {
+    padding: 20px;
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .experience-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .languages-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .experience-wrapper .recommendations-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .experience-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .languages-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .languages-wrapper .recommendations-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .experience-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .languages-item,
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .recommendations-wrapper .recommendations-item {
+    width: calc(100% - 16px);
+}
+.profile-wrapper .profile-body .profile-card .profile-card-section .section-content .skills-wrapper .skills-item .people .v-avatar:not(:last-child) {
+    display: none !important;
+}
+.profile-wrapper .profile-body .settings-section .settings-box {
+    width: calc(50% - 16px);
+}
+.account-wrapper .account-box.is-form .form-head .left {
+    display: none;
+}
+.account-wrapper .account-box.is-form .form-head .right {
+    flex-grow: 2;
+}
+.account-wrapper .account-box.is-form .form-head .right .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+.account-wrapper .account-box.is-form .form-head .right .buttons .button {
+    width: calc(50% - 6px);
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.profile-wrapper .profile-body .settings-section .settings-box {
+    width: calc(25% - 16px);
+}
+}
+.is-dark .icon-wrap,
+.is-dark .icon-wrap.is-placeholder {
+  background: var(--dark-sidebar-light-2) !important;
+  border-color: var(--dark-sidebar-light-12) !important;
+}

@@ -1,0 +1,34 @@
+/* ==========================================================================
+1. Projects Toolbar
+========================================================================== */
+.projects-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.projects-toolbar .avatar-stack {
+  margin-left: 16px;
+}
+[dir=rtl] .projects-toolbar .avatar-stack {
+  margin-left: unset;
+  margin-right: 16px;
+}
+.projects-toolbar .button {
+  margin-left: auto;
+  min-width: 140px;
+}
+[dir=rtl] .projects-toolbar .button {
+  margin-left: unset;
+  margin-right: auto;
+}
+.is-dark .projects-toolbar .avatar-stack .avatar {
+  border-color: var(--dark-sidebar-light-3);
+}
+@media only screen and (max-width: 767px) {
+.projects-toolbar .avatar-stack {
+    display: none;
+}
+.projects-toolbar .v-button {
+    min-width: 110px;
+}
+}

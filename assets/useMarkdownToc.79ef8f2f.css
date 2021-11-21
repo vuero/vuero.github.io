@@ -1,0 +1,89 @@
+.toc[data-v-5a8caa40] {
+  position: fixed;
+  display: block;
+  padding-left: 2rem;
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+}
+[dir=rtl] .toc[data-v-5a8caa40] {
+  padding-left: unset;
+  padding-right: 2rem;
+}
+.toc[data-v-5a8caa40]:hover, .toc[data-v-5a8caa40]:focus-within {
+  opacity: 1;
+}
+.toc-title[data-v-5a8caa40] {
+  font-family: var(--font-alt);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--dark-text);
+  padding-bottom: 4px;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+ul[data-v-5a8caa40] {
+  border-left: 1px solid var(--fade-grey-dark-6);
+}
+[dir=rtl] ul[data-v-5a8caa40] {
+  border-left: none;
+  border-right: 1px solid var(--fade-grey-dark-6);
+}
+ul li[data-v-5a8caa40] {
+  padding: 0.25rem 0;
+}
+ul li a[data-v-5a8caa40] {
+  position: relative;
+  left: -2px;
+  font-family: var(--font);
+  border-left: 3px solid transparent;
+  padding: 0.5rem 1.25rem;
+}
+[dir=rtl] ul li a[data-v-5a8caa40] {
+  left: unset;
+  right: -2px;
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+ul li a.is-active[data-v-5a8caa40] {
+  font-weight: 500;
+  border-color: var(--primary);
+}
+.toc-level-4[data-v-5a8caa40] {
+  padding-left: 14px;
+}
+[dir=rtl] .toc-level-4[data-v-5a8caa40] {
+  padding-left: unset;
+  padding-right: 14px;
+}
+.toc-level-4 + .toc-level-3[data-v-5a8caa40] {
+  padding-top: 4px;
+}
+.toc-level-5[data-v-5a8caa40] {
+  padding-left: 24px;
+}
+[dir=rtl] .toc-level-5[data-v-5a8caa40] {
+  padding-left: unset;
+  padding-right: 24px;
+}
+a[data-v-5a8caa40] {
+  color: var(--light-text);
+}
+a.is-active[data-v-5a8caa40] {
+  color: var(--primary);
+}
+a[data-v-5a8caa40]:focus:not(.is-active), a[data-v-5a8caa40]:hover:not(.is-active) {
+  color: var(--dark-text);
+}
+.back-to-top[data-v-5a8caa40] {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.is-dark .toc-title[data-v-5a8caa40] {
+  color: var(--dark-dark-text);
+}
+.is-dark ul[data-v-5a8caa40] {
+  border-color: var(--dark-sidebar-light-22);
+}
+.is-dark a[data-v-5a8caa40]:focus:not(.is-active), .is-dark a[data-v-5a8caa40]:hover:not(.is-active) {
+  color: var(--white);
+}

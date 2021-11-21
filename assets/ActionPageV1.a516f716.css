@@ -1,0 +1,485 @@
+/*! _subpages.scss | Vuero | Css ninja 2020-2021 */
+/* ==========================================================================
+Subpages UI Elements
+========================================================================== */
+/*
+    1. Action Page V1
+    2. Action Page V2
+    3. Media Queries
+*/
+/* ==========================================================================
+1. Action Page V1
+========================================================================== */
+.action-page-wrapper.action-page-v1, .action-page-wrapper.action-page-v2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  min-height: 560px;
+  margin: 0 auto;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 40px;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.has-margin-bottom, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-flat, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-flat {
+  box-shadow: none;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-raised, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-primary p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-secondary p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-info p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-info p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-success p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-success p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-warning p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger .title,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger .subtitle,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger h1,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger h2,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger h3,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger h4,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box.is-danger p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger .title,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger h1,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger h2,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger h3,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger h4,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-head, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-head .left,
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-head .right, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-head .left,
+.action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-head .left .title, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-head .right, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-head .right {
+  justify-content: flex-end;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .card-inner, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .card-inner {
+  padding-top: 1.75rem;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content {
+  text-align: center;
+  font-family: var(--font);
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .v-avatar, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .v-avatar {
+  display: block;
+  margin: 0 auto 8px auto;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content h3, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content h3 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  max-width: 320px;
+  margin: 0 auto 16px auto;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content h3 span, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content h3 span {
+  color: var(--primary);
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .sender-message, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .sender-message {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid var(--fade-grey-dark-3);
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: var(--radius-large);
+  box-shadow: var(--light-box-shadow);
+}
+[dir=rtl] .action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .sender-message, [dir=rtl] .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .sender-message {
+  text-align: right;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .sender-message h4, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .sender-message h4 {
+  font-family: var(--font-alt);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--dark-text);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .sender-message p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .sender-message p {
+  font-size: 0.9rem;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .people-wrap .people, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .people-wrap .people {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 8px 0;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .people-wrap .people .v-avatar, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .people-wrap .people .v-avatar {
+  margin: 0 4px;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .people-wrap .people-text p, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .people-wrap .people-text p {
+  font-size: 0.9rem;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .buttons, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .buttons .button, .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .box-content .buttons .button {
+  margin: 0 4px;
+  min-width: 150px;
+}
+/* ==========================================================================
+2. Action Page V2
+========================================================================== */
+.action-page-wrapper.action-page-v2 {
+  max-width: 840px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  display: flex;
+  padding: 0;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-flat {
+  box-shadow: none;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-info p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-success p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger .title,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger .subtitle,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger h1,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger h2,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger h3,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger h4,
+.action-page-wrapper.action-page-v2 .wrapper-outer.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-head .left,
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-head .right {
+  justify-content: flex-end;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .card-inner {
+  padding-top: 1.75rem;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box {
+  border: none;
+  background: none;
+  border-radius: 0;
+  border-right: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box {
+  border-right: none;
+  border-left: 1px solid var(--fade-grey-dark-3);
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper {
+  flex-grow: 2;
+  padding: 40px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .side-title {
+  font-family: var(--font);
+  margin-bottom: 16px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .side-title h3 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .side-title p {
+  font-size: 0.9rem;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .action-list .media-flex .icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+  color: var(--primary);
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .action-list .media-flex .icon-wrap svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 3px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .action-list .media-flex .flex-meta span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper .side-inner .action-list .media-flex .flex-meta p {
+  font-size: 0.9rem;
+  max-width: 240px;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-inner .action-box, .is-dark .action-page-wrapper.action-page-v2 .wrapper-inner .action-box {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-inner .action-box .v-avatar img, .is-dark .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-inner .action-box .avatar-stack .v-avatar, .is-dark .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-inner .action-box .avatar-stack .v-avatar .avatar.is-more .inner, .is-dark .action-page-wrapper.action-page-v2 .wrapper-inner .action-box .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-outer, .is-dark .action-page-wrapper.action-page-v2 .wrapper-outer {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-outer .v-avatar img, .is-dark .action-page-wrapper.action-page-v2 .wrapper-outer .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-outer .avatar-stack .v-avatar, .is-dark .action-page-wrapper.action-page-v2 .wrapper-outer .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .action-page-wrapper.action-page-v1 .wrapper-outer .avatar-stack .v-avatar .avatar.is-more .inner, .is-dark .action-page-wrapper.action-page-v2 .wrapper-outer .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box {
+    padding: 20px;
+}
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .buttons .button {
+    min-width: 130px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer {
+    flex-direction: column;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box {
+    padding: 20px 20px 40px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
+}
+[dir=rtl] .action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box {
+    border-right: none;
+    border-left: none;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box .box-content .buttons .button {
+    min-width: 130px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper {
+    padding: 40px 20px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.action-page-wrapper.action-page-v1 .wrapper-inner .action-box .box-content .buttons .button {
+    min-width: 130px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box {
+    padding: 30px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .wrapper-inner .action-box .box-content .buttons .button {
+    min-width: 130px;
+}
+.action-page-wrapper.action-page-v2 .wrapper-outer .side-wrapper {
+    padding: 30px;
+}
+}

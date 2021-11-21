@@ -1,0 +1,389 @@
+@charset "UTF-8";
+.banking-dashboard-v3 .dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font);
+  margin-bottom: 20px;
+}
+.banking-dashboard-v3 .dashboard-header .left > span {
+  color: var(--light-text);
+}
+.banking-dashboard-v3 .dashboard-header .left .currency .amount {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.banking-dashboard-v3 .dashboard-header .left .currency .amount.is-positive::after {
+  color: var(--green);
+}
+.banking-dashboard-v3 .dashboard-header .left .currency .amount.is-negative::after {
+  color: var(--red);
+}
+.banking-dashboard-v3 .dashboard-header .left .currency .amount::after {
+  content: "+۳/۴درصد";
+  position: relative;
+  top: -8px;
+  right: -8px;
+  font-size: 1.1rem;
+}
+[dir=rtl] .banking-dashboard-v3 .dashboard-header .left .currency .amount::after {
+  right: unset;
+  left: -8px;
+}
+.banking-dashboard-v3 .dashboard-tiles {
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  margin-bottom: 1rem;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  width: calc(33.3% - 16px);
+  margin: 8px;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-flat {
+  box-shadow: none;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-info p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-success p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger .title,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger .subtitle,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger h1,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger h2,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger h3,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger h4,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-head .left,
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-head .right {
+  justify-content: flex-end;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile .card-inner {
+  padding-top: 1.75rem;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile span {
+  display: block;
+  font-family: var(--font);
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile span:first-child {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  margin-bottom: 4px;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile span:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--dark-text);
+}
+.banking-dashboard-v3 .dashboard-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+}
+.banking-dashboard-v3 .dashboard-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.banking-dashboard-v3 .dashboard-card.is-flat {
+  box-shadow: none;
+}
+.banking-dashboard-v3 .dashboard-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.banking-dashboard-v3 .dashboard-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.banking-dashboard-v3 .dashboard-card.is-primary .title,
+.banking-dashboard-v3 .dashboard-card.is-primary .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-primary h1,
+.banking-dashboard-v3 .dashboard-card.is-primary h2,
+.banking-dashboard-v3 .dashboard-card.is-primary h3,
+.banking-dashboard-v3 .dashboard-card.is-primary h4,
+.banking-dashboard-v3 .dashboard-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-secondary .title,
+.banking-dashboard-v3 .dashboard-card.is-secondary .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-secondary h1,
+.banking-dashboard-v3 .dashboard-card.is-secondary h2,
+.banking-dashboard-v3 .dashboard-card.is-secondary h3,
+.banking-dashboard-v3 .dashboard-card.is-secondary h4,
+.banking-dashboard-v3 .dashboard-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-info .title,
+.banking-dashboard-v3 .dashboard-card.is-info .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-info h1,
+.banking-dashboard-v3 .dashboard-card.is-info h2,
+.banking-dashboard-v3 .dashboard-card.is-info h3,
+.banking-dashboard-v3 .dashboard-card.is-info h4,
+.banking-dashboard-v3 .dashboard-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-success .title,
+.banking-dashboard-v3 .dashboard-card.is-success .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-success h1,
+.banking-dashboard-v3 .dashboard-card.is-success h2,
+.banking-dashboard-v3 .dashboard-card.is-success h3,
+.banking-dashboard-v3 .dashboard-card.is-success h4,
+.banking-dashboard-v3 .dashboard-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-warning .title,
+.banking-dashboard-v3 .dashboard-card.is-warning .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-warning h1,
+.banking-dashboard-v3 .dashboard-card.is-warning h2,
+.banking-dashboard-v3 .dashboard-card.is-warning h3,
+.banking-dashboard-v3 .dashboard-card.is-warning h4,
+.banking-dashboard-v3 .dashboard-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.banking-dashboard-v3 .dashboard-card.is-danger .title,
+.banking-dashboard-v3 .dashboard-card.is-danger .subtitle,
+.banking-dashboard-v3 .dashboard-card.is-danger h1,
+.banking-dashboard-v3 .dashboard-card.is-danger h2,
+.banking-dashboard-v3 .dashboard-card.is-danger h3,
+.banking-dashboard-v3 .dashboard-card.is-danger h4,
+.banking-dashboard-v3 .dashboard-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.banking-dashboard-v3 .dashboard-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banking-dashboard-v3 .dashboard-card .card-head .left,
+.banking-dashboard-v3 .dashboard-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.banking-dashboard-v3 .dashboard-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.banking-dashboard-v3 .dashboard-card .card-head .right {
+  justify-content: flex-end;
+}
+.banking-dashboard-v3 .dashboard-card .card-inner {
+  padding-top: 1.75rem;
+}
+.banking-dashboard-v3 .dashboard-card:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.banking-dashboard-v3 .dashboard-card.is-side {
+  padding: 30px;
+}
+.banking-dashboard-v3 .dashboard-card.is-side .people .v-avatar {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+[dir=rtl] .banking-dashboard-v3 .dashboard-card.is-side .people .v-avatar {
+  margin-left: 0.5rem;
+  margin-right: unset;
+}
+.banking-dashboard-v3 .dashboard-card.is-wallet img {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.banking-dashboard-v3 .dashboard-card .subheading-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.banking-dashboard-v3 .dashboard-card .subheading-wrap .subheading {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--dark-text);
+}
+.banking-dashboard-v3 .dashboard-card .subheading-wrap .action-link {
+  font-size: 0.9rem;
+}
+.banking-dashboard-v3 .dashboard-card .currency-description {
+  padding: 10px 0 20px 0;
+}
+.banking-dashboard-v3 .dashboard-card .button-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.banking-dashboard-v3 .dashboard-card .button-wrap .button {
+  width: 49%;
+}
+.is-dark .banking-dashboard-v3 .dashboard-tiles .dashboard-tile {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .banking-dashboard-v3 .dashboard-tiles .dashboard-tile .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v3 .dashboard-tiles .dashboard-tile .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v3 .dashboard-tiles .dashboard-tile .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v3 .dashboard-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .banking-dashboard-v3 .dashboard-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v3 .dashboard-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .banking-dashboard-v3 .dashboard-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+@media only screen and (max-width: 767px) {
+.banking-dashboard-v3 .dashboard-header {
+    flex-direction: column;
+}
+.banking-dashboard-v3 .dashboard-header .left {
+    margin-bottom: 1.5rem;
+}
+.banking-dashboard-v3 .dashboard-tiles {
+    flex-wrap: wrap;
+}
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile {
+    width: calc(100% - 16px) !important;
+    min-width: calc(100% - 16px) !important;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile span:nth-child(2) {
+    font-size: 1.1rem;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.banking-dashboard-v3 .dashboard-tiles .dashboard-tile span:nth-child(2) {
+    font-size: 1rem;
+}
+}

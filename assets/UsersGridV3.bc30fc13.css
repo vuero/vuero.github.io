@@ -1,0 +1,293 @@
+.user-grid-v3 .columns {
+  margin-left: -0.5rem !important;
+  margin-right: -0.5rem !important;
+  margin-top: -0.5rem !important;
+}
+.user-grid-v3 .column {
+  padding: 0.5rem !important;
+}
+.user-grid-v3 .grid-item {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  text-align: center;
+}
+.user-grid-v3 .grid-item.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.user-grid-v3 .grid-item.is-flat {
+  box-shadow: none;
+}
+.user-grid-v3 .grid-item.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.user-grid-v3 .grid-item.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.user-grid-v3 .grid-item.is-primary .title,
+.user-grid-v3 .grid-item.is-primary .subtitle,
+.user-grid-v3 .grid-item.is-primary h1,
+.user-grid-v3 .grid-item.is-primary h2,
+.user-grid-v3 .grid-item.is-primary h3,
+.user-grid-v3 .grid-item.is-primary h4,
+.user-grid-v3 .grid-item.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.user-grid-v3 .grid-item.is-secondary .title,
+.user-grid-v3 .grid-item.is-secondary .subtitle,
+.user-grid-v3 .grid-item.is-secondary h1,
+.user-grid-v3 .grid-item.is-secondary h2,
+.user-grid-v3 .grid-item.is-secondary h3,
+.user-grid-v3 .grid-item.is-secondary h4,
+.user-grid-v3 .grid-item.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.user-grid-v3 .grid-item.is-info .title,
+.user-grid-v3 .grid-item.is-info .subtitle,
+.user-grid-v3 .grid-item.is-info h1,
+.user-grid-v3 .grid-item.is-info h2,
+.user-grid-v3 .grid-item.is-info h3,
+.user-grid-v3 .grid-item.is-info h4,
+.user-grid-v3 .grid-item.is-info p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.user-grid-v3 .grid-item.is-success .title,
+.user-grid-v3 .grid-item.is-success .subtitle,
+.user-grid-v3 .grid-item.is-success h1,
+.user-grid-v3 .grid-item.is-success h2,
+.user-grid-v3 .grid-item.is-success h3,
+.user-grid-v3 .grid-item.is-success h4,
+.user-grid-v3 .grid-item.is-success p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.user-grid-v3 .grid-item.is-warning .title,
+.user-grid-v3 .grid-item.is-warning .subtitle,
+.user-grid-v3 .grid-item.is-warning h1,
+.user-grid-v3 .grid-item.is-warning h2,
+.user-grid-v3 .grid-item.is-warning h3,
+.user-grid-v3 .grid-item.is-warning h4,
+.user-grid-v3 .grid-item.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.user-grid-v3 .grid-item.is-danger .title,
+.user-grid-v3 .grid-item.is-danger .subtitle,
+.user-grid-v3 .grid-item.is-danger h1,
+.user-grid-v3 .grid-item.is-danger h2,
+.user-grid-v3 .grid-item.is-danger h3,
+.user-grid-v3 .grid-item.is-danger h4,
+.user-grid-v3 .grid-item.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.user-grid-v3 .grid-item .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-grid-v3 .grid-item .card-head .left,
+.user-grid-v3 .grid-item .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.user-grid-v3 .grid-item .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.user-grid-v3 .grid-item .card-head .right {
+  justify-content: flex-end;
+}
+.user-grid-v3 .grid-item .card-inner {
+  padding-top: 1.75rem;
+}
+.user-grid-v3 .grid-item > .v-avatar {
+  display: block;
+  margin: 0 auto 4px auto;
+}
+.user-grid-v3 .grid-item h3 {
+  font-family: var(--font-alt);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.user-grid-v3 .grid-item p {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper {
+  padding-bottom: 20px;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs {
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+  border: 1px solid var(--fade-grey-dark-4);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--light-box-shadow);
+  margin-bottom: 16px;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+  color: var(--light-text);
+  padding: 4px 8px;
+  margin: 8px 0;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item.is-active {
+  color: var(--primary);
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:first-child.is-active ~ .icon-tabs-naver {
+  margin-left: 0;
+}
+[dir=rtl] .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:first-child.is-active ~ .icon-tabs-naver {
+  margin-left: unset;
+  margin-right: 0;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:nth-child(2) {
+  border-left: 1px solid var(--fade-grey-dark-4);
+  border-right: 1px solid var(--fade-grey-dark-4);
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:nth-child(2).is-active ~ .icon-tabs-naver {
+  margin-left: 33% !important;
+}
+[dir=rtl] .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:nth-child(2).is-active ~ .icon-tabs-naver {
+  margin-left: unset !important;
+  margin-right: 33% !important;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:nth-child(3).is-active ~ .icon-tabs-naver {
+  margin-left: 66.6%;
+}
+[dir=rtl] .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item:nth-child(3).is-active ~ .icon-tabs-naver {
+  margin-left: unset;
+  margin-right: 66.6%;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item svg {
+  pointer-events: none;
+  height: 16px;
+  width: 16px;
+  stroke-width: 1.6px;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .icon-tabs-naver {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  width: 33.3% !important;
+  height: 2px;
+  background: var(--primary);
+  z-index: 1;
+  transition: all 0.3s;
+  border-radius: 12px;
+}
+[dir=rtl] .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .icon-tabs-naver {
+  left: unset;
+  right: 0;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs-content {
+  display: none;
+  animation: fadeInLeft 0.5s;
+  padding-top: 16px;
+}
+[dir=rtl] .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs-content {
+  animation: fadeInRight 0.5s;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs-content.is-active {
+  display: block;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .chart-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 165px;
+  margin: 0 auto;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .chart-block .stats span {
+  display: block;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .chart-block .stats span:first-child {
+  font-family: var(--font);
+  font-size: 1.8rem;
+  color: var(--dark-text);
+  font-weight: 700;
+  line-height: 1;
+}
+.user-grid-v3 .grid-item .icon-tabs-wrapper .chart-block .stats span:nth-child(2) {
+  font-family: var(--font-alt);
+  color: var(--light-text);
+}
+.user-grid-v3 .grid-item .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.user-grid-v3 .grid-item .buttons .button,
+.user-grid-v3 .grid-item .buttons .v-button {
+  width: calc(50% - 4px);
+  color: var(--light-text);
+  margin-bottom: 0;
+}
+.user-grid-v3 .grid-item .buttons .button:hover,
+.user-grid-v3 .grid-item .buttons .v-button:hover {
+  border-color: var(--fade-grey-dark-4);
+  color: var(--primary);
+  box-shadow: var(--light-box-shadow);
+}
+.is-dark .user-grid-v3 .grid-item {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .user-grid-v3 .grid-item .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .user-grid-v3 .grid-item .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .user-grid-v3 .grid-item .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs {
+  background: var(--dark-sidebar-light-2);
+  border-color: var(--dark-sidebar-light-10);
+}
+.is-dark .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item {
+  border-color: var(--dark-sidebar-light-10);
+}
+.is-dark .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .tab-item.is-active {
+  color: var(--primary);
+}
+.is-dark .user-grid-v3 .grid-item .icon-tabs-wrapper .icon-tabs .icon-tabs-inner .icon-tabs-naver {
+  background: var(--primary);
+}

@@ -1,0 +1,6 @@
+.has-top-nav .flex-list-wrapper,
+.has-top-nav .list-flex-toolbar {
+  max-width: 880px;
+  margin-right: auto;
+  margin-left: auto;
+}

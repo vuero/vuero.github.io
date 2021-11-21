@@ -1,0 +1,685 @@
+.lifestyle-dashboard-v4 .illustration-header-2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+  background: var(--primary);
+  font-family: var(--font);
+  box-shadow: var(--primary-box-shadow);
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-image {
+  position: relative;
+  height: 175px;
+  width: 320px;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-image img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  display: block;
+  pointer-events: none;
+}
+[dir=rtl] .lifestyle-dashboard-v4 .illustration-header-2 .header-image img {
+  left: unset;
+  right: -40px;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta {
+  margin-left: 0;
+  padding-right: 30px;
+}
+[dir=rtl] .lifestyle-dashboard-v4 .illustration-header-2 .header-meta {
+  margin-left: unset;
+  margin-right: 0;
+  padding-left: 30px;
+  padding-right: unset;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta h3 {
+  color: var(--smoke-white);
+  font-family: var(--font-alt);
+  font-weight: 700;
+  font-size: 1.3rem;
+  max-width: 280px;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta p {
+  font-weight: 400;
+  color: var(--smoke-white-dark-2);
+  margin-bottom: 16px;
+  max-width: 320px;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta .action-link span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+[dir=rtl] .lifestyle-dashboard-v4 .illustration-header-2 .header-meta .action-link span {
+  margin-left: 6px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta .action-link i {
+  font-size: 12px;
+}
+.lifestyle-dashboard-v4 .writing-stats {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  margin: 8px;
+  width: calc(33.3% - 16px);
+  padding: 12px;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-flat {
+  box-shadow: none;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-info p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-success p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger .title,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger .subtitle,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger h1,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger h2,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger h3,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger h4,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-head .left,
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-head .right {
+  justify-content: flex-end;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat .card-inner {
+  padding-top: 1.75rem;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat span {
+  display: block;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat span:first-child {
+  font-family: var(--font-alt);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--light-text);
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat span:nth-child(2) {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .featured-authors {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 20px;
+}
+.lifestyle-dashboard-v4 .featured-authors.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-flat {
+  box-shadow: none;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.lifestyle-dashboard-v4 .featured-authors.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.lifestyle-dashboard-v4 .featured-authors.is-primary .title,
+.lifestyle-dashboard-v4 .featured-authors.is-primary .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-primary h1,
+.lifestyle-dashboard-v4 .featured-authors.is-primary h2,
+.lifestyle-dashboard-v4 .featured-authors.is-primary h3,
+.lifestyle-dashboard-v4 .featured-authors.is-primary h4,
+.lifestyle-dashboard-v4 .featured-authors.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-secondary .title,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary h1,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary h2,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary h3,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary h4,
+.lifestyle-dashboard-v4 .featured-authors.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-info .title,
+.lifestyle-dashboard-v4 .featured-authors.is-info .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-info h1,
+.lifestyle-dashboard-v4 .featured-authors.is-info h2,
+.lifestyle-dashboard-v4 .featured-authors.is-info h3,
+.lifestyle-dashboard-v4 .featured-authors.is-info h4,
+.lifestyle-dashboard-v4 .featured-authors.is-info p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-success .title,
+.lifestyle-dashboard-v4 .featured-authors.is-success .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-success h1,
+.lifestyle-dashboard-v4 .featured-authors.is-success h2,
+.lifestyle-dashboard-v4 .featured-authors.is-success h3,
+.lifestyle-dashboard-v4 .featured-authors.is-success h4,
+.lifestyle-dashboard-v4 .featured-authors.is-success p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-warning .title,
+.lifestyle-dashboard-v4 .featured-authors.is-warning .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-warning h1,
+.lifestyle-dashboard-v4 .featured-authors.is-warning h2,
+.lifestyle-dashboard-v4 .featured-authors.is-warning h3,
+.lifestyle-dashboard-v4 .featured-authors.is-warning h4,
+.lifestyle-dashboard-v4 .featured-authors.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors.is-danger .title,
+.lifestyle-dashboard-v4 .featured-authors.is-danger .subtitle,
+.lifestyle-dashboard-v4 .featured-authors.is-danger h1,
+.lifestyle-dashboard-v4 .featured-authors.is-danger h2,
+.lifestyle-dashboard-v4 .featured-authors.is-danger h3,
+.lifestyle-dashboard-v4 .featured-authors.is-danger h4,
+.lifestyle-dashboard-v4 .featured-authors.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .featured-authors .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v4 .featured-authors .card-head .left,
+.lifestyle-dashboard-v4 .featured-authors .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v4 .featured-authors .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.lifestyle-dashboard-v4 .featured-authors .card-head .right {
+  justify-content: flex-end;
+}
+.lifestyle-dashboard-v4 .featured-authors .card-inner {
+  padding-top: 1.75rem;
+}
+.lifestyle-dashboard-v4 .featured-authors .featured-authors-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.lifestyle-dashboard-v4 .featured-authors .featured-authors-header h3 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .featured-authors .featured-authors-header .action-link {
+  font-size: 0.9rem;
+}
+.lifestyle-dashboard-v4 .featured-authors .featured-authors-list .featured-authors-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v4 .featured-authors .featured-authors-list .featured-authors-item .media-flex-center .flex-end span {
+  font-family: var(--font);
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .updates {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  padding: 20px;
+  margin-top: 8px;
+}
+.lifestyle-dashboard-v4 .updates.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.lifestyle-dashboard-v4 .updates.is-flat {
+  box-shadow: none;
+}
+.lifestyle-dashboard-v4 .updates.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.lifestyle-dashboard-v4 .updates.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.lifestyle-dashboard-v4 .updates.is-primary .title,
+.lifestyle-dashboard-v4 .updates.is-primary .subtitle,
+.lifestyle-dashboard-v4 .updates.is-primary h1,
+.lifestyle-dashboard-v4 .updates.is-primary h2,
+.lifestyle-dashboard-v4 .updates.is-primary h3,
+.lifestyle-dashboard-v4 .updates.is-primary h4,
+.lifestyle-dashboard-v4 .updates.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-secondary .title,
+.lifestyle-dashboard-v4 .updates.is-secondary .subtitle,
+.lifestyle-dashboard-v4 .updates.is-secondary h1,
+.lifestyle-dashboard-v4 .updates.is-secondary h2,
+.lifestyle-dashboard-v4 .updates.is-secondary h3,
+.lifestyle-dashboard-v4 .updates.is-secondary h4,
+.lifestyle-dashboard-v4 .updates.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-info .title,
+.lifestyle-dashboard-v4 .updates.is-info .subtitle,
+.lifestyle-dashboard-v4 .updates.is-info h1,
+.lifestyle-dashboard-v4 .updates.is-info h2,
+.lifestyle-dashboard-v4 .updates.is-info h3,
+.lifestyle-dashboard-v4 .updates.is-info h4,
+.lifestyle-dashboard-v4 .updates.is-info p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-success .title,
+.lifestyle-dashboard-v4 .updates.is-success .subtitle,
+.lifestyle-dashboard-v4 .updates.is-success h1,
+.lifestyle-dashboard-v4 .updates.is-success h2,
+.lifestyle-dashboard-v4 .updates.is-success h3,
+.lifestyle-dashboard-v4 .updates.is-success h4,
+.lifestyle-dashboard-v4 .updates.is-success p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-warning .title,
+.lifestyle-dashboard-v4 .updates.is-warning .subtitle,
+.lifestyle-dashboard-v4 .updates.is-warning h1,
+.lifestyle-dashboard-v4 .updates.is-warning h2,
+.lifestyle-dashboard-v4 .updates.is-warning h3,
+.lifestyle-dashboard-v4 .updates.is-warning h4,
+.lifestyle-dashboard-v4 .updates.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.lifestyle-dashboard-v4 .updates.is-danger .title,
+.lifestyle-dashboard-v4 .updates.is-danger .subtitle,
+.lifestyle-dashboard-v4 .updates.is-danger h1,
+.lifestyle-dashboard-v4 .updates.is-danger h2,
+.lifestyle-dashboard-v4 .updates.is-danger h3,
+.lifestyle-dashboard-v4 .updates.is-danger h4,
+.lifestyle-dashboard-v4 .updates.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.lifestyle-dashboard-v4 .updates .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lifestyle-dashboard-v4 .updates .card-head .left,
+.lifestyle-dashboard-v4 .updates .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.lifestyle-dashboard-v4 .updates .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.lifestyle-dashboard-v4 .updates .card-head .right {
+  justify-content: flex-end;
+}
+.lifestyle-dashboard-v4 .updates .card-inner {
+  padding-top: 1.75rem;
+}
+.lifestyle-dashboard-v4 .updates .updates-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v4 .updates .updates-header h3 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .updates .updates-header .action-link {
+  font-size: 0.9rem;
+}
+.lifestyle-dashboard-v4 .updates .updates-list .update-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--fade-grey-dark-3);
+}
+.lifestyle-dashboard-v4 .updates .updates-list .update-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.lifestyle-dashboard-v4 .updates .updates-list .update-item p {
+  font-size: 0.9rem;
+}
+.lifestyle-dashboard-v4 .updates .updates-list .update-item span {
+  display: block;
+  min-width: 60px;
+  text-align: right;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--dark-text);
+}
+[dir=rtl] .lifestyle-dashboard-v4 .updates .updates-list .update-item span {
+  text-align: left;
+}
+.lifestyle-dashboard-v4 .articles-feed {
+  background: var(--widget-grey);
+  padding: 30px;
+  border-radius: 12px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-header h3 {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-header .action-link {
+  font-size: 0.9rem;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-subheader {
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-subheader .selector .button {
+  font-size: 0.8rem;
+  border-radius: 50px;
+  margin-right: 4px;
+}
+[dir=rtl] .lifestyle-dashboard-v4 .articles-feed .articles-feed-subheader .selector .button {
+  margin-left: 4px;
+  margin-right: unset;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-subheader .selector .button.is-selected {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: var(--primary-box-shadow);
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item {
+  display: block;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-image {
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content {
+  position: relative;
+  padding: 25px;
+  border-radius: 18px;
+  background: var(--white);
+  margin-top: -40px;
+  z-index: 1;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content h4,
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content p {
+  margin-bottom: 10px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content h4 {
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content .media-flex-center .flex-meta span {
+  font-size: 0.8rem;
+}
+.is-dark .lifestyle-dashboard-v4 .illustration-header-2 {
+  background: var(--dark-sidebar);
+  box-shadow: none;
+}
+.is-dark .lifestyle-dashboard-v4 .writing-stats .writing-stat {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .lifestyle-dashboard-v4 .writing-stats .writing-stat .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .writing-stats .writing-stat .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .writing-stats .writing-stat .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .updates,
+.is-dark .lifestyle-dashboard-v4 .featured-authors {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .lifestyle-dashboard-v4 .updates .v-avatar img,
+.is-dark .lifestyle-dashboard-v4 .featured-authors .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .updates .avatar-stack .v-avatar,
+.is-dark .lifestyle-dashboard-v4 .featured-authors .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .updates .avatar-stack .v-avatar .avatar.is-more .inner,
+.is-dark .lifestyle-dashboard-v4 .featured-authors .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .articles-feed {
+  background: var(--dark-sidebar-light-8);
+}
+.is-dark .lifestyle-dashboard-v4 .articles-feed .articles-feed-subheader .selector .button.is-selected {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: var(--primary-box-shadow) !important;
+  color: var(--white) !important;
+}
+.is-dark .lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item .featured-content {
+  background: var(--dark-sidebar);
+}
+@media only screen and (max-width: 767px) {
+.lifestyle-dashboard-v4 .illustration-header-2 {
+    flex-direction: column;
+    text-align: center;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-image {
+    height: auto;
+    width: 100%;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-image img {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    margin-top: -34px;
+}
+[dir=rtl] .lifestyle-dashboard-v4 .illustration-header-2 .header-image img {
+    left: unset;
+    right: 0;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta {
+    padding: 20px;
+}
+.lifestyle-dashboard-v4 .illustration-header-2 .header-meta > p {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lifestyle-dashboard-v4 .writing-stats .writing-stat {
+    text-align: center;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.lifestyle-dashboard-v4 .articles-feed .articles-feed-list .articles-feed-list-inner .articles-feed-item {
+    width: calc(50% - 24px);
+    margin: 12px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.lifestyle-dashboard-v4 .updates .updates-list .update-item > span {
+    display: none;
+}
+.lifestyle-dashboard-v4 .articles-feed {
+    padding: 20px;
+}
+}

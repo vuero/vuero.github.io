@@ -1,0 +1,465 @@
+/*! _demo.scss | Vuero | Css ninja 2020-2021 */
+/*
+    1. Demo Cards
+    2. Demo Card Dark mode
+    3. Media Queries
+*/
+/* ==========================================================================
+1. Demo Card
+========================================================================== */
+.demo-card {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
+  transition: all 0.3s;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.demo-card.has-margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.demo-card.is-flat {
+  box-shadow: none;
+}
+.demo-card.is-raised {
+  box-shadow: var(--light-box-shadow);
+}
+.demo-card.is-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary--color-invert);
+}
+.demo-card.is-primary .title,
+.demo-card.is-primary .subtitle,
+.demo-card.is-primary h1,
+.demo-card.is-primary h2,
+.demo-card.is-primary h3,
+.demo-card.is-primary h4,
+.demo-card.is-primary p {
+  color: var(--smoke-white) !important;
+}
+.demo-card.is-secondary {
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+.demo-card.is-secondary .title,
+.demo-card.is-secondary .subtitle,
+.demo-card.is-secondary h1,
+.demo-card.is-secondary h2,
+.demo-card.is-secondary h3,
+.demo-card.is-secondary h4,
+.demo-card.is-secondary p {
+  color: var(--smoke-white) !important;
+}
+.demo-card.is-info {
+  background: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.demo-card.is-info .title,
+.demo-card.is-info .subtitle,
+.demo-card.is-info h1,
+.demo-card.is-info h2,
+.demo-card.is-info h3,
+.demo-card.is-info h4,
+.demo-card.is-info p {
+  color: var(--smoke-white) !important;
+}
+.demo-card.is-success {
+  background: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.demo-card.is-success .title,
+.demo-card.is-success .subtitle,
+.demo-card.is-success h1,
+.demo-card.is-success h2,
+.demo-card.is-success h3,
+.demo-card.is-success h4,
+.demo-card.is-success p {
+  color: var(--smoke-white) !important;
+}
+.demo-card.is-warning {
+  background: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.demo-card.is-warning .title,
+.demo-card.is-warning .subtitle,
+.demo-card.is-warning h1,
+.demo-card.is-warning h2,
+.demo-card.is-warning h3,
+.demo-card.is-warning h4,
+.demo-card.is-warning p {
+  color: var(--smoke-white) !important;
+}
+.demo-card.is-danger {
+  background: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+.demo-card.is-danger .title,
+.demo-card.is-danger .subtitle,
+.demo-card.is-danger h1,
+.demo-card.is-danger h2,
+.demo-card.is-danger h3,
+.demo-card.is-danger h4,
+.demo-card.is-danger p {
+  color: var(--smoke-white) !important;
+}
+.demo-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.demo-card .card-head .left,
+.demo-card .card-head .right {
+  display: flex;
+  align-items: center;
+}
+.demo-card .card-head .left .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.demo-card .card-head .right {
+  justify-content: flex-end;
+}
+.demo-card .card-inner {
+  padding-top: 1.75rem;
+}
+.demo-card.has-more-margin {
+  margin-bottom: 3rem;
+}
+.demo-card.has-margin-top {
+  margin-top: 3rem;
+}
+.demo-card.is-narrow {
+  margin-bottom: 0;
+}
+.demo-card .demo-title h3 {
+  font-family: var(--font-alt);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  color: var(--dark-text);
+  line-height: 1.125;
+}
+.demo-card .demo-title p {
+  max-width: 540px;
+}
+.demo-card .demo-title p a {
+  font-weight: 500;
+  color: var(--primary);
+}
+.demo-card .code-trigger {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+  transition: all 0.3s;
+}
+[dir=rtl] .demo-card .code-trigger {
+  right: auto;
+  left: 20px;
+}
+.demo-card .code-trigger:hover svg {
+  color: var(--dark-text);
+}
+.demo-card .code-trigger.is-active {
+  border-color: var(--fade-grey-dark-6);
+  transform: rotate(180deg);
+}
+.demo-card .code-trigger.is-active svg {
+  color: var(--primary);
+}
+.demo-card .code-trigger.is-active svg.open {
+  display: none !important;
+}
+.demo-card .code-trigger.is-active svg.close {
+  display: block !important;
+}
+.demo-card .code-trigger svg {
+  height: 16px;
+  width: 16px;
+  color: var(--light-text);
+  transition: stroke 0.3s;
+}
+.demo-card .code-trigger svg.open {
+  display: block !important;
+}
+.demo-card .code-trigger svg.close {
+  display: none !important;
+  opacity: 1 !important;
+}
+.demo-card .card-inner {
+  padding: 0;
+}
+.demo-card .card-inner.no-padding {
+  padding: 0;
+}
+.demo-card .card-inner .buttons {
+  margin-bottom: 0;
+}
+.demo-card .card-inner .is-grouped-multiline,
+.demo-card .card-inner .tabs-wrapper,
+.demo-card .card-inner .progress,
+.demo-card .card-inner .message,
+.demo-card .card-inner .snacks,
+.demo-card .card-inner .filepond-uploader {
+  max-width: 540px;
+}
+.demo-card .card-inner .demo-icon-search .input {
+  min-width: 260px;
+}
+.demo-card .card-inner .demo-icon-search .input:focus {
+  min-width: 350px;
+}
+.demo-card .card-inner.is-scrolling .demo-icon-search {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.demo-card .card-inner .demo-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.demo-card .card-inner .demo-icon-list li {
+  width: 20%;
+  border-radius: 0.25em;
+  transition: background-color 0.2s;
+  user-select: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem 1rem;
+  cursor: pointer;
+}
+.demo-card .card-inner .demo-icon-list li:hover {
+  background-color: var(--fade-grey-light-5);
+}
+.demo-card .card-inner .demo-icon-list li:hover .lnil,
+.demo-card .card-inner .demo-icon-list li:hover .lnir,
+.demo-card .card-inner .demo-icon-list li:hover .fas,
+.demo-card .card-inner .demo-icon-list li:hover .fab {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+.demo-card .card-inner .demo-icon-list li:hover svg {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+.demo-card .card-inner .demo-icon-list .lnil,
+.demo-card .card-inner .demo-icon-list .lnir,
+.demo-card .card-inner .demo-icon-list .fas,
+.demo-card .card-inner .demo-icon-list .fab {
+  color: var(--light-text);
+  font-size: 1.6rem;
+  transition: all 0.35s;
+}
+.demo-card .card-inner .demo-icon-list svg {
+  height: 20px;
+  width: 20px;
+  stroke-width: 1.8px;
+  color: var(--light-text);
+  transition: stroke 0.3s;
+}
+.demo-card .card-inner .demo-icon-list input,
+.demo-card .card-inner .demo-icon-list em,
+.demo-card .card-inner .demo-icon-list .icon-unicode {
+  display: none;
+}
+.demo-card .card-inner .demo-icon-list .icon.w-grid-2 {
+  padding: 4rem 0 !important;
+}
+.demo-card .card-inner .demo-icon-list .icon-name {
+  color: var(--light-text);
+}
+.demo-card .card-inner .field.credit-card {
+  padding-bottom: 4rem;
+}
+.demo-card .card-inner .field:not(.credit-card) {
+  max-width: 540px;
+  flex-wrap: wrap;
+}
+.demo-card .card-inner .field:not(.credit-card).is-grouped .control {
+  margin-bottom: 0.75rem;
+}
+.demo-card .card-inner .field:not(.credit-card).demo-select {
+  max-width: 340px;
+}
+.demo-card .highlight-block {
+  margin-top: 20px;
+}
+.demo-card .content table {
+  margin-top: 2rem;
+}
+.demo-card .content table th {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-alt);
+  border-bottom: solid 1px var(--border);
+}
+.demo-card .content table th:first-of-type {
+  width: 200px;
+}
+.demo-card .content table td {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font);
+  border-bottom: solid 1px var(--border);
+}
+.demo-card .content table td code {
+  font-family: var(--font-monospace);
+}
+.demo-card .content table td code:first-child {
+  padding-left: 0 !important;
+}
+[dir=rtl] .demo-card .content table td code:first-child {
+  padding-right: 0 !important;
+}
+.demo-card .content table td .is-string code {
+  color: var(--red);
+}
+.demo-card .content table td .is-function code {
+  color: var(--info);
+}
+.demo-card .content table td .is-number code,
+.demo-card .content table td .is-boolean code {
+  color: var(--orange);
+}
+.demo-card .content table td .is-null code,
+.demo-card .content table td .is-undefined code {
+  color: var(--light-blue);
+}
+.demo-card .content table td .is-array code {
+  color: var(--dark);
+}
+.is-dark .demo-card .content table td .is-array code {
+  color: var(--primary-grey-light-10);
+}
+.demo-s-card .title,
+.demo-r-card .title,
+.demo-l-card .title {
+  margin-bottom: 6px;
+}
+.demo-spacer {
+  padding-bottom: 100px;
+}
+.demo-editor-container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.helper-table .category,
+.helper-table th {
+  width: 25%;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.helper-table .name {
+  width: 25%;
+}
+.helper-table .description {
+  width: 50%;
+}
+.demo-table .table th {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.demo-field {
+  max-width: 340px;
+}
+/* ==========================================================================
+2. Demo Card Dark mode
+========================================================================== */
+.is-dark .demo-card {
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
+}
+.is-dark .demo-card .v-avatar img {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .demo-card .avatar-stack .v-avatar {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .demo-card .avatar-stack .v-avatar .avatar.is-more .inner {
+  border-color: var(--dark-sidebar-light-6) !important;
+}
+.is-dark .demo-card .demo-title h3 {
+  color: var(--dark-dark-text);
+}
+.is-dark .demo-card .demo-title .code-trigger {
+  border-color: var(--dark-sidebar-light-14);
+}
+.is-dark .demo-card .demo-title .code-trigger:hover svg {
+  color: var(--light-text);
+}
+.is-dark .demo-card .demo-title .code-trigger.is-active {
+  border-color: var(--dark-sidebar-light-16);
+  background: var(--dark-sidebar-light-12);
+}
+.is-dark .demo-card .demo-title .code-trigger.is-active svg {
+  color: var(--primary);
+}
+.is-dark .demo-card .demo-icon-list li:hover {
+  background-color: var(--dark-sidebar-light-10) !important;
+}
+.is-dark .demo-card .demo-icon-list li:hover .lnil,
+.is-dark .demo-card .demo-icon-list li:hover .lnir,
+.is-dark .demo-card .demo-icon-list li:hover .fas,
+.is-dark .demo-card .demo-icon-list li:hover .fab {
+  color: var(--primary);
+}
+.is-dark .demo-card .demo-icon-list li:hover svg {
+  color: var(--primary);
+}
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+@media only screen and (max-width: 767px) {
+.demo-card .demo-title .code-trigger {
+    top: 10px;
+    right: 12px;
+}
+[dir=rtl] .demo-card .demo-title .code-trigger {
+    right: auto;
+    left: 12px;
+}
+.demo-card .field.is-grouped .control {
+    margin-bottom: 0.75rem;
+}
+}
+@media only screen and (min-device-width: 1024px) and (orientation: portrait) {
+.landing-page-wrapper .hero .navbar:not(.is-docked) .navbar-menu {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: none !important;
+}
+.landing-page-wrapper .hero .navbar:not(.is-docked) .navbar-menu .navbar-item.is-theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-page-wrapper .hero .navbar .navbar-brand {
+    width: auto !important;
+}
+.landing-page-wrapper .hero .navbar .navbar-menu {
+    width: auto;
+    position: static;
+}
+.landing-page-wrapper .hero .navbar .navbar-menu .navbar-end {
+    margin-right: -28px;
+}
+[dir=rtl] .landing-page-wrapper .hero .navbar .navbar-menu .navbar-end {
+    margin-right: 0;
+    margin-left: -28px;
+}
+}
